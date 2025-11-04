@@ -226,8 +226,8 @@
     ]
   },
   {
-    "name": "Sustainabiliity",
-    "folder": "02_Sustainabiliity",
+    "name": "Sustainability",
+    "folder": "02_Sustainability",
     "papers": [
       {
         "id": "IFSCC2025-1040",
@@ -508,7 +508,7 @@
   },
   {
     "name": "Well aging / Logevity",
-    "folder": "03_Well_aging__Logevity",
+    "folder": "03_Well aging, Longevity",
     "papers": [
       {
         "id": "IFSCC2025-570",
@@ -1294,7 +1294,7 @@
   },
   {
     "name": "Make up",
-    "folder": "04_Make_up",
+    "folder": "04_Make up",
     "papers": [
       {
         "id": "IFSCC2025-209",
@@ -1480,7 +1480,7 @@
   },
   {
     "name": "Analytical technologies",
-    "folder": "05_Analytical_technologies",
+    "folder": "05_Analytical technologies",
     "papers": [
       {
         "id": "IFSCC2025-1484",
@@ -2572,7 +2572,7 @@
   },
   {
     "name": "Melanogenesis / Pigmentation",
-    "folder": "07_Melanogenesis__Pigmentation",
+    "folder": "07_Melanogenesis, Pigmentation",
     "papers": [
       {
         "id": "IFSCC2025-1046",
@@ -3104,7 +3104,7 @@
   },
   {
     "name": "Neuro/Sensory Sciences/Emotions",
-    "folder": "09_NeuroSensory_SciencesEmotions",
+    "folder": "09_Neuro, Sensory Sciences, Emotions",
     "papers": [
       {
         "id": "IFSCC2025-293",
@@ -3936,7 +3936,7 @@
   },
   {
     "name": "Personnalisation/beauty tech",
-    "folder": "11_Personnalisationbeauty_tech",
+    "folder": "11_Personnalisation, beauty tech",
     "papers": [
       {
         "id": "IFSCC2025-666",
@@ -3962,7 +3962,7 @@
   },
   {
     "name": "Exposome/stress",
-    "folder": "12_Exposomestress",
+    "folder": "12_Exposome, stress",
     "papers": [
       {
         "id": "IFSCC2025-407",
@@ -4009,7 +4009,7 @@
   },
   {
     "name": "Human & environmental safety",
-    "folder": "14_Human__environmental_safety",
+    "folder": "14_Human&environmental safety",
     "papers": [
       {
         "id": "IFSCC2025-1363",

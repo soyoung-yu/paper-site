@@ -1,11 +1,52 @@
 import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
-const buildPdfPath = (folder, filename) =>
-  new URL(
-    `/papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`,
-    import.meta.env.BASE_URL
-  ).toString();
+
+// Apps Script 웹앱 URL
+const LOG_URL = "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
+
+const buildPdfPath = (folder, filename) => {
+  const base = import.meta.env.BASE_URL || "/";
+  return `${base}papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`;
+};
+
+
+// 같은 파일을 연속 클릭할 때 중복 카운트 방지(2초 내 중복 제거)
+const dedupe = (paperId) => {
+  const key = `dl:${paperId}`;
+  const last = Number(localStorage.getItem(key) || 0);
+  const now = Date.now();
+  if (now - last < 2000) return true; // 2초 내 재클릭 무시
+  localStorage.setItem(key, String(now));
+  return false;
+};
+
+const logAndOpen = (folder, paper) => {
+  const href = buildPdfPath(folder, paper.filename);
+
+  const payload = {
+    paper_id: paper.id,
+    title: paper.title,
+    folder,
+    href,
+    ua: navigator.userAgent,
+    ref: document.referrer || "",
+    ts: new Date().toISOString(),
+  };
+
+  try {
+    const body = new URLSearchParams(payload).toString();
+    const blob = new Blob([body], { type: "application/x-www-form-urlencoded" });
+    navigator.sendBeacon(LOG_URL, blob);
+  } catch (_) {}
+
+  try {
+    const img = new Image();
+    img.src = `${LOG_URL}?${new URLSearchParams(payload).toString()}`;
+  } catch (_) {}
+
+  window.open(href, "_blank", "noopener");
+};
 
 export default function PaperSite() {
   const [folders, setFolders] = useState([]);
@@ -13,7 +54,7 @@ export default function PaperSite() {
 
   useEffect(() => {
     // public/papers.json 로드
-    fetch(new URL("/papers.json", import.meta.env.BASE_URL))
+    fetch(`${import.meta.env.BASE_URL || "/"}papers.json`)
       .then((r) => r.json())
       .then(setFolders)
       .catch((e) => console.error("Failed to load papers.json", e));
@@ -86,15 +127,13 @@ export default function PaperSite() {
                         </div>
                       </div>
 
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noreferrer"
+                      <button
+                        onClick={() => logAndOpen(selectedFolder.folder, paper)}
                         className="flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors ml-4"
                       >
                         <Download className="w-4 h-4 mr-2" />
                         Download
-                      </a>
+                      </button>
                     </div>
                   );
                 })}
