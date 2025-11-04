@@ -2,7 +2,10 @@ import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
 const buildPdfPath = (folder, filename) =>
-  new URL(`/papers/${folder}/${filename}`, import.meta.env.BASE_URL).toString();
+  new URL(
+    `/papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`,
+    import.meta.env.BASE_URL
+  ).toString();
 
 export default function PaperSite() {
   const [folders, setFolders] = useState([]);
