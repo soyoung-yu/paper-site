@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
+import podiumMap from "../public/podium.json"; // ✅ podium.json 불러오기
 
 const LOG_URL =
   "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
@@ -57,11 +58,8 @@ export default function PaperSite() {
   }, []);
 
   return (
-    // 바깥 배경은 index.css에서 body에 적용했으니 여기선 w-full만
     <div className="min-h-screen w-full">
-      {/* 상단 래퍼: 폭 제한 완전 제거 */}
       <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
-        {/* 헤더 */}
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -71,7 +69,6 @@ export default function PaperSite() {
           </p>
         </header>
 
-        {/* 메인 */}
         <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <section>
@@ -79,7 +76,6 @@ export default function PaperSite() {
                 Categories
               </h2>
 
-              {/* 큰 화면에서도 계속 펼쳐지도록 칼럼 확장 */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
                 {folders.map((folder) => (
                   <button
@@ -125,7 +121,11 @@ export default function PaperSite() {
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
-                          {paper.podium && <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />}
+
+                          {/* ✅ podium.json 기반 아이콘 표시 */}
+                          {podiumMap[paper.id] && (
+                            <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                          )}
                         </div>
                         <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
                           {paper.title}
@@ -154,4 +154,3 @@ export default function PaperSite() {
     </div>
   );
 }
-
