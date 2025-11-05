@@ -21,17 +21,27 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
+          cache: npm
 
-      - name: Install deps
+      - name: Install dependencies
         run: npm ci
+
+      # (옵션) VITE 기본 base 확인용 로그
+      - name: Show vite.config.* (optional)
+        run: |
+          ls -1 | grep -E 'vite\.config\.(js|ts)$' || true
+          grep -R "base:" -n . || true
 
       - name: Build
         run: npm run build
+
+      # GitHub Pages용 아티팩트 설정
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -42,6 +52,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     environment:
+      # ⚠️ Pages는 environment 이름이 반드시 github-pages 여야 함
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
