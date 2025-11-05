@@ -60,7 +60,7 @@ export default function PaperSite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6 md:p-8">
-      <div className="max-w-screen-xl mx-auto">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         {/* 헤더 */}
         <header className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
