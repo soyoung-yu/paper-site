@@ -272,7 +272,6 @@ export default function PaperSite() {
   const Pagination = ({ page, total, onChange }) => {
     if (total <= 1) return null;
 
-    // 페이지 버튼 범위 (최대 7개 표시)
     const windowSize = 7;
     let start = Math.max(1, page - Math.floor(windowSize / 2));
     let end = start + windowSize - 1;
@@ -335,9 +334,10 @@ export default function PaperSite() {
   };
 
   return (
-    <div className="min-h-screen w-full">
+    <div className="min-h-screen w-full bg-gray-50">
       <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
 
+        {/* 헤더 (별도 블록) */}
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -347,11 +347,12 @@ export default function PaperSite() {
           </p>
         </header>
 
-        <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+        {/* 메인 */}
+        <main className="w-full">
           {!selectedFolder ? (
             <>
-              {/* Sessions 섹션 */}
-              <section>
+              {/* Sessions 블록 (독립 카드) */}
+              <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
                   Sessions
                 </h2>
@@ -377,8 +378,8 @@ export default function PaperSite() {
                 </div>
               </section>
 
-              {/* All Papers 섹션 */}
-              <section className="mt-8 sm:mt-10">
+              {/* All Papers 블록 (독립 카드) */}
+              <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
                     All Papers
@@ -470,8 +471,8 @@ export default function PaperSite() {
               </section>
             </>
           ) : (
-            // 폴더 내부 뷰
-            <section>
+            // 폴더 내부 뷰 (하나의 카드)
+            <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
               <button
                 onClick={handleBack}
                 className="flex items-center text-indigo-600 hover:text-indigo-800 mb-4 sm:mb-6 transition-colors"
