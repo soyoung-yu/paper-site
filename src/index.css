@@ -2,21 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ===== Global base ===== */
 :root {
+  /* Fluid root font-size: scales with viewport width */
+  font-size: clamp(14px, 0.9vw + 10px, 18px);
+
+  /* Typography rendering */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
+  /* Color scheme hint for UI controls */
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
+  /* Better text rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Links */
 a {
   font-weight: 500;
   color: #646cff;
@@ -26,24 +32,29 @@ a:hover {
   color: #535bf2;
 }
 
+/* Body reset
+   Remove fixed centering so the app can be fully responsive */
+html, body, #root {
+  height: 100%;
+}
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100%;
+  background: transparent; /* page background is handled by Tailwind classes */
 }
 
+/* Headings inherit fluid scale via rem */
 h1 {
-  font-size: 3.2em;
   line-height: 1.1;
 }
 
+/* Buttons: keep minimal defaults, Tailwind will style most buttons */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
@@ -58,6 +69,8 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Light mode defaults for plain elements
+   Tailwind dark mode can override via class if you enable it */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -70,3 +83,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Optional utility tweaks without adding classes in JSX */
+@layer base {
+  /* Make images and videos responsive by default */
+  img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
