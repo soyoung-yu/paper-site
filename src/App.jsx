@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
-// Apps Script 웹앱 URL
 const LOG_URL =
   "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
 
@@ -10,7 +9,6 @@ const buildPdfPath = (folder, filename) => {
   return `${base}papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`;
 };
 
-// 같은 파일을 연속 클릭할 때 중복 카운트 방지(2초 내 중복 제거)
 const dedupe = (paperId) => {
   const key = `dl:${paperId}`;
   const last = Number(localStorage.getItem(key) || 0);
@@ -59,11 +57,11 @@ export default function PaperSite() {
   }, []);
 
   return (
-    // ✅ 화면 가로폭을 그대로 쓰도록 w-screen
-    <div className="min-h-screen w-screen bg-gradient-to-br from-blue-50 to-indigo-100">
-      {/* ✅ 어떤 max-width도 걸리지 않게 max-w-none, 좌우 패딩만 부여 */}
-      <div className="w-full max-w-none px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 4xl:px-20">
-        {/* 헤더: 폭 제한 제거 */}
+    // 바깥 배경은 index.css에서 body에 적용했으니 여기선 w-full만
+    <div className="min-h-screen w-full">
+      {/* 상단 래퍼: 폭 제한 완전 제거 */}
+      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
+        {/* 헤더 */}
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -73,7 +71,7 @@ export default function PaperSite() {
           </p>
         </header>
 
-        {/* 메인 패널: 폭 제한 제거 */}
+        {/* 메인 */}
         <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <section>
@@ -81,7 +79,7 @@ export default function PaperSite() {
                 Categories
               </h2>
 
-              {/* ✅ 초대형 모니터에서도 계속 펼쳐지도록 칼럼 확장 */}
+              {/* 큰 화면에서도 계속 펼쳐지도록 칼럼 확장 */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
                 {folders.map((folder) => (
                   <button
@@ -118,7 +116,6 @@ export default function PaperSite() {
 
               <div className="space-y-3 sm:space-y-4">
                 {selectedFolder.papers.map((paper) => (
-                  // ✅ 각 행도 전체 너비로 확장
                   <div
                     key={paper.id}
                     className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
@@ -157,3 +154,4 @@ export default function PaperSite() {
     </div>
   );
 }
+

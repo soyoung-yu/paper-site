@@ -2,23 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 전역 보정 */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* 뷰포트에 맞춰 레이아웃이 꽉 차도록 */
-html,
-body,
-#root {
+/* 루트가 화면 전체를 사용하도록 */
+html, body, #root {
   height: 100%;
   width: 100%;
 }
 
-/* 글자 크기는 고정/완만 스케일 (원하면 이 줄 지워도 됨) */
+/* 기본 폰트/렌더링 */
 :root {
+  /* 글씨는 크게 안 키우고 싶다면 이 줄을 16px 고정으로 바꿔도 됨 */
   font-size: clamp(14px, 0.9vw + 10px, 18px);
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -31,7 +23,18 @@ body,
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 링크 기본색 (필요 없으면 제거) */
+/* ✅ 페이지 전체 배경을 body에 직접 적용해서 항상 꽉 채움 */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  display: block; /* Vite 기본 flex 제거 */
+  background: linear-gradient(135deg, #eff6ff 0%, #e0e7ff 100%);
+  /* 혹시 수평 스크롤 생기는 환경을 잡으려면 아래 한 줄 추가 */
+  overflow-x: hidden;
+}
+
+/* 링크 기본색 (선택) */
 a {
   font-weight: 500;
   color: #646cff;
@@ -41,21 +44,7 @@ a:hover {
   color: #535bf2;
 }
 
-/* ✅ 중앙정렬/고정폭을 유발하던 flex 제거가 핵심 */
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100%;
-  display: block;           /* ← 기존 flex 제거 */
-  background: transparent;  /* 배경은 앱(Tailwind)에서 제어 */
-}
-
-/* 제목은 rem로 자연 스케일 */
-h1 {
-  line-height: 1.1;
-}
-
-/* 버튼 기본값 (Tailwind에서 덮어씀) */
+/* 버튼 기본값 (Tailwind가 덮어씀) */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -67,29 +56,18 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+button:hover { border-color: #646cff; }
 button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
+button:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
 
-/* 라이트 모드 기본 */
+/* 라이트 모드 색상 (선택) */
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  :root { color: #213547; }
+  a:hover { color: #747bff; }
+  button { background-color: #f9f9f9; }
 }
 
-/* 접근성: 모션 감소 존중 */
+/* 접근성: 모션 감소 */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
