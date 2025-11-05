@@ -1,0 +1,4052 @@
+[
+  {
+    "name": "Microbiome",
+    "folder": "01_Microbiome",
+    "papers": [
+      {
+        "id": "IFSCC2025-1480",
+        "title": "A Mildly Acidic Amino Acid-Based Foaming Care Solution for Intimate Areas",
+        "filename": "IFSCC2025-1480.pdf"
+      },
+      {
+        "id": "IFSCC2025-1258",
+        "title": "A Novel Microbiome in-vitro Assessment Test Model Utilizing Metagenome Analysis",
+        "filename": "IFSCC2025-1258.pdf"
+      },
+      {
+        "id": "IFSCC2025-1814",
+        "title": "A Paradigm Shift in Skin Microbiome Enhancement: Leveraging Skin Lipidomics and Probiotic Delivery Systems",
+        "filename": "IFSCC2025-1814.pdf"
+      },
+      {
+        "id": "IFSCC2025-1202",
+        "title": "Advancing Eczema Care: A Microbiome-Centered Approach to Product Testing",
+        "filename": "IFSCC2025-1202.pdf"
+      },
+      {
+        "id": "IFSCC2025-469",
+        "title": "All inclusive microbiome-friendly cosmetic ingredient portfolio – galenic ingredients that allow the development of formulations that do not harm the healthy skin microbiome",
+        "filename": "IFSCC2025-469.pdf"
+      },
+      {
+        "id": "IFSCC2025-1047",
+        "title": "Anti-microbial Activity of Sodium Decanoyl/Dodecanoyl Lactylate Against Malassezia furfur and Cutibacterium Acnes",
+        "filename": "IFSCC2025-1047.pdf"
+      },
+      {
+        "id": "IFSCC2025-1692",
+        "title": "Balancing the Skin Microbiome: Postbiotics in Acne Control",
+        "filename": "IFSCC2025-1692.pdf"
+      },
+      {
+        "id": "IFSCC2025-772",
+        "title": "Bifidobacterium/Lactobacillus/Soybean Seed Extract Ferment Filtrate: A Novel, Efficient, and Gentle Bio-Penetration Enhancer",
+        "filename": "IFSCC2025-772.pdf"
+      },
+      {
+        "id": "IFSCC2025-1129",
+        "title": "Biodiversity rich lotion reduced pro-inflammatory cytokine levels in in vitro skin model",
+        "filename": "IFSCC2025-1129.pdf"
+      },
+      {
+        "id": "IFSCC2025-828",
+        "title": "Biophysical and Microbial Conditions in Dandruff-afflicted Scalp Skin of Chinese Young Consumers, and the Shampoo Solutions to Address the Root Cause from Microbiota Perspective",
+        "filename": "IFSCC2025-828.pdf"
+      },
+      {
+        "id": "IFSCC2025-312",
+        "title": "Comprehensive study of a selected botanical species: extraction, analytical profiling, in silico anti-aging bioactivity prediction, and microbiome modulation for dermo-cosmetic applications",
+        "filename": "IFSCC2025-312.pdf"
+      },
+      {
+        "id": "IFSCC2025-967",
+        "title": "Corynebacterium in Skin Aging: Species Distribution and Anti-Aging Potential",
+        "filename": "IFSCC2025-967.pdf"
+      },
+      {
+        "id": "IFSCC2025-576",
+        "title": "Cutibacterium acnes-colonized Human Skin Equivalent Including Sebaceous Glands as a New Advanced 3D Model Mimicking Oily and Acne-prone Skin for Active Ingredients Research",
+        "filename": "IFSCC2025-576.pdf"
+      },
+      {
+        "id": "IFSCC2025-688",
+        "title": "Development of a Bio Emulsion from Novel Skin Microbiome Epi-7i: A Green Science Approach to Cosmetic Formulation",
+        "filename": "IFSCC2025-688.pdf"
+      },
+      {
+        "id": "IFSCC2025-1233",
+        "title": "Effect of immediate and chronic use of biosurfactant cleanser on reactive skin and its impact on microbiome.",
+        "filename": "IFSCC2025-1233.pdf"
+      },
+      {
+        "id": "IFSCC2025-521",
+        "title": "Effect of plant extract spray on axillary microbiome using 3D skin cell model",
+        "filename": "IFSCC2025-521.pdf"
+      },
+      {
+        "id": "IFSCC2025-1137",
+        "title": "Effects of different culture media and pH on the pigment and antioxidant activity of Pycnoporus cinnabarinus",
+        "filename": "IFSCC2025-1137.pdf"
+      },
+      {
+        "id": "IFSCC2025-661",
+        "title": "Enhancing Skin Microbiota Diversity: Metagenomic Insights into the Impact of Nanostructured Anti-Aging Cosmetics with Pre- and Postbiotics",
+        "filename": "IFSCC2025-661.pdf"
+      },
+      {
+        "id": "IFSCC2025-1440",
+        "title": "Fermented Eggplant Peel Extracts Enhance Skin Health and Anti-Aging through the Gut-Skin Axis",
+        "filename": "IFSCC2025-1440.pdf"
+      },
+      {
+        "id": "IFSCC2025-656",
+        "title": "Flash Nano-Encapsulation of Probiotics for Gut-Skin Regulation: Functionalized Strains with High Endurance and Strong Mucin Adhesion",
+        "filename": "IFSCC2025-656.pdf"
+      },
+      {
+        "id": "IFSCC2025-342",
+        "title": "Hyaluronic Acid and Ectoine Inhibit Cutibacterium acnes Biofilm Formation and Reduce Skin Inflammation and Damage",
+        "filename": "IFSCC2025-342.pdf"
+      },
+      {
+        "id": "IFSCC2025-564",
+        "title": "Ideal controlling of androgenetic alopecia clinical characteristics with rebalancing scalp microbiome dysbiosis via droplet digital PCR",
+        "filename": "IFSCC2025-564.pdf"
+      },
+      {
+        "id": "IFSCC2025-1276",
+        "title": "If Malassezia wasn't the only determining factor in dandruff: the role of scalp bacterial profile and ethnicity",
+        "filename": "IFSCC2025-1276.pdf"
+      },
+      {
+        "id": "IFSCC2025-1562",
+        "title": "Impact of an upcycled Humulus lupulus extract on atopic skin microbiota",
+        "filename": "IFSCC2025-1562.pdf"
+      },
+      {
+        "id": "IFSCC2025-1285",
+        "title": "Innovative ex-vivo full skin model for targeting microbiota-induced skin barrier damage",
+        "filename": "IFSCC2025-1285.pdf"
+      },
+      {
+        "id": "IFSCC2025-183",
+        "title": "Integrated Analysis of the Age -related Microbiome and Metabolites in Korean Women’s Skin",
+        "filename": "IFSCC2025-183.pdf"
+      },
+      {
+        "id": "IFSCC2025-1437",
+        "title": "Lysates of Bifidobacterium Iongum Subsp. Iuvenis Alleviate SLS-Simulated Skin Barrier Damage in Human Skin Tissue",
+        "filename": "IFSCC2025-1437.pdf"
+      },
+      {
+        "id": "IFSCC2025-295",
+        "title": "Lysophosphatidic acid inhibits proliferation of Cutibacterium acnes by promoting human beta defensin-3 expression via LPA1 receptor",
+        "filename": "IFSCC2025-295.pdf"
+      },
+      {
+        "id": "IFSCC2025-1234",
+        "title": "Microbial Dynamics in Dandruff: Insights from Co-occurrence Network Analysis",
+        "filename": "IFSCC2025-1234.pdf"
+      },
+      {
+        "id": "IFSCC2025-1597",
+        "title": "Microbiome Skincare Innovation: AI-Driven Skin Segmentation for Targeted Formulations",
+        "filename": "IFSCC2025-1597.pdf"
+      },
+      {
+        "id": "IFSCC2025-662",
+        "title": "Micrococcus luteus mediates skin anti-aging effects of Saccharomyces rice ferment filtrate via microbiome and metabolite modulation",
+        "filename": "IFSCC2025-662.pdf"
+      },
+      {
+        "id": "IFSCC2025-790",
+        "title": "Microgravity impact on the skin microbiota – A bacterial analysis of ISS internal surfaces samples",
+        "filename": "IFSCC2025-790.pdf"
+      },
+      {
+        "id": "IFSCC2025-680",
+        "title": "Novel Micro-ecological Lotion for Acne Treatment: Selective Inhibition of Cutibacterium acnes Biofilm Formation",
+        "filename": "IFSCC2025-680.pdf"
+      },
+      {
+        "id": "IFSCC2025-1653",
+        "title": "Predicting Facial Microbial Distribution: A Machine Learning Pilot Study",
+        "filename": "IFSCC2025-1653.pdf"
+      },
+      {
+        "id": "IFSCC2025-1710",
+        "title": "Reconstructing Skin Microbiome via a Two-Step AI-Driven Regimen Involving Targeted Microbial Removal and Beneficial Reintroduction",
+        "filename": "IFSCC2025-1710.pdf"
+      },
+      {
+        "id": "IFSCC2025-299",
+        "title": "Revitalizing the potential of skin microbiome for UV defense",
+        "filename": "IFSCC2025-299.pdf"
+      },
+      {
+        "id": "IFSCC2025-1651",
+        "title": "Revolutionizing Holistic Beauty Care with the Super-Metabiotics Platform",
+        "filename": "IFSCC2025-1651.pdf"
+      },
+      {
+        "id": "IFSCC2025-627",
+        "title": "Rice-derived components fermented with special yeast promote skin hydration and barrier function",
+        "filename": "IFSCC2025-627.pdf"
+      },
+      {
+        "id": "IFSCC2025-1012",
+        "title": "Scalp Sebum Balance: How Jasmine Sambac Extract Addresses Hyperseborrhea To Enhance Scalp Microbiota Harmony",
+        "filename": "IFSCC2025-1012.pdf"
+      },
+      {
+        "id": "IFSCC2025-606",
+        "title": "Study on the effect of rice fermentation filtrate on cellular energy metabolism and mitochondrial function",
+        "filename": "IFSCC2025-606.pdf"
+      },
+      {
+        "id": "IFSCC2025-1792",
+        "title": "Targeting Acne Dysbiosis Through An Advanced Microbial CoCulture Model",
+        "filename": "IFSCC2025-1792.pdf"
+      },
+      {
+        "id": "IFSCC2025-899",
+        "title": "Targeting Adolescent and Child Skin Barrier Dysfunction: A Green and Synergistic Composition to Address Skin Issues and Regulate the Skin Microbiome",
+        "filename": "IFSCC2025-899.pdf"
+      },
+      {
+        "id": "IFSCC2025-1354",
+        "title": "The triple-fermentation essence empowers the journey of skin micro-ecological nourishment",
+        "filename": "IFSCC2025-1354.pdf"
+      },
+      {
+        "id": "IFSCC2025-926",
+        "title": "Virulent bacteria trigger specific neuro-inflammatory responses in keratinocytes and in a new keratinocytes/ sensory neurons model",
+        "filename": "IFSCC2025-926.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Sustainability",
+    "folder": "02_Sustainability",
+    "papers": [
+      {
+        "id": "IFSCC2025-1040",
+        "title": "A combination of deep eutectic solvent and enzymatic degradation of polysaccharide from Naematelia aurantiabla: a sustainable way to enhance its skin care function properties",
+        "filename": "IFSCC2025-1040.pdf"
+      },
+      {
+        "id": "IFSCC2025-895",
+        "title": "A novel reconstructed human epidermis model for skin irritation tests",
+        "filename": "IFSCC2025-895.pdf"
+      },
+      {
+        "id": "IFSCC2025-1251",
+        "title": "A versatile biomimetic approach to conceive new sustainable formula to fight skin imperfections",
+        "filename": "IFSCC2025-1251.pdf"
+      },
+      {
+        "id": "IFSCC2025-1243",
+        "title": "Addressing 1,4-Dioxane Concerns in Personal Care: New Alcohol Ether Sulfates for the Future",
+        "filename": "IFSCC2025-1243.pdf"
+      },
+      {
+        "id": "IFSCC2025-1685",
+        "title": "Advancements in Sustainable Plant-Based Ingredients for Hair Coloring: The Role of Cork Oak as a Novel Bio-Mordant in Enhancing the Colorfastness and Durability of Natural Dyes.",
+        "filename": "IFSCC2025-1685.pdf"
+      },
+      {
+        "id": "IFSCC2025-1305",
+        "title": "An Innovative AI-Based Pipeline for More Efficient and Sustainable Botanical Extracts",
+        "filename": "IFSCC2025-1305.pdf"
+      },
+      {
+        "id": "IFSCC2025-498",
+        "title": "An upcycled green synthetic personal care ingredient with high antioxidant and antimicrobial properties",
+        "filename": "IFSCC2025-498.pdf"
+      },
+      {
+        "id": "IFSCC2025-786",
+        "title": "Application of supercritical carbon dioxide (CO2SC) for microbial decontamination of upcycled micronized Padouk wood powder in cosmetics.",
+        "filename": "IFSCC2025-786.pdf"
+      },
+      {
+        "id": "IFSCC2025-938",
+        "title": "Boosting the production of plant extracts from vertical farms by modulating their phytobiomes: Centella asiatica, a case study",
+        "filename": "IFSCC2025-938.pdf"
+      },
+      {
+        "id": "IFSCC2025-1828",
+        "title": "Characterization and Toxicity Analysis of Taperebá-Loaded Nanostructured Lipid Carriers",
+        "filename": "IFSCC2025-1828.pdf"
+      },
+      {
+        "id": "IFSCC2025-252",
+        "title": "Characterization of the in vitro cosmetic efficacy of an extract derived from a by-product of the agri-food industry",
+        "filename": "IFSCC2025-252.pdf"
+      },
+      {
+        "id": "IFSCC2025-1688",
+        "title": "Consumer Community: a digital, approach to guide Researchers in Sustainable Beauty innovations.",
+        "filename": "IFSCC2025-1688.pdf"
+      },
+      {
+        "id": "IFSCC2025-215",
+        "title": "Cosmetopoeia: a path to creativity and sustainability for the cosmetics industry",
+        "filename": "IFSCC2025-215.pdf"
+      },
+      {
+        "id": "IFSCC2025-486",
+        "title": "Deep eutectic solvent extract of Pueraria lobata improves anti-aging and antimicrobial activity",
+        "filename": "IFSCC2025-486.pdf"
+      },
+      {
+        "id": "IFSCC2025-1212",
+        "title": "Development of a new sustainable cosmetic ingredient using Saussurea laniceps callus originated from Himalaya",
+        "filename": "IFSCC2025-1212.pdf"
+      },
+      {
+        "id": "IFSCC2025-1676",
+        "title": "Development of a Technological Eco-Friendly Platform for the Nanoencapsulation of Fragrances",
+        "filename": "IFSCC2025-1676.pdf"
+      },
+      {
+        "id": "IFSCC2025-247",
+        "title": "Development of functional cosmetic ingredient using plants from Okinawa",
+        "filename": "IFSCC2025-247.pdf"
+      },
+      {
+        "id": "IFSCC2025-1340",
+        "title": "Development of Plant Exosome Engineering for Multifunctional Skin Improvement and Anti-inflammatory.",
+        "filename": "IFSCC2025-1340.pdf"
+      },
+      {
+        "id": "IFSCC2025-1488",
+        "title": "Enhanced bioactive components and repairing effects of Tricholoma matsutake co-fermentated by Saccharomyces cerevisiae",
+        "filename": "IFSCC2025-1488.pdf"
+      },
+      {
+        "id": "IFSCC2025-273",
+        "title": "Enhancing Deposition Efficiency: The Impact of Glycolipids on Active Ingredients",
+        "filename": "IFSCC2025-273.pdf"
+      },
+      {
+        "id": "IFSCC2025-1157",
+        "title": "Enzymatically Hydrolyzed Peony Seed Peptides: A Comprehensive Study From Anti-Aging Activity to Molecular Mechanisms",
+        "filename": "IFSCC2025-1157.pdf"
+      },
+      {
+        "id": "IFSCC2025-574",
+        "title": "Exploring Flaxseed Mucilage’s Potential in Cosmetic Applications",
+        "filename": "IFSCC2025-574.pdf"
+      },
+      {
+        "id": "IFSCC2025-952",
+        "title": "Exploring Sustainable Skincare Solutions from Sumba Island: The Moisturizing and Calming Effects of Aureobasidium pullulans Ferment Isolated from Indonesian Sakura (Cassia javanica)",
+        "filename": "IFSCC2025-952.pdf"
+      },
+      {
+        "id": "IFSCC2025-713",
+        "title": "From Waste to Value: Green Extraction of Phenolics from Orange Peels with NADES",
+        "filename": "IFSCC2025-713.pdf"
+      },
+      {
+        "id": "IFSCC2025-1757",
+        "title": "Glycyrrhiza glabra Suspension Cell Culture and Its Applications in Cosmetics",
+        "filename": "IFSCC2025-1757.pdf"
+      },
+      {
+        "id": "IFSCC2025-735",
+        "title": "Harnessing the Power of Hedyotis diffusa Extract: Molecularly Imprinted Iridoid Glycosides for Skin Soothing and Repair",
+        "filename": "IFSCC2025-735.pdf"
+      },
+      {
+        "id": "IFSCC2025-988",
+        "title": "Impact of natural oils and extracts on the moisturizing, physico-mechanical and sensory properties of an organogel formulation",
+        "filename": "IFSCC2025-988.pdf"
+      },
+      {
+        "id": "IFSCC2025-1631",
+        "title": "Improving Biodegradability in Non-ionic Associative Surfactant Thickeners",
+        "filename": "IFSCC2025-1631.pdf"
+      },
+      {
+        "id": "IFSCC2025-1677",
+        "title": "Innovating Multi-Functional Protein & Peptide Solutions: Sustainable, Scalable, and High-Performance Ingredients for Diverse Applications",
+        "filename": "IFSCC2025-1677.pdf"
+      },
+      {
+        "id": "IFSCC2025-409",
+        "title": "Innovation from Pearl Oysters: The Development of a New Sustainable Multifunctional Pearl Powder",
+        "filename": "IFSCC2025-409.pdf"
+      },
+      {
+        "id": "IFSCC2025-1824",
+        "title": "Innovative Ecodesign Methodology for Efficient and sustainable rinse-off Cosmetic Formulations: combining LCA with Physicochemical Property Analysis",
+        "filename": "IFSCC2025-1824.pdf"
+      },
+      {
+        "id": "IFSCC2025-1803",
+        "title": "Innovative Methodology for Scientific Validation: Assessing Water-Saving Claims of ‘Easy to Rinse’ Hair Dye Through Initial In Vivo Observations",
+        "filename": "IFSCC2025-1803.pdf"
+      },
+      {
+        "id": "IFSCC2025-1245",
+        "title": "Interfacial Behavior and Deposition Performance of Nanometric Polymer-surfactant Complexes for Sustainable Conditioning",
+        "filename": "IFSCC2025-1245.pdf"
+      },
+      {
+        "id": "IFSCC2025-1059",
+        "title": "Next-Generation Green Cosmetics: Development and Applications of Rice Callus-Derived Proteins and Vesicles",
+        "filename": "IFSCC2025-1059.pdf"
+      },
+      {
+        "id": "IFSCC2025-329",
+        "title": "Optimized Indoor Cultivation, Extraction, and Analytical Profiling of Two Plant Species for Enhanced Skin Biology and anti-aging Applications",
+        "filename": "IFSCC2025-329.pdf"
+      },
+      {
+        "id": "IFSCC2025-1229",
+        "title": "Plant-based Multifunctionals",
+        "filename": "IFSCC2025-1229.pdf"
+      },
+      {
+        "id": "IFSCC2025-1529",
+        "title": "Plant-Derived Exosomes from Upcycled Citrus Reticulata Peel: A Sustainable AI-Driven Cosmetic Innovation",
+        "filename": "IFSCC2025-1529.pdf"
+      },
+      {
+        "id": "IFSCC2025-438",
+        "title": "Polysaccharide-Rich Fermentation Broth from Prinsepia utilis Royle Pomace Exhibits Instant Skin Firming Effects",
+        "filename": "IFSCC2025-438.pdf"
+      },
+      {
+        "id": "IFSCC2025-1319",
+        "title": "Preliminary Study On The Use Of Açaí (Euterpe Oleracea Mart.) Residues As Sustainable Alternatives For Exfoliating Cosmetics",
+        "filename": "IFSCC2025-1319.pdf"
+      },
+      {
+        "id": "IFSCC2025-939",
+        "title": "Recombinant human collagen III from moss protonema cultures: A new vegan collagen active",
+        "filename": "IFSCC2025-939.pdf"
+      },
+      {
+        "id": "IFSCC2025-980",
+        "title": "Research on the antioxidant properties of Radish Leaf Extract from Raphanus sativus var. Laciniatus and Raphanus sativus var. Oleiformis",
+        "filename": "IFSCC2025-980.pdf"
+      },
+      {
+        "id": "IFSCC2025-744",
+        "title": "Safe Cosmetic Actives via Two-liquid Phase Fermentation: Optimization of Oil Phase and Emulsifier Selection",
+        "filename": "IFSCC2025-744.pdf"
+      },
+      {
+        "id": "IFSCC2025-1006",
+        "title": "Sensory and texture properties of cosmetic formulations for hair and skin care containing Orbignya oleifera oil",
+        "filename": "IFSCC2025-1006.pdf"
+      },
+      {
+        "id": "IFSCC2025-719",
+        "title": "Silicone-Free Lip Balms: The Impact of Cooling Times and Temperatures on Performance",
+        "filename": "IFSCC2025-719.pdf"
+      },
+      {
+        "id": "IFSCC2025-1334",
+        "title": "Surface Morphology Control of Sustainable Functional Cosmetic Particles Using Green Spray Drying Process",
+        "filename": "IFSCC2025-1334.pdf"
+      },
+      {
+        "id": "IFSCC2025-1453",
+        "title": "Sustainable Beauty from the Garden: Bio-resins Derived from Tomato Skin",
+        "filename": "IFSCC2025-1453.pdf"
+      },
+      {
+        "id": "IFSCC2025-1315",
+        "title": "Sustainable Bio-Based Polymers in Action – Diving Deeper into Mechanistic Properties for Cosmetic Formulations",
+        "filename": "IFSCC2025-1315.pdf"
+      },
+      {
+        "id": "IFSCC2025-1492",
+        "title": "Sustainable Cosmetic Innovation: Unlocking the Potential of Perilla Frutescens (Red Shiso) through Precision Indoor Farming",
+        "filename": "IFSCC2025-1492.pdf"
+      },
+      {
+        "id": "IFSCC2025-1257",
+        "title": "Sustainable Science in Decolleté Skinification: Merging WellAging, Longevity, and Advanced Technologies",
+        "filename": "IFSCC2025-1257.pdf"
+      },
+      {
+        "id": "IFSCC2025-1329",
+        "title": "Synthesis of Damaged Hair Protective Agents using Nanocellulose extracted from Rice Husk and Application of Hair Care Products",
+        "filename": "IFSCC2025-1329.pdf"
+      },
+      {
+        "id": "IFSCC2025-770",
+        "title": "The ferment of an endophytic fungi Umbelopsis dimorpha: a superior substitute for Tricholoma matsutake",
+        "filename": "IFSCC2025-770.pdf"
+      },
+      {
+        "id": "IFSCC2025-629",
+        "title": "The Green Sciences Index: A Novel Method For Assessing The Sustainability Of Cosmetic Ingredients",
+        "filename": "IFSCC2025-629.pdf"
+      },
+      {
+        "id": "IFSCC2025-455",
+        "title": "Transforming Oleochemical Production: Enzymatic Solutions for a Low-Carbon Future",
+        "filename": "IFSCC2025-455.pdf"
+      },
+      {
+        "id": "IFSCC2025-1297",
+        "title": "Unveiling the truth of silicone degradation: the path to full mineralization",
+        "filename": "IFSCC2025-1297.pdf"
+      },
+      {
+        "id": "IFSCC2025-780",
+        "title": "Valorization of mushroom species in the cosmetic industry using natural deep eutectic systems",
+        "filename": "IFSCC2025-780.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Well aging / Logevity",
+    "folder": "03_Well aging, Longevity",
+    "papers": [
+      {
+        "id": "IFSCC2025-570",
+        "title": "100-day extended-time cultured in vitro 3D skin model mimicking chronological aging for studying long term repeated topical application of a cosmetic product",
+        "filename": "IFSCC2025-570.pdf"
+      },
+      {
+        "id": "IFSCC2025-582",
+        "title": "27P Bioactive Peptide Enhances Multifaceted Regulation of Collagen Type I Protein Production in Fibroblast Subpopulations without the Deleterious effects associated with retinoic acid and TGF-beta growth factor.",
+        "filename": "IFSCC2025-582.pdf"
+      },
+      {
+        "id": "IFSCC2025-1013",
+        "title": "5’-CMP (5’-Cytidylic Acid), a Fundamental Nucleotide Enhancing Skin Resilience",
+        "filename": "IFSCC2025-1013.pdf"
+      },
+      {
+        "id": "IFSCC2025-1444",
+        "title": "A biomechanical study of the effects of silicium on the skin",
+        "filename": "IFSCC2025-1444.pdf"
+      },
+      {
+        "id": "IFSCC2025-806",
+        "title": "A brand-new natural plant oils complex with the «Golden-Triangle Concept of anti-aging effects in multiple dimensions",
+        "filename": "IFSCC2025-806.pdf"
+      },
+      {
+        "id": "IFSCC2025-777",
+        "title": "A Chinese plateau plants-based formulation suitable for Asian skin: gentle, enduring anti-aging effects and mechanism",
+        "filename": "IFSCC2025-777.pdf"
+      },
+      {
+        "id": "IFSCC2025-856",
+        "title": "A Dual-Component Complex Mitochondrial Flash Charge Cellular Energy Pack: Fast-Acting and Long-Lasting Skin Problem Solution",
+        "filename": "IFSCC2025-856.pdf"
+      },
+      {
+        "id": "IFSCC2025-1630",
+        "title": "A Healthy-Alternative to TCA Peels: A Topical Antioxidant Biostimulating Treatment for Collagen Synthesis and Skin Rejuvenation",
+        "filename": "IFSCC2025-1630.pdf"
+      },
+      {
+        "id": "IFSCC2025-503",
+        "title": "A New patented ingredient technology targeting molecular causes and visible signs of skin aging to promote the skin longevity",
+        "filename": "IFSCC2025-503.pdf"
+      },
+      {
+        "id": "IFSCC2025-1239",
+        "title": "A new performance territory for skincare using targeted long UVA protection in association with powerful anti-aging actives",
+        "filename": "IFSCC2025-1239.pdf"
+      },
+      {
+        "id": "IFSCC2025-1689",
+        "title": "A new tool for the evaluation of skin barrier overall wellbeing",
+        "filename": "IFSCC2025-1689.pdf"
+      },
+      {
+        "id": "IFSCC2025-933",
+        "title": "A novel antioxidant tripeptide identified by molecular docking ameliorates photoaging in skin cells",
+        "filename": "IFSCC2025-933.pdf"
+      },
+      {
+        "id": "IFSCC2025-931",
+        "title": "A novel clinical skin evaluation approach reflecting systemic longevity: restoring multiple signs of vitality and regeneration targeting young and healthy skin parameters by only using a cosmetic formulation containing a specific DNA.",
+        "filename": "IFSCC2025-931.pdf"
+      },
+      {
+        "id": "IFSCC2025-1752",
+        "title": "A Passiflora Edulis Extract With A Potent Stimulation Of Vitamin D3 Synthesis In Skin Epidermis: In Silico And In Vitro",
+        "filename": "IFSCC2025-1752.pdf"
+      },
+      {
+        "id": "IFSCC2025-1113",
+        "title": "A Powerful Collagen Supramolecular Vehicle to Amplify the Skin Regenerative Effects of Actives",
+        "filename": "IFSCC2025-1113.pdf"
+      },
+      {
+        "id": "IFSCC2025-453",
+        "title": "A supramolecular caffeic acid with enhanced water solubility, stability, and bioactivity",
+        "filename": "IFSCC2025-453.pdf"
+      },
+      {
+        "id": "IFSCC2025-306",
+        "title": "A supramolecular salicylic acid with low irritation and enhanced anti-acne ability",
+        "filename": "IFSCC2025-306.pdf"
+      },
+      {
+        "id": "IFSCC2025-1504",
+        "title": "Achieving Flawless Skin: Advancements In Pore Analysis With Ai And Computer Vision Technologies",
+        "filename": "IFSCC2025-1504.pdf"
+      },
+      {
+        "id": "IFSCC2025-544",
+        "title": "Adaptogen plants in delaying skin-aging: A holistic biochemical/ mechanical coupling observation system construction",
+        "filename": "IFSCC2025-544.pdf"
+      },
+      {
+        "id": "IFSCC2025-1572",
+        "title": "Advancing multi-age skin innovation: tackling senescence pathway complexity across life stages in diverse populations",
+        "filename": "IFSCC2025-1572.pdf"
+      },
+      {
+        "id": "IFSCC2025-1064",
+        "title": "Age-Related Facial Wrinkle Dynamics in the Chinese Population: Advanced Insights into Facial Wrinkles Changes and the Anti-Wrinkle Efficacy of a Targeted Serum",
+        "filename": "IFSCC2025-1064.pdf"
+      },
+      {
+        "id": "IFSCC2025-1724",
+        "title": "AI-based retinol signature: Identification of new best-in-class anti-aging ingredients",
+        "filename": "IFSCC2025-1724.pdf"
+      },
+      {
+        "id": "IFSCC2025-1797",
+        "title": "AI-Driven Multi-Ethnic Study on Facial Dermis Aging: Insights from in vivo 3D LC-OCT Measurements",
+        "filename": "IFSCC2025-1797.pdf"
+      },
+      {
+        "id": "IFSCC2025-1782",
+        "title": "AI-driven tools for non-invasive skin analysis: A study in detecting lentigines and nevi in human skin",
+        "filename": "IFSCC2025-1782.pdf"
+      },
+      {
+        "id": "IFSCC2025-741",
+        "title": "An innovative ingredients combination to promote skin longevity that revitalizes and protects mitochondrial function and addresses problems of aged and impaired skin",
+        "filename": "IFSCC2025-741.pdf"
+      },
+      {
+        "id": "IFSCC2025-1266",
+        "title": "An innovative lifting serum that mimics the effect of microcurrents home devices to improve skin appearance",
+        "filename": "IFSCC2025-1266.pdf"
+      },
+      {
+        "id": "IFSCC2025-443",
+        "title": "An Innovative Rhythm-Regulating Tetrapeptide Resynchronizes Skin’s Circadian Clock for Well-Aging",
+        "filename": "IFSCC2025-443.pdf"
+      },
+      {
+        "id": "IFSCC2025-1309",
+        "title": "Anti-Aging Efficacy of a Botanical-Based Skincare Formulated with Syringa vulgaris Extract",
+        "filename": "IFSCC2025-1309.pdf"
+      },
+      {
+        "id": "IFSCC2025-1060",
+        "title": "Anti-wrinkle Effects of Miquelianin on Human Dermal Fibroblasts",
+        "filename": "IFSCC2025-1060.pdf"
+      },
+      {
+        "id": "IFSCC2025-510",
+        "title": "Application of skin aging markers to prepare for the new anti-aging cosmetic ingredient",
+        "filename": "IFSCC2025-510.pdf"
+      },
+      {
+        "id": "IFSCC2025-1732",
+        "title": "Assessing the impact of chronological aging on dermal blood and lymphatic microvasculature system using a 3D human endothelialized full-thickness skin model",
+        "filename": "IFSCC2025-1732.pdf"
+      },
+      {
+        "id": "IFSCC2025-1224",
+        "title": "Assessment of skin physiological changes and efficacy of skincare products in post-menopausal Chinese women",
+        "filename": "IFSCC2025-1224.pdf"
+      },
+      {
+        "id": "IFSCC2025-1228",
+        "title": "Bacillus velezensis Endophyte Extract: A Multi-functional Ingredient for Adult Acne and Skin Well-Aging",
+        "filename": "IFSCC2025-1228.pdf"
+      },
+      {
+        "id": "IFSCC2025-1508",
+        "title": "Based on network pharmacology and molecular docking to explore the anti-aging and anti-inflammatory mechanism of Terminalia Chebula extract at AKT1 target",
+        "filename": "IFSCC2025-1508.pdf"
+      },
+      {
+        "id": "IFSCC2025-1468",
+        "title": "Beyond Traditional Anti-Aging: A Tailor-Made Plant-Based Innovation To Answer Precisely Menopausal Skin Needs",
+        "filename": "IFSCC2025-1468.pdf"
+      },
+      {
+        "id": "IFSCC2025-791",
+        "title": "Bio-revitalizing activity of HA-based MDs on aged dermis spheroids: the role of trehalose in inducing of ECM mechanical boosting by a systemic administration.",
+        "filename": "IFSCC2025-791.pdf"
+      },
+      {
+        "id": "IFSCC2025-690",
+        "title": "Bioactive Compound Discovery for Mitochondrial Enhancement and Skin Aging Prevention: A Deep Learning-Aided Screening",
+        "filename": "IFSCC2025-690.pdf"
+      },
+      {
+        "id": "IFSCC2025-211",
+        "title": "Biohacking Molecular Aging: Unlocking the Power of RNA Nanoparticles to Combat Cellular Senescence and Restore Extracellular Homeostasis",
+        "filename": "IFSCC2025-211.pdf"
+      },
+      {
+        "id": "IFSCC2025-1794",
+        "title": "Bioinspired Homeostasis Protection: Hacking the Power of Raspberry Leaves Ellagitannins to Target Hallmarks of Aging",
+        "filename": "IFSCC2025-1794.pdf"
+      },
+      {
+        "id": "IFSCC2025-1219",
+        "title": "Biomechanical Improvement and Dermal Regeneration: The Transformative Potential of a Novel Cosmetic Formulation",
+        "filename": "IFSCC2025-1219.pdf"
+      },
+      {
+        "id": "IFSCC2025-1810",
+        "title": "Biomimetic Vegan Exosomes: A Breakthrough in Skincare Innovation, Replicating the Structure and Function of Natural Exosomes Using Advanced Microalgae Biotechnology. A Sustainable, Ethical, and Scalable Alternative to Animal-Derived Exosomes for Targeted",
+        "filename": "IFSCC2025-1810.pdf"
+      },
+      {
+        "id": "IFSCC2025-1421",
+        "title": "Biotransformation of Rare Ginsenosides C-O and Compound-MC1 Using Lactobacillus: Enhancing Klotho Expression for Anti-Aging Effects",
+        "filename": "IFSCC2025-1421.pdf"
+      },
+      {
+        "id": "IFSCC2025-186",
+        "title": "BluX Supertide: The Ultimate Fusion Carrier of Hyaluronic Acid-Arginine Derivatives and GHK-Cu Peptide for Ageless, Revitalized Skin",
+        "filename": "IFSCC2025-186.pdf"
+      },
+      {
+        "id": "IFSCC2025-328",
+        "title": "Breaking the senescence chain: Identification of cellular senescence inducing microRNA",
+        "filename": "IFSCC2025-328.pdf"
+      },
+      {
+        "id": "IFSCC2025-1178",
+        "title": "Camellia chrysantha: A valuable golden camellia firstly applied to sensitive skin management",
+        "filename": "IFSCC2025-1178.pdf"
+      },
+      {
+        "id": "IFSCC2025-1075",
+        "title": "CCN1: The Key to Sensitive Skin Aging Ecology—Ashwagandha as a Scientific Solution for Holistic Beauty and Wellness",
+        "filename": "IFSCC2025-1075.pdf"
+      },
+      {
+        "id": "IFSCC2025-970",
+        "title": "Characterisation Of Biomechanical Properties With A Novel Device And Through Evaluation Of Tension Lines Index In Very Mature Senescent Skins",
+        "filename": "IFSCC2025-970.pdf"
+      },
+      {
+        "id": "IFSCC2025-816",
+        "title": "Clinical Approved Performance On Anti-Aging Based On Combined Mechanisms Of Anti-Glycation And Ecm&Dej Remodeling",
+        "filename": "IFSCC2025-816.pdf"
+      },
+      {
+        "id": "IFSCC2025-784",
+        "title": "Complete Aging Repair Needs Five Key Dimensions To Restructure Skin Face: Biological & Clinical Evidence",
+        "filename": "IFSCC2025-784.pdf"
+      },
+      {
+        "id": "IFSCC2025-1237",
+        "title": "Comprehensive Evaluation of 5D LAA-Collagen in Skin Applications: Insights from Multiple Studies",
+        "filename": "IFSCC2025-1237.pdf"
+      },
+      {
+        "id": "IFSCC2025-349",
+        "title": "Comprehensive Mechanistic Understanding and Ingredient Screening for Skin Collagen via Biological Knowledge Graph and Artificial Intelligence",
+        "filename": "IFSCC2025-349.pdf"
+      },
+      {
+        "id": "IFSCC2025-1751",
+        "title": "Comprehensive Study on the Skin Care Efficacy of Heparin",
+        "filename": "IFSCC2025-1751.pdf"
+      },
+      {
+        "id": "IFSCC2025-1515",
+        "title": "Cracking the longevity code with an innovative iris pallida root extract targeting humanin mitochondrial peptide",
+        "filename": "IFSCC2025-1515.pdf"
+      },
+      {
+        "id": "IFSCC2025-1404",
+        "title": "Decoding the role of dermal telocytes in aged-induced skin alterations",
+        "filename": "IFSCC2025-1404.pdf"
+      },
+      {
+        "id": "IFSCC2025-866",
+        "title": "Deep Learning Analysis of Perceived Facial Aging and Influential Features Across Evaluator Groups",
+        "filename": "IFSCC2025-866.pdf"
+      },
+      {
+        "id": "IFSCC2025-352",
+        "title": "Delaying Age-Related Skin Changes: Investigating the Role of Enriched Oat -Glucan Complex from Avena sativa L. In Telomere Protection and Skin Rejuvenation",
+        "filename": "IFSCC2025-352.pdf"
+      },
+      {
+        "id": "IFSCC2025-286",
+        "title": "Development and analytical profiling of a botanically-derived active extract: deep analytical profiling, in silico anti-aging activity prediction and in vitro evaluation with microplastic free microencapsulation technology.",
+        "filename": "IFSCC2025-286.pdf"
+      },
+      {
+        "id": "IFSCC2025-620",
+        "title": "Development of Bakuchiol Incorporated Nanoliposomes with Efficient Skin Penetration, High Stability and Safety for Anti-Aging Application",
+        "filename": "IFSCC2025-620.pdf"
+      },
+      {
+        "id": "IFSCC2025-877",
+        "title": "Development of Extracellular Vesicles Loaded with Madecassoside for Enhanced Skin Penetration and Skin Conditions",
+        "filename": "IFSCC2025-877.pdf"
+      },
+      {
+        "id": "IFSCC2025-1119",
+        "title": "Development of Koenigia alpina Extract as an Anti-Aging Agent and Its Potential Applications in Cosmetics",
+        "filename": "IFSCC2025-1119.pdf"
+      },
+      {
+        "id": "IFSCC2025-1382",
+        "title": "Development of well aging skincare materials from insight of historical plant exudates",
+        "filename": "IFSCC2025-1382.pdf"
+      },
+      {
+        "id": "IFSCC2025-1171",
+        "title": "Discovery of a new regulator involved in skin aging: The Dynamic Interplay of Telocytes in Modulating WNT Signaling for Dermal-Epidermal Homeostasis",
+        "filename": "IFSCC2025-1171.pdf"
+      },
+      {
+        "id": "IFSCC2025-1516",
+        "title": "Dual anti-aging action of new ingredient designed by artificial intelligence",
+        "filename": "IFSCC2025-1516.pdf"
+      },
+      {
+        "id": "IFSCC2025-338",
+        "title": "Dynamics of Facial Shape: Unraveling the Non-Genetic Factors and Developing Face-Shaping Skincare Ingredients through Gravity-Responsive 3D Facial Imaging",
+        "filename": "IFSCC2025-338.pdf"
+      },
+      {
+        "id": "IFSCC2025-462",
+        "title": "Effects of Extracellular Vesicles on Skin Aging Biomarkers in a 3D Reconstructed Skin Model",
+        "filename": "IFSCC2025-462.pdf"
+      },
+      {
+        "id": "IFSCC2025-1102",
+        "title": "Enhancing Mitochondrial Function and Skin Barrier Repair: A Novel Approach for Male Anti-Aging",
+        "filename": "IFSCC2025-1102.pdf"
+      },
+      {
+        "id": "IFSCC2025-1313",
+        "title": "Enhancing Skin Longevity through Stem Cell Protection and Senescence Modulation: A Botanical Approach for Anti-Aging and Regeneration",
+        "filename": "IFSCC2025-1313.pdf"
+      },
+      {
+        "id": "IFSCC2025-979",
+        "title": "Epidermal fasting as a new cosmetic approach to provide wellaging benefits to skin.",
+        "filename": "IFSCC2025-979.pdf"
+      },
+      {
+        "id": "IFSCC2025-611",
+        "title": "Epidermal retinol prevents aging by protecting epidermal stem cells - The key role of BCO1",
+        "filename": "IFSCC2025-611.pdf"
+      },
+      {
+        "id": "IFSCC2025-1177",
+        "title": "Establishment of an in vitro model for the transition of differentiated preadipocytes to myofibroblasts to screen potential modulators for cosmetic applications",
+        "filename": "IFSCC2025-1177.pdf"
+      },
+      {
+        "id": "IFSCC2025-1213",
+        "title": "Evaluation of anti-aging effect of polypeptide and bifida ferment lysate essence",
+        "filename": "IFSCC2025-1213.pdf"
+      },
+      {
+        "id": "IFSCC2025-745",
+        "title": "Evaluation of the skin physiology improving function of a novel cosmetic active ingredient poacic acid and its application to cosmetics",
+        "filename": "IFSCC2025-745.pdf"
+      },
+      {
+        "id": "IFSCC2025-1274",
+        "title": "First 3D Facial Hypodermis Donor-derived Tissue Model for holistic assessment and mechanistic evaluation of dermocosmetic ingredients",
+        "filename": "IFSCC2025-1274.pdf"
+      },
+      {
+        "id": "IFSCC2025-1247",
+        "title": "Ganoderma Lucidum Extract Enhances Skin Firmness And Collagen Organization",
+        "filename": "IFSCC2025-1247.pdf"
+      },
+      {
+        "id": "IFSCC2025-572",
+        "title": "Global well-aging solution for scalp and hair: a natural upcycled multi-functional ingredient",
+        "filename": "IFSCC2025-572.pdf"
+      },
+      {
+        "id": "IFSCC2025-700",
+        "title": "Groundbreaking Insights into the Role of Brain-Derived Neurotrophic Factor (BDNF) in Skin Senescence",
+        "filename": "IFSCC2025-700.pdf"
+      },
+      {
+        "id": "IFSCC2025-755",
+        "title": "Harnessing Fermentation Technology: Discovery of Dual-Action Bio-Transformed Compounds for Managing Chronic Pruritus in Sensitive Skin",
+        "filename": "IFSCC2025-755.pdf"
+      },
+      {
+        "id": "IFSCC2025-1573",
+        "title": "Holistic approach targeting primary hallmarks of ageing to reverse it: toward a new role for Hyaluronic Acid?",
+        "filename": "IFSCC2025-1573.pdf"
+      },
+      {
+        "id": "IFSCC2025-964",
+        "title": "How a holistic approach combining cabin treatment technology, expert massage gestures and topical formulation provides enhanced anti-ageing results.",
+        "filename": "IFSCC2025-964.pdf"
+      },
+      {
+        "id": "IFSCC2025-1083",
+        "title": "How do anti-wrinkle ingredients influence cellular behavior? The effects of cosmetic ingredients on cell shape and movement",
+        "filename": "IFSCC2025-1083.pdf"
+      },
+      {
+        "id": "IFSCC2025-1330",
+        "title": "How the genomic analysis could help the Developpement of the cosmetic formulation?",
+        "filename": "IFSCC2025-1330.pdf"
+      },
+      {
+        "id": "IFSCC2025-1196",
+        "title": "How to detect senescent cells and intercellular junctions by in vivo confocal microscopy. An algorithm to approach new in vivo longevity parameters using Artificial Intelligence applied to stratum granulosum and stratum spinosum images",
+        "filename": "IFSCC2025-1196.pdf"
+      },
+      {
+        "id": "IFSCC2025-974",
+        "title": "Identifying a Distinct NMF Barrier in the Stratum Corneum: Insights into Hydration, Lipid Organization, and Skin Barrier Function",
+        "filename": "IFSCC2025-974.pdf"
+      },
+      {
+        "id": "IFSCC2025-1312",
+        "title": "Impact of gravitational force on facial skin sagging across age groups using a custom-built imaging device: Evidence from French women",
+        "filename": "IFSCC2025-1312.pdf"
+      },
+      {
+        "id": "IFSCC2025-1784",
+        "title": "In Vivo Evidence of Ectoin’s Superior Protective Effects on Skin Against Protein Carbonylation",
+        "filename": "IFSCC2025-1784.pdf"
+      },
+      {
+        "id": "IFSCC2025-187",
+        "title": "Increasing skin oxygenation using a cosmetic energy drink",
+        "filename": "IFSCC2025-187.pdf"
+      },
+      {
+        "id": "IFSCC2025-1419",
+        "title": "INNOVATIVE APPROACHES TO ENHANCE AND DEEPEN SKIN WRINKLE ANALYSIS",
+        "filename": "IFSCC2025-1419.pdf"
+      },
+      {
+        "id": "IFSCC2025-168",
+        "title": "Integrating mass spectrometry imaging and multi-omics strategies to reveal the mechanism of anti-inflammatory and anti-aging effects of Centella asiatica extract in skin",
+        "filename": "IFSCC2025-168.pdf"
+      },
+      {
+        "id": "IFSCC2025-653",
+        "title": "Intermediate water is beneficial to the skin -Unveiling the important role of a long-overlooked state of waterIFSCC2025-463 - Discovery of Candidate Compound that Alleviates Senescence by Inducing State Transition of STING",
+        "filename": "IFSCC2025-653.pdf"
+      },
+      {
+        "id": "IFSCC2025-481",
+        "title": "Investigation of Bioactive Substances in Different Rose Varieties and Molecular Docking and Validation with Anti-Aging Receptor Proteins",
+        "filename": "IFSCC2025-481.pdf"
+      },
+      {
+        "id": "IFSCC2025-674",
+        "title": "Investigation of Novel SIRT-1 Activating Cosmetic Ingredients and Evaluation of Their Effects on Human Skin through Clinical Trials",
+        "filename": "IFSCC2025-674.pdf"
+      },
+      {
+        "id": "IFSCC2025-1291",
+        "title": "It’s Not Just An Eye But Rather The Region Of The Gaze",
+        "filename": "IFSCC2025-1291.pdf"
+      },
+      {
+        "id": "IFSCC2025-1514",
+        "title": "Linking Visible Features of Facial Aging to Multimodal Instrumental Measurements Using Advanced Chemometrics: A Comprehensive Multi-Ethnic Study in Healthy Women",
+        "filename": "IFSCC2025-1514.pdf"
+      },
+      {
+        "id": "IFSCC2025-265",
+        "title": "MAMs Interactions: The Mitochondrial Hub Unlocking Cellular Rejuvenation",
+        "filename": "IFSCC2025-265.pdf"
+      },
+      {
+        "id": "IFSCC2025-610",
+        "title": "Mechanisms of Collagen Homeostasis Disruption in Senescent Cells and Novel Role of Niacinamide: Enhancing Autophagy and Preventing Misfolded Collagen Accumulation with Cellular Senescence",
+        "filename": "IFSCC2025-610.pdf"
+      },
+      {
+        "id": "IFSCC2025-1203",
+        "title": "Mechanistic Insights into Royal Jelly’s Effects on Epidermal Stem Cell Activation and Skin Function",
+        "filename": "IFSCC2025-1203.pdf"
+      },
+      {
+        "id": "IFSCC2025-1728",
+        "title": "Mimicking key stages of skin aging to propose innovative and targeted solutions",
+        "filename": "IFSCC2025-1728.pdf"
+      },
+      {
+        "id": "IFSCC2025-875",
+        "title": "Mitochondrial Rejuvenation from Within: Plant Stem Cell Breakthroughs to Reverse Skin Aging and Restore Radiance",
+        "filename": "IFSCC2025-875.pdf"
+      },
+      {
+        "id": "IFSCC2025-1485",
+        "title": "New Perspectives on the Potential Role of Water Channels in Skin Pyroptosis",
+        "filename": "IFSCC2025-1485.pdf"
+      },
+      {
+        "id": "IFSCC2025-1790",
+        "title": "Next-generation in vitro testing: microfluidic models for chronological skin aging and wound healing in safety and efficacy analysis.",
+        "filename": "IFSCC2025-1790.pdf"
+      },
+      {
+        "id": "IFSCC2025-1101",
+        "title": "Non-animal cell-derived extracellular vesicles for substantial skin anti-ageing",
+        "filename": "IFSCC2025-1101.pdf"
+      },
+      {
+        "id": "IFSCC2025-825",
+        "title": "Novel approach to well aging and longevity ~balancing mitochondrial activation and antioxidant effects~",
+        "filename": "IFSCC2025-825.pdf"
+      },
+      {
+        "id": "IFSCC2025-267",
+        "title": "Novel combination of compounds for skin regeneration and rejuvenation through retinoid and epigenetic pathways",
+        "filename": "IFSCC2025-267.pdf"
+      },
+      {
+        "id": "IFSCC2025-1749",
+        "title": "Novel effects of Paeonia lactiflora extract for modulation of inflammation process by bacterial invasion and hypersensitivity in skin and oral cavity: in silico, in vitro and stability tests.",
+        "filename": "IFSCC2025-1749.pdf"
+      },
+      {
+        "id": "IFSCC2025-1541",
+        "title": "Novel Natural Peeling System Containing Lactobacillus Exosome for Anti-Aging",
+        "filename": "IFSCC2025-1541.pdf"
+      },
+      {
+        "id": "IFSCC2025-852",
+        "title": "Novel Witch Hazel Formulation for Enhanced Skin Barrier and Reduced Inflammation",
+        "filename": "IFSCC2025-852.pdf"
+      },
+      {
+        "id": "IFSCC2025-1218",
+        "title": "Objective and Subjective Changes to Skin Appearance during a Six Hour Period of the Working Day",
+        "filename": "IFSCC2025-1218.pdf"
+      },
+      {
+        "id": "IFSCC2025-258",
+        "title": "Oxyregeneration: Tissue oxygenation regenerates aged skin",
+        "filename": "IFSCC2025-258.pdf"
+      },
+      {
+        "id": "IFSCC2025-1837",
+        "title": "Photoaging and chronological aging: biophysical properties of the photo aged and photo protected skin",
+        "filename": "IFSCC2025-1837.pdf"
+      },
+      {
+        "id": "IFSCC2025-912",
+        "title": "Plant-Derived Polydeoxyribonucleotide (PDRN) and Exosome Exploration from Three Indonesia Native Plants as Well-Aging Ingredients",
+        "filename": "IFSCC2025-912.pdf"
+      },
+      {
+        "id": "IFSCC2025-420",
+        "title": "Preparation and Characterization of Retinol-Loaded Mannosylerythritol Lipid Nanoliposome and Its Effects on Ex Vivo Human Skin Penetration",
+        "filename": "IFSCC2025-420.pdf"
+      },
+      {
+        "id": "IFSCC2025-1230",
+        "title": "Preparation and Study of Novel GHK-Cu-Loaded Ginsenoside Liposomes for Anti-Aging Activity",
+        "filename": "IFSCC2025-1230.pdf"
+      },
+      {
+        "id": "IFSCC2025-1116",
+        "title": "Preserving and/or restoring the facial and neck beauty in aged panelists",
+        "filename": "IFSCC2025-1116.pdf"
+      },
+      {
+        "id": "IFSCC2025-1525",
+        "title": "Promoting Skin Longevity and Wellbeing using a Cannabisin-rich Eco-extract from Bioreactor-cultivated Hemp",
+        "filename": "IFSCC2025-1525.pdf"
+      },
+      {
+        "id": "IFSCC2025-1431",
+        "title": "Proposal of a New Analysis Method through the Correlation Between Vectra XT and Ballistometer",
+        "filename": "IFSCC2025-1431.pdf"
+      },
+      {
+        "id": "IFSCC2025-1275",
+        "title": "Protein signature of human epidermis aging from the INSPIRE-T cohort: A machine learning model for estimating biological age",
+        "filename": "IFSCC2025-1275.pdf"
+      },
+      {
+        "id": "IFSCC2025-1082",
+        "title": "Purification and Functional Evaluation of Exosome-like Nanoparticles Derived from Pavlova",
+        "filename": "IFSCC2025-1082.pdf"
+      },
+      {
+        "id": "IFSCC2025-785",
+        "title": "Quantitative evaluation of the collagen organization in dermis by AI-assisted AFM microscopy",
+        "filename": "IFSCC2025-785.pdf"
+      },
+      {
+        "id": "IFSCC2025-472",
+        "title": "Recombinant Collagen Type 21: A Novel rational designed recombinant collagen with skin regenerative potential for well aging",
+        "filename": "IFSCC2025-472.pdf"
+      },
+      {
+        "id": "IFSCC2025-1726",
+        "title": "Regulation of epidermal pathways and skin homeostasis through a skin-identical plant-derived vitamin D and cholesterol precursor",
+        "filename": "IFSCC2025-1726.pdf"
+      },
+      {
+        "id": "IFSCC2025-1416",
+        "title": "Research on the Anti-inflammatory Activity Components and Structure-Activity Relationship of Sesquiterpene Lactones from Saussurea involucrate",
+        "filename": "IFSCC2025-1416.pdf"
+      },
+      {
+        "id": "IFSCC2025-1393",
+        "title": "Research on the Enhancement of the Flexibility of Oat - Glucan by Physical Methods and Its Repair and Anti - aging Efficacy",
+        "filename": "IFSCC2025-1393.pdf"
+      },
+      {
+        "id": "IFSCC2025-1109",
+        "title": "Reverse Aging effects of Iris germanica L.-derived exosomes via identification of novel microRNAs and their gene regulatory functions",
+        "filename": "IFSCC2025-1109.pdf"
+      },
+      {
+        "id": "IFSCC2025-461",
+        "title": "Sage Extract Activates OR2AT4 to Regulate Skin Physiological Actions in Keratinocytes",
+        "filename": "IFSCC2025-461.pdf"
+      },
+      {
+        "id": "IFSCC2025-452",
+        "title": "Skin aging ameliorated via the reprogramming energy metabolism by an NAMPT activator in senescent fibroblasts",
+        "filename": "IFSCC2025-452.pdf"
+      },
+      {
+        "id": "IFSCC2025-1798",
+        "title": "Skin elasticity and regional differences measured using instrumental measurements: Implications for clinical trials",
+        "filename": "IFSCC2025-1798.pdf"
+      },
+      {
+        "id": "IFSCC2025-1785",
+        "title": "Skin frequency analysis using Digital image correlation: a new method to evaluate dynamical movements of body skin",
+        "filename": "IFSCC2025-1785.pdf"
+      },
+      {
+        "id": "IFSCC2025-969",
+        "title": "Slowing down skin aging properties of linseed oil concentrate obtained from a regenerative plant sourcing, Linum usitatissimum",
+        "filename": "IFSCC2025-969.pdf"
+      },
+      {
+        "id": "IFSCC2025-314",
+        "title": "Stabilization of Retinal using Poly(2-oxazoline) based Polymer-Lipid Hybrid Nanoparticle",
+        "filename": "IFSCC2025-314.pdf"
+      },
+      {
+        "id": "IFSCC2025-450",
+        "title": "Study on the anti-aging effect of a composite nanocarrier with regulation of autophagy and inhibition of oxidative stress",
+        "filename": "IFSCC2025-450.pdf"
+      },
+      {
+        "id": "IFSCC2025-659",
+        "title": "Study on the extraction of highly active peptides from lotus flower proteins and evaluation of their anti-aging efficacy",
+        "filename": "IFSCC2025-659.pdf"
+      },
+      {
+        "id": "IFSCC2025-591",
+        "title": "Study on the Plant-derived Exosome Like Nanoparticles Essence Composition to Reducing Crow’s Feet Wrinkles",
+        "filename": "IFSCC2025-591.pdf"
+      },
+      {
+        "id": "IFSCC2025-681",
+        "title": "Synergistic Anti-Aging Effects of Yeast/Rice Fermentation Filtrate and Sialic Acid Combination on Collagen Synthesis and Skin Inflammation",
+        "filename": "IFSCC2025-681.pdf"
+      },
+      {
+        "id": "IFSCC2025-804",
+        "title": "Synergistic effects of tremella fuciformis polysaccharide and euglena gracilis poplypeptide on skin barrier repair and photoprotection with experimental and bioinformatic approaches",
+        "filename": "IFSCC2025-804.pdf"
+      },
+      {
+        "id": "IFSCC2025-1547",
+        "title": "Synergy of Powerhouses: Unveiling the New Barrier Repair Profile of Retinol and A New Peptide and Competing with the Anti-Aging Efficacy of IPL",
+        "filename": "IFSCC2025-1547.pdf"
+      },
+      {
+        "id": "IFSCC2025-879",
+        "title": "Tailored cosmetic products containing Traditional Chinese Medicine (TCM) ingredients -Panax ginseng Root Extract for menopausal women in China",
+        "filename": "IFSCC2025-879.pdf"
+      },
+      {
+        "id": "IFSCC2025-1267",
+        "title": "Taurine’s Role in Cellular Longevity: Implications for Aging and Senescence",
+        "filename": "IFSCC2025-1267.pdf"
+      },
+      {
+        "id": "IFSCC2025-1099",
+        "title": "The New Anti-Aging Agent: Blue Color Houttuynia Cordata By Fermentation",
+        "filename": "IFSCC2025-1099.pdf"
+      },
+      {
+        "id": "IFSCC2025-1165",
+        "title": "The Potential of Thuja orientalis L. Major Fraction (TOMF) Containing Quercitrin as a Cosmetic Agent for Wrinkle Improvement.",
+        "filename": "IFSCC2025-1165.pdf"
+      },
+      {
+        "id": "IFSCC2025-1105",
+        "title": "The relationship between mitochondrial metabolic abnormalities in aging cells and wrinkles in the dermis revealed by Photothermal Microscopy",
+        "filename": "IFSCC2025-1105.pdf"
+      },
+      {
+        "id": "IFSCC2025-1809",
+        "title": "Topical Application of Adaptogens Modulate the Brain-Skin Axis for Holistic Well-Aging",
+        "filename": "IFSCC2025-1809.pdf"
+      },
+      {
+        "id": "IFSCC2025-1310",
+        "title": "Transcriptomic-Guided Development of a Post-Procedure Formula to Prolong Skin Tone, Texture, and Wrinkle Appearance Benefits from Aesthetic Procedures",
+        "filename": "IFSCC2025-1310.pdf"
+      },
+      {
+        "id": "IFSCC2025-1783",
+        "title": "Ubiquitination - A novel target for a universal anti-aging strategy highlighted by mass spectrometry analysis and applied to a natural ingredient",
+        "filename": "IFSCC2025-1783.pdf"
+      },
+      {
+        "id": "IFSCC2025-776",
+        "title": "Unique synergistic combination of biomimetic DNA and catalytic environment to improve and go beyond cell longevity, proven by Proteomics",
+        "filename": "IFSCC2025-776.pdf"
+      },
+      {
+        "id": "IFSCC2025-1307",
+        "title": "Unlocking Radiance: A New Botanical Active Ingredient for Skin Luminosity",
+        "filename": "IFSCC2025-1307.pdf"
+      },
+      {
+        "id": "IFSCC2025-849",
+        "title": "Unlocking the Anti-Wrinkle and Repair Power Camellia Japonica Seed Extract: Insights from Cell Studies",
+        "filename": "IFSCC2025-849.pdf"
+      },
+      {
+        "id": "IFSCC2025-1788",
+        "title": "Unlocking the mechanism of action of recombinant collagen in preserving dermal structure and delivering anti-aging benefits",
+        "filename": "IFSCC2025-1788.pdf"
+      },
+      {
+        "id": "IFSCC2025-545",
+        "title": "Unraveling the key role of oxidized protein hydrolase in the removal of glycated and carbonylated proteins in the skin",
+        "filename": "IFSCC2025-545.pdf"
+      },
+      {
+        "id": "IFSCC2025-528",
+        "title": "Unveiling Cryptic Transcription: Loss of Transcriptional Fidelity in a Skin Cellular Aging Model during Senescence",
+        "filename": "IFSCC2025-528.pdf"
+      },
+      {
+        "id": "IFSCC2025-146",
+        "title": "Unveiling the Slow Aging Factors: A Seven-Year Skin Evaluation in Korean Women",
+        "filename": "IFSCC2025-146.pdf"
+      },
+      {
+        "id": "IFSCC2025-1238",
+        "title": "Upcycled Apple Flower Extract Demonstrate Clinical Efficacy In Cellulite Reduction Through Activation Of Caloric Restriction",
+        "filename": "IFSCC2025-1238.pdf"
+      },
+      {
+        "id": "IFSCC2025-1641",
+        "title": "Using Lettuce to Produce Collagen Peptides: A Novel Biotechnological Approach for Enhancing Skin Structure",
+        "filename": "IFSCC2025-1641.pdf"
+      },
+      {
+        "id": "IFSCC2025-1154",
+        "title": "Virtual Screening of Botox-like Cosmetic Active Peptides Targeting the SNARE Complex and Syt1 C2B Domain",
+        "filename": "IFSCC2025-1154.pdf"
+      },
+      {
+        "id": "IFSCC2025-751",
+        "title": "Virtual screening of Kelch-like ECH-Associated Protein 1−Nuclear Factor Erythroid 2-Related Factor 2 (Keap1−Nrf2) Inhibitors and in vitro validation",
+        "filename": "IFSCC2025-751.pdf"
+      },
+      {
+        "id": "IFSCC2025-1436",
+        "title": "Vitamin C–Induced Gene and miRNA Crosstalk Orchestrates Regeneration, Antioxidant Defense, and Pigmentation Modulation in Human Skin Cells",
+        "filename": "IFSCC2025-1436.pdf"
+      },
+      {
+        "id": "IFSCC2025-783",
+        "title": "World’s thickest ‘close to real life’ artificial human skin with muscle, hypodermis, dermis and epidermis for modelling of ageing skin, wrinkles and cosmetics development",
+        "filename": "IFSCC2025-783.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Make up",
+    "folder": "04_Make up",
+    "papers": [
+      {
+        "id": "IFSCC2025-209",
+        "title": "A Natural European Mica Ensuring Softness, Cohesion And Long Lasting Effect",
+        "filename": "IFSCC2025-209.pdf"
+      },
+      {
+        "id": "IFSCC2025-1729",
+        "title": "A technological phytotensor for rapid and long-lasting makeup benefits",
+        "filename": "IFSCC2025-1729.pdf"
+      },
+      {
+        "id": "IFSCC2025-1207",
+        "title": "Abstract: A multidimensional and transversal approach to fully assess lipsticks through perception, emotion, and textural characterization",
+        "filename": "IFSCC2025-1207.pdf"
+      },
+      {
+        "id": "IFSCC2025-157",
+        "title": "Advanced Makeup Performance with Cationic Polymer-Infused Skincare Formulations",
+        "filename": "IFSCC2025-157.pdf"
+      },
+      {
+        "id": "IFSCC2025-318",
+        "title": "Advanced Metal-Soap Powder for Makeup Applications Achieving a Viable Alternative to Talc",
+        "filename": "IFSCC2025-318.pdf"
+      },
+      {
+        "id": "IFSCC2025-1602",
+        "title": "AI-Powered Lipstick Color Prediction: Designing Inclusive Shade Ranges for Diverse Skin Tones",
+        "filename": "IFSCC2025-1602.pdf"
+      },
+      {
+        "id": "IFSCC2025-242",
+        "title": "An innovative concealing technology designed to enhance the beauty of every skin tone with natural-looking and high coverage",
+        "filename": "IFSCC2025-242.pdf"
+      },
+      {
+        "id": "IFSCC2025-272",
+        "title": "Characterization of unique hybrid surface treated cellulose spherical powder Gemini Type Surfactant and salt of Fatty Acid",
+        "filename": "IFSCC2025-272.pdf"
+      },
+      {
+        "id": "IFSCC2025-396",
+        "title": "Development of Environmentally Friendly Amino Acid-Based Surface Treatment Agents",
+        "filename": "IFSCC2025-396.pdf"
+      },
+      {
+        "id": "IFSCC2025-465",
+        "title": "Development of the Generative AI based Pipeline Architecture for Advanced Virtual Makeup",
+        "filename": "IFSCC2025-465.pdf"
+      },
+      {
+        "id": "IFSCC2025-992",
+        "title": "Eco-design & Long-Lasting: Biosourced Wear Engines based on PolyHydroxyalkanoates for High-Performance Makeup",
+        "filename": "IFSCC2025-992.pdf"
+      },
+      {
+        "id": "IFSCC2025-1615",
+        "title": "Effect of formulation ingredients on compacted powder properties",
+        "filename": "IFSCC2025-1615.pdf"
+      },
+      {
+        "id": "IFSCC2025-1463",
+        "title": "Enhancing Color Perception in Lipstick: The Synergistic Effects of Shade Range, Fragrance and Emotion",
+        "filename": "IFSCC2025-1463.pdf"
+      },
+      {
+        "id": "IFSCC2025-324",
+        "title": "Functional Composite Powders for Cosmetic Ingredients Using Novel Manufacturing Technology",
+        "filename": "IFSCC2025-324.pdf"
+      },
+      {
+        "id": "IFSCC2025-789",
+        "title": "House’s lipsticks color trend evolution from 1960 until today",
+        "filename": "IFSCC2025-789.pdf"
+      },
+      {
+        "id": "IFSCC2025-370",
+        "title": "How Naturally Derived Ester CST Outperform Petroleum Derived Esters: Pigment Dispersion and Coloring Properties of Novel Glycerol Succinate Fatty Acid Ester",
+        "filename": "IFSCC2025-370.pdf"
+      },
+      {
+        "id": "IFSCC2025-594",
+        "title": "In vivo and in vitro study on the long-lasting makeup of biomimetic film-forming compositions in foundation",
+        "filename": "IFSCC2025-594.pdf"
+      },
+      {
+        "id": "IFSCC2025-1241",
+        "title": "Innovative application of freeze-drying in the production of makeup compacts",
+        "filename": "IFSCC2025-1241.pdf"
+      },
+      {
+        "id": "IFSCC2025-1364",
+        "title": "La beauté ne transpire pas: Microstructural and sensory analysis of lipstick under sweating conditions.",
+        "filename": "IFSCC2025-1364.pdf"
+      },
+      {
+        "id": "IFSCC2025-1628",
+        "title": "Leveraging Naturally Derived Polymeric Film Formers to Achieve Enhanced Sensory and Water Resistance in Clean Makeup Formulations",
+        "filename": "IFSCC2025-1628.pdf"
+      },
+      {
+        "id": "IFSCC2025-1684",
+        "title": "Lip color diversity and makeup strategies",
+        "filename": "IFSCC2025-1684.pdf"
+      },
+      {
+        "id": "IFSCC2025-1174",
+        "title": "Lipsticks: Understanding Structure-Property Relationships and Material Breakdown Mechanisms through Oscillatory Rheology",
+        "filename": "IFSCC2025-1174.pdf"
+      },
+      {
+        "id": "IFSCC2025-1477",
+        "title": "Long lasting performance in lipstick formulations: a comparison between synthetic and natural oil-based polymers",
+        "filename": "IFSCC2025-1477.pdf"
+      },
+      {
+        "id": "IFSCC2025-280",
+        "title": "New Standard in Skin Perfection: Polyion Complex-based Facial Makeup for Firmer and Smoother Skin",
+        "filename": "IFSCC2025-280.pdf"
+      },
+      {
+        "id": "IFSCC2025-202",
+        "title": "Physicochemical Properties of Acrylate Copolymer Emulsions as Functional Film Formers in Cosmetics",
+        "filename": "IFSCC2025-202.pdf"
+      },
+      {
+        "id": "IFSCC2025-1120",
+        "title": "Real World Makeup Study Exploration　Lip Fading Testing Methods and Analysis Based on Remote Image Collecting",
+        "filename": "IFSCC2025-1120.pdf"
+      },
+      {
+        "id": "IFSCC2025-1609",
+        "title": "Reducing the Color Shift of Long Lasting Liquid Foundations",
+        "filename": "IFSCC2025-1609.pdf"
+      },
+      {
+        "id": "IFSCC2025-1479",
+        "title": "Revolutionizing Powder Characterization: A Microfluidic Biomimetic Skin Model for Screening Sustainable Alternatives",
+        "filename": "IFSCC2025-1479.pdf"
+      },
+      {
+        "id": "IFSCC2025-274",
+        "title": "Silicone-Free W/O Foundation Based on Poly-Ion Complex Technology for Long-Lasting Performance",
+        "filename": "IFSCC2025-274.pdf"
+      },
+      {
+        "id": "IFSCC2025-1072",
+        "title": "Study Of Lophatherum Gracile Extract In Relieving Skin Sensitivity",
+        "filename": "IFSCC2025-1072.pdf"
+      },
+      {
+        "id": "IFSCC2025-1124",
+        "title": "Study On The Moisturising And Oil-Control Efficacy Of Black-Red Paeonia Albiflora Ferment Filtrate",
+        "filename": "IFSCC2025-1124.pdf"
+      },
+      {
+        "id": "IFSCC2025-809",
+        "title": "Study on the Suitability of Various Materials as Talc Alternatives in Makeup Powder Formulations",
+        "filename": "IFSCC2025-809.pdf"
+      },
+      {
+        "id": "IFSCC2025-1401",
+        "title": "The efficacy and safety of a type of Biotec Essence Lipstick on Chinese female lip skin",
+        "filename": "IFSCC2025-1401.pdf"
+      },
+      {
+        "id": "IFSCC2025-1385",
+        "title": "The formulation of peony seed oil oleogel and its utilization in lipstick",
+        "filename": "IFSCC2025-1385.pdf"
+      },
+      {
+        "id": "IFSCC2025-642",
+        "title": "The Science of Color: Iterative Clustering and Sensory Testing Shape the Future of Lipstick Visual Perception",
+        "filename": "IFSCC2025-642.pdf"
+      },
+      {
+        "id": "IFSCC2025-1587",
+        "title": "Unlocking the Rainbow: Advanced Technology for Diverse and Vibrant Cosmetic Colors",
+        "filename": "IFSCC2025-1587.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Analytical technologies",
+    "folder": "05_Analytical technologies",
+    "papers": [
+      {
+        "id": "IFSCC2025-1484",
+        "title": "A Cutting-Edge Transcriptomic Dive into the Beauty Benefits of Rosehip Extract",
+        "filename": "IFSCC2025-1484.pdf"
+      },
+      {
+        "id": "IFSCC2025-1482",
+        "title": "A novel ex-vivo scalp model to study the early events associated to microbiota imbalance",
+        "filename": "IFSCC2025-1482.pdf"
+      },
+      {
+        "id": "IFSCC2025-1055",
+        "title": "A Novel Method for Evaluating Water in SC ―Visualization of Water Using “Ultra”- Low Temperature DSC―",
+        "filename": "IFSCC2025-1055.pdf"
+      },
+      {
+        "id": "IFSCC2025-541",
+        "title": "A novel skin penetration evaluation method for cream containing tranexamic acid: Raman imaging using multivariate curve resolution-alternating least squares analysis",
+        "filename": "IFSCC2025-541.pdf"
+      },
+      {
+        "id": "IFSCC2025-1543",
+        "title": "A Step Towards Sustainability: Application of Potentiometric Titration for the Analysis of Anionic Surfactants",
+        "filename": "IFSCC2025-1543.pdf"
+      },
+      {
+        "id": "IFSCC2025-376",
+        "title": "A versatile electrochemical sensor for quality control and antioxidant evaluation of cosmetic ingredients and formulations",
+        "filename": "IFSCC2025-376.pdf"
+      },
+      {
+        "id": "IFSCC2025-1536",
+        "title": "Advanced Lipidomics Analysis in Cosmetics: dive deeper into claim substantiation",
+        "filename": "IFSCC2025-1536.pdf"
+      },
+      {
+        "id": "IFSCC2025-223",
+        "title": "AI Redefining the Aesthetics of Makeup: Unveiling Patterns of Beauty and Achieving Fair and Diverse Expressions",
+        "filename": "IFSCC2025-223.pdf"
+      },
+      {
+        "id": "IFSCC2025-1034",
+        "title": "AI-based Hair Damage Quantification and Visualization on Microscopic Hair Images",
+        "filename": "IFSCC2025-1034.pdf"
+      },
+      {
+        "id": "IFSCC2025-914",
+        "title": "An Analysis and Approach of Lipidomics Test Using Human Ex Vivo Skin Tissues Treated with Ingredients That Mimic Skin Lipids",
+        "filename": "IFSCC2025-914.pdf"
+      },
+      {
+        "id": "IFSCC2025-1490",
+        "title": "An efficient method for evaluating Bakuchiol in cosmetics industry: HPLC combined with normalization method",
+        "filename": "IFSCC2025-1490.pdf"
+      },
+      {
+        "id": "IFSCC2025-1112",
+        "title": "Analysis of clay characteristics based on illite/smectite interstratified minerals",
+        "filename": "IFSCC2025-1112.pdf"
+      },
+      {
+        "id": "IFSCC2025-831",
+        "title": "Application of Multi-Omics Technologies in Cosmetics and Supporting Personalized Skin care Solutions",
+        "filename": "IFSCC2025-831.pdf"
+      },
+      {
+        "id": "IFSCC2025-1830",
+        "title": "Atlas of Dermatological Assessment for Wrinkles and Fine Lines: A Focus on Brazilian Skin",
+        "filename": "IFSCC2025-1830.pdf"
+      },
+      {
+        "id": "IFSCC2025-1289",
+        "title": "AUTHENTICATION AND DIFFERENTIATION OF CHITOSAN ORIGINS",
+        "filename": "IFSCC2025-1289.pdf"
+      },
+      {
+        "id": "IFSCC2025-1507",
+        "title": "Bio-Guided Fractionation and Molecular Networking of Three Marine Microalgae for Anti-Inflammatory and Antioxidant Applications in Cosmetics",
+        "filename": "IFSCC2025-1507.pdf"
+      },
+      {
+        "id": "IFSCC2025-501",
+        "title": "Breakthrough in skin sensing by monitoring quality of moisture through hydrogen bonding of water molecules",
+        "filename": "IFSCC2025-501.pdf"
+      },
+      {
+        "id": "IFSCC2025-1155",
+        "title": "Breakthrough of lipoplex for the treatment of dermatological diseases",
+        "filename": "IFSCC2025-1155.pdf"
+      },
+      {
+        "id": "IFSCC2025-1731",
+        "title": "Deciphering the lipid modulation in dry skin to propose dedicated solutions",
+        "filename": "IFSCC2025-1731.pdf"
+      },
+      {
+        "id": "IFSCC2025-707",
+        "title": "Development of a Model Mimicking Lipid Matrix in the Stratum Corneum for Simulating Percutaneous Absorption",
+        "filename": "IFSCC2025-707.pdf"
+      },
+      {
+        "id": "IFSCC2025-1302",
+        "title": "Discovering Innovative Natural Compounds for Cosmetic Applications with Advanced AI-Driven Modeling",
+        "filename": "IFSCC2025-1302.pdf"
+      },
+      {
+        "id": "IFSCC2025-410",
+        "title": "Effect of aging on maintaining the hydration of the epidermal stratum corneum",
+        "filename": "IFSCC2025-410.pdf"
+      },
+      {
+        "id": "IFSCC2025-1180",
+        "title": "Establishment and Validation of An Assessment Tool for Evaluating the Global Face Sagging",
+        "filename": "IFSCC2025-1180.pdf"
+      },
+      {
+        "id": "IFSCC2025-566",
+        "title": "Ex-vivo human skin model for the evaluation of rinse-off products",
+        "filename": "IFSCC2025-566.pdf"
+      },
+      {
+        "id": "IFSCC2025-1272",
+        "title": "Exploring skin chemistry and cosmetic permeation across different skin tones using secondary ion mass spectrometry",
+        "filename": "IFSCC2025-1272.pdf"
+      },
+      {
+        "id": "IFSCC2025-823",
+        "title": "Facial skin elasticity mapping in Chinese females and its comparison to skin softness/stiffness",
+        "filename": "IFSCC2025-823.pdf"
+      },
+      {
+        "id": "IFSCC2025-563",
+        "title": "Finding the actor: Bio-detection in botanicals with a case study on safety and efficacy",
+        "filename": "IFSCC2025-563.pdf"
+      },
+      {
+        "id": "IFSCC2025-1303",
+        "title": "From measurements to improvements: Life Cycle Analysis as a tool for sustainable analytical development",
+        "filename": "IFSCC2025-1303.pdf"
+      },
+      {
+        "id": "IFSCC2025-1438",
+        "title": "Full transcriptomics, a powerful tool for ingredient innovation and repurposing",
+        "filename": "IFSCC2025-1438.pdf"
+      },
+      {
+        "id": "IFSCC2025-1181",
+        "title": "Gentiopicroside from Gentiana scabra Bunge: In Vitro Anti-Allergic Mechanism and Skincare Potential",
+        "filename": "IFSCC2025-1181.pdf"
+      },
+      {
+        "id": "IFSCC2025-1527",
+        "title": "Halogen Moisture Analyser: A Practical Approach to Measuring Hair Tress Drying Time",
+        "filename": "IFSCC2025-1527.pdf"
+      },
+      {
+        "id": "IFSCC2025-217",
+        "title": "How can the dynamics of polymers at the surface of cosmetic pigments be probed using solid-state NMR spectroscopy?",
+        "filename": "IFSCC2025-217.pdf"
+      },
+      {
+        "id": "IFSCC2025-1491",
+        "title": "In silico study to identify new melatonin-like botanical cosmetic active ingredients",
+        "filename": "IFSCC2025-1491.pdf"
+      },
+      {
+        "id": "IFSCC2025-177",
+        "title": "In vitro evaluation on the performance of a liquid foundation formulation from a materials science perspective",
+        "filename": "IFSCC2025-177.pdf"
+      },
+      {
+        "id": "IFSCC2025-332",
+        "title": "In vivo Study of Skin Barrier Repair Kinetics with Structural and Molecular Insights Using 3D LC-OCT and Confocal Raman Spectroscopy",
+        "filename": "IFSCC2025-332.pdf"
+      },
+      {
+        "id": "IFSCC2025-1697",
+        "title": "In-Silico Identification of Antibacterial Molecules in Cosmetic Ingredients: A QSAR and Mechanism-Driven AI Approach",
+        "filename": "IFSCC2025-1697.pdf"
+      },
+      {
+        "id": "IFSCC2025-954",
+        "title": "Innovation Through Single-Cell Transcriptomics: New Pathways for Tackling Skin Inflammation and Aging",
+        "filename": "IFSCC2025-954.pdf"
+      },
+      {
+        "id": "IFSCC2025-1026",
+        "title": "Innovative analysis of emulsion behavior on skin",
+        "filename": "IFSCC2025-1026.pdf"
+      },
+      {
+        "id": "IFSCC2025-525",
+        "title": "Innovative Characterization of Whipped Body Butters through Instrumental Analysis and Sensory Evaluation",
+        "filename": "IFSCC2025-525.pdf"
+      },
+      {
+        "id": "IFSCC2025-1223",
+        "title": "Lc-Ms/Ms Analysis Based On Double Isotope Labelling Of Hyaluronic Acid In Complex Matrices",
+        "filename": "IFSCC2025-1223.pdf"
+      },
+      {
+        "id": "IFSCC2025-1599",
+        "title": "Machine Learning Models to Forecast Results in Cosmetic Clinical Research",
+        "filename": "IFSCC2025-1599.pdf"
+      },
+      {
+        "id": "IFSCC2025-977",
+        "title": "Metabolomic approaches in the development of cosmetic products: discriminative sourcing, sustainable and efficient ingredients.",
+        "filename": "IFSCC2025-977.pdf"
+      },
+      {
+        "id": "IFSCC2025-1019",
+        "title": "MiRNA408 from Camellia japonica L. Mediates cross-kingdom regulation in human skin recovery",
+        "filename": "IFSCC2025-1019.pdf"
+      },
+      {
+        "id": "IFSCC2025-810",
+        "title": "Multi-omics analysis jointly reveals the mechanism of matrine salicylate against acne",
+        "filename": "IFSCC2025-810.pdf"
+      },
+      {
+        "id": "IFSCC2025-910",
+        "title": "New 3D detection algorithms using the last generation fringe projection scanner: A novel full face wrinkle depth classification and distribution index for ageing evaluation",
+        "filename": "IFSCC2025-910.pdf"
+      },
+      {
+        "id": "IFSCC2025-1454",
+        "title": "Novel Animal-free Testing Technology for Evaluating Cosmetic Efficacy Based on Cuticle Transparency",
+        "filename": "IFSCC2025-1454.pdf"
+      },
+      {
+        "id": "IFSCC2025-1494",
+        "title": "Novel Approach to Enhancing Skin Penetration of Active Ingredients by Cosmetic Film Formation on the Skin",
+        "filename": "IFSCC2025-1494.pdf"
+      },
+      {
+        "id": "IFSCC2025-1683",
+        "title": "OMIC Skin Histology & AI: The path to a new era of skin complexity analysis",
+        "filename": "IFSCC2025-1683.pdf"
+      },
+      {
+        "id": "IFSCC2025-932",
+        "title": "Precision Assessment of the 28-Day Skin Turnover Cycle and Epidermal Regeneration Effect of Iris Germanica Root Extract",
+        "filename": "IFSCC2025-932.pdf"
+      },
+      {
+        "id": "IFSCC2025-163",
+        "title": "Prediction of facial translucency scores and facial skin image generation using neural network models",
+        "filename": "IFSCC2025-163.pdf"
+      },
+      {
+        "id": "IFSCC2025-1108",
+        "title": "Predictive Modeling of Estimated Age and Related Subsurface Skin Changes Across Facial Zones in Chinese Female Population",
+        "filename": "IFSCC2025-1108.pdf"
+      },
+      {
+        "id": "IFSCC2025-1041",
+        "title": "Proposal for a new method to realize comprehensive evaluation of facial color",
+        "filename": "IFSCC2025-1041.pdf"
+      },
+      {
+        "id": "IFSCC2025-1058",
+        "title": "Quantitative Analysis of Triple-Helical Collagen Structure Using Affinity purification – Mass Spectrometry",
+        "filename": "IFSCC2025-1058.pdf"
+      },
+      {
+        "id": "IFSCC2025-1214",
+        "title": "Relationship Between Scalp Barrier Function and Transepidermal Water Loss",
+        "filename": "IFSCC2025-1214.pdf"
+      },
+      {
+        "id": "IFSCC2025-592",
+        "title": "Research on the Development and Stability of the Critical Emulsion System",
+        "filename": "IFSCC2025-592.pdf"
+      },
+      {
+        "id": "IFSCC2025-1817",
+        "title": "Simultaneous Determination of Seven Whitening Agents by Ion-Pair Reversed-Phase High Performance Liquid Chromatography",
+        "filename": "IFSCC2025-1817.pdf"
+      },
+      {
+        "id": "IFSCC2025-1598",
+        "title": "Skin Organoid: A Robust in vitro Model for Toxicity and Efficacy Testing in Dermocosmetics",
+        "filename": "IFSCC2025-1598.pdf"
+      },
+      {
+        "id": "IFSCC2025-559",
+        "title": "Soft Tribology and Tactile Sensing for Biomimetic Skin Applications",
+        "filename": "IFSCC2025-559.pdf"
+      },
+      {
+        "id": "IFSCC2025-391",
+        "title": "Spatial Multi-Omics Reveals N-acetylneuraminic acid’s Multifaceted Role in Skin Health and Repair",
+        "filename": "IFSCC2025-391.pdf"
+      },
+      {
+        "id": "IFSCC2025-1664",
+        "title": "The first adjustable TEWL Biomimicry Models: Bridging In Vitro and In Vivo Assessments for Advanced Cosmetic Testing",
+        "filename": "IFSCC2025-1664.pdf"
+      },
+      {
+        "id": "IFSCC2025-548",
+        "title": "The Key to Ganoderma lucidum Fermentation Broth Alleviating Skin Inflammation: Ganoderic Acid",
+        "filename": "IFSCC2025-548.pdf"
+      },
+      {
+        "id": "IFSCC2025-1097",
+        "title": "The Laser Speckle Contrast Analysis (LASCA) Technique for Evaluating UV Exposure Effects on Skin: A Dual-layer Spray for Repair",
+        "filename": "IFSCC2025-1097.pdf"
+      },
+      {
+        "id": "IFSCC2025-446",
+        "title": "The mechanism of soothing effect of plant extracts was studied based on network pharmacology and transcriptomics methods",
+        "filename": "IFSCC2025-446.pdf"
+      },
+      {
+        "id": "IFSCC2025-1044",
+        "title": "The role of miRNA167 in skin improvement: Insight from extracellular vesicles derived from Rock Samphire (Crithmum maritimum)",
+        "filename": "IFSCC2025-1044.pdf"
+      },
+      {
+        "id": "IFSCC2025-1725",
+        "title": "The Skin’s Secrets Revealed using RZ-660 a In vivo Raman analyzer",
+        "filename": "IFSCC2025-1725.pdf"
+      },
+      {
+        "id": "IFSCC2025-363",
+        "title": "Toward Moisturizers Beyond Glycerol: Water Attraction and Additional Properties to Consider",
+        "filename": "IFSCC2025-363.pdf"
+      },
+      {
+        "id": "IFSCC2025-1338",
+        "title": "Uncover Novel Mechanisms and Targets in Wound Healing through AI Network-Based Prediction and In vitro Evaluation",
+        "filename": "IFSCC2025-1338.pdf"
+      },
+      {
+        "id": "IFSCC2025-175",
+        "title": "Understanding hair repair mechanism by Hybrid SIMS technique",
+        "filename": "IFSCC2025-175.pdf"
+      },
+      {
+        "id": "IFSCC2025-630",
+        "title": "Understanding the smell of aging: Analysis of volatile organic compounds emitted on the bust area by young and aged Caucasian skin",
+        "filename": "IFSCC2025-630.pdf"
+      },
+      {
+        "id": "IFSCC2025-1175",
+        "title": "Validation of a Machine Learning-Based Model for Blackhead Evaluation in a Pilot Trials",
+        "filename": "IFSCC2025-1175.pdf"
+      },
+      {
+        "id": "IFSCC2025-1317",
+        "title": "Wettability, a reliable method to measure the surface energy of the cosmetic products",
+        "filename": "IFSCC2025-1317.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Formulation",
+    "folder": "06_Formulation",
+    "papers": [
+      {
+        "id": "IFSCC2025-768",
+        "title": "2R,3R-Dihydroquercetin is a scarce and super antioxidant with long-term antioxidation ability in a cyclic manner",
+        "filename": "IFSCC2025-768.pdf"
+      },
+      {
+        "id": "IFSCC2025-454",
+        "title": "A Breakthrough in Liposomal Technology: Enhanced Stability and Skin Barrier Function of Liposomes Through the Utilization of Acidic phospholipids",
+        "filename": "IFSCC2025-454.pdf"
+      },
+      {
+        "id": "IFSCC2025-1295",
+        "title": "A comprehensive methodology for ensuring safety, quality, efficacy, and regulatory compliance of hyper-personalized cosmetics",
+        "filename": "IFSCC2025-1295.pdf"
+      },
+      {
+        "id": "IFSCC2025-697",
+        "title": "A Holistic Approach to Maximize Pigment Performance in Color Cosmetics and Sunscreens: from Wetting, Dispersing, to Stabilization",
+        "filename": "IFSCC2025-697.pdf"
+      },
+      {
+        "id": "IFSCC2025-1053",
+        "title": "A Method of Manufacturing Liposome Vesicles in a Supercritical State and Stabilizing them by Encapsulating Pure Retinol inside Them",
+        "filename": "IFSCC2025-1053.pdf"
+      },
+      {
+        "id": "IFSCC2025-1511",
+        "title": "A multi-dimensional approach for antiperspirants evaluation",
+        "filename": "IFSCC2025-1511.pdf"
+      },
+      {
+        "id": "IFSCC2025-961",
+        "title": "A multifaceted anti-aging composition targeting the restoration of functional proteins in skin layers",
+        "filename": "IFSCC2025-961.pdf"
+      },
+      {
+        "id": "IFSCC2025-1027",
+        "title": "A New Formulation of Retinol Stabilization – Bio 3D Printing solid-phase Retinolsome",
+        "filename": "IFSCC2025-1027.pdf"
+      },
+      {
+        "id": "IFSCC2025-752",
+        "title": "A New Serum for Pore Management: Efficacy Evaluation and the Application of a Precise Pore Grading Atlas",
+        "filename": "IFSCC2025-752.pdf"
+      },
+      {
+        "id": "IFSCC2025-754",
+        "title": "A Novel Efficacy Evaluation Method for Lip Treatment Products in Improving Lip Hydration in Human Subjects with Dry Lips",
+        "filename": "IFSCC2025-754.pdf"
+      },
+      {
+        "id": "IFSCC2025-829",
+        "title": "A Novel Green Technology of Multifunctional Nanozyme and Its Potential Application in Skin Care",
+        "filename": "IFSCC2025-829.pdf"
+      },
+      {
+        "id": "IFSCC2025-865",
+        "title": "A Novel HASE Polymer For Challenged System In O/W Emulsion",
+        "filename": "IFSCC2025-865.pdf"
+      },
+      {
+        "id": "IFSCC2025-1331",
+        "title": "A novel innovative polysaccharide ingredient combination for skin repair and healing based on glycobiology",
+        "filename": "IFSCC2025-1331.pdf"
+      },
+      {
+        "id": "IFSCC2025-1032",
+        "title": "A Novel Liquid Crystal Emulsifier: Properties of Formulation Using Glycocare-HA",
+        "filename": "IFSCC2025-1032.pdf"
+      },
+      {
+        "id": "IFSCC2025-603",
+        "title": "A Novel Mechanism For Removing Keratin Plugs Using Selective Cleansing Properties Of Sebum Components",
+        "filename": "IFSCC2025-603.pdf"
+      },
+      {
+        "id": "IFSCC2025-936",
+        "title": "A proprietary Rosemary based terpenic composition for topical scar management post Acne treatment",
+        "filename": "IFSCC2025-936.pdf"
+      },
+      {
+        "id": "IFSCC2025-1374",
+        "title": "A study on UV-blocking material with SPF Booster effect",
+        "filename": "IFSCC2025-1374.pdf"
+      },
+      {
+        "id": "IFSCC2025-346",
+        "title": "A triple permeation system (TPS) -based soothing treatment for alleviating sensitive skin",
+        "filename": "IFSCC2025-346.pdf"
+      },
+      {
+        "id": "IFSCC2025-1675",
+        "title": "A unique Lavandin Absolute bringing skin and wellness benefits.",
+        "filename": "IFSCC2025-1675.pdf"
+      },
+      {
+        "id": "IFSCC2025-1505",
+        "title": "Advanced skin organoid that perfectly mirrors real skin ~The evolution of an innovative skin model to develop the ultimate personalized cosmetics~",
+        "filename": "IFSCC2025-1505.pdf"
+      },
+      {
+        "id": "IFSCC2025-388",
+        "title": "Alpha-gel layered facial cleanser: A natural origin combination of polyglycerol surfactant and amino acid surfactant achieves ultra-gentle efficacy",
+        "filename": "IFSCC2025-388.pdf"
+      },
+      {
+        "id": "IFSCC2025-1665",
+        "title": "Application and Effect Evaluation of EGCG Biomimetic Exosomes in Anti-wrinkle Cosmetics",
+        "filename": "IFSCC2025-1665.pdf"
+      },
+      {
+        "id": "IFSCC2025-1366",
+        "title": "Bibbidi-Bobbidi-Boo Self-assembly multilayer nanocarriers by collagen peptides and mild skin application of retinol by multilayer structure",
+        "filename": "IFSCC2025-1366.pdf"
+      },
+      {
+        "id": "IFSCC2025-894",
+        "title": "Biodegradable Fragrance Design: Scents That Disappear, Not the Planet",
+        "filename": "IFSCC2025-894.pdf"
+      },
+      {
+        "id": "IFSCC2025-940",
+        "title": "Bionic Golden Ceramide EOP, Beyond Skin Barrier Repairing",
+        "filename": "IFSCC2025-940.pdf"
+      },
+      {
+        "id": "IFSCC2025-876",
+        "title": "Charge-Induced Ceramide Encapsulation into Lipid Nanocarriers for Enhanced Skin Penetration and Barrier Protection",
+        "filename": "IFSCC2025-876.pdf"
+      },
+      {
+        "id": "IFSCC2025-1194",
+        "title": "CNN based data-driven study for suits the skin makeup recommendation",
+        "filename": "IFSCC2025-1194.pdf"
+      },
+      {
+        "id": "IFSCC2025-1144",
+        "title": "Combating Oxidation, Glycation, and Inflammation in Skin: A Holistic Anti-Aging Complex Containing Ergothioneine",
+        "filename": "IFSCC2025-1144.pdf"
+      },
+      {
+        "id": "IFSCC2025-1355",
+        "title": "Comparison of Skin Characteristics Between Korean and Vietnamese Women: Focusing on Age-Related Differences Between the 20s and 50s",
+        "filename": "IFSCC2025-1355.pdf"
+      },
+      {
+        "id": "IFSCC2025-1533",
+        "title": "Comprehensive Clinical & Morphological Evaluation of A Potent Eyelash Serum: Synergistic Effect of Advanced Peptide and Botanical Extracts to Lash Growth, Density and Overall Appearance",
+        "filename": "IFSCC2025-1533.pdf"
+      },
+      {
+        "id": "IFSCC2025-587",
+        "title": "Comprehensive Evaluation of a Skincare Formulation Containing Recombinant Type III Collagen and Anti-Wrinkle Peptide for Anti-Aging Efficacy",
+        "filename": "IFSCC2025-587.pdf"
+      },
+      {
+        "id": "IFSCC2025-678",
+        "title": "Comprehensive evaluation of an essence formulated with a complex enzyme ingredient in the management of closed comedones",
+        "filename": "IFSCC2025-678.pdf"
+      },
+      {
+        "id": "IFSCC2025-1759",
+        "title": "Construction of pH-Responsive Pseudo-Gemini Surfactants: Exploring the Microscopic Mechanisms for Enhancing the Performance of Hair Conditioner Systems",
+        "filename": "IFSCC2025-1759.pdf"
+      },
+      {
+        "id": "IFSCC2025-763",
+        "title": "Deciphering the Water-Holding Capability of Multifunctional Amphiphilic Polymer Esters: Insights from In Vitro Experiments and In Silico Simulations",
+        "filename": "IFSCC2025-763.pdf"
+      },
+      {
+        "id": "IFSCC2025-1268",
+        "title": "Delivering retinol efficiently",
+        "filename": "IFSCC2025-1268.pdf"
+      },
+      {
+        "id": "IFSCC2025-1048",
+        "title": "Demonstration of the efficacy of the moisturizing and itch-relief cream for sensitive skin that utilizes technology to increase the penetration of water-soluble active ingredients to the skin",
+        "filename": "IFSCC2025-1048.pdf"
+      },
+      {
+        "id": "IFSCC2025-550",
+        "title": "Development and application of spontaneous cleansing technology to remove makeup gently for skin only by applying and rinsing with water",
+        "filename": "IFSCC2025-550.pdf"
+      },
+      {
+        "id": "IFSCC2025-456",
+        "title": "Development and Efficacy Evaluation of a Natural Fragrance Base with Emotional Relieving Properties",
+        "filename": "IFSCC2025-456.pdf"
+      },
+      {
+        "id": "IFSCC2025-767",
+        "title": "Development of a novel capsule formulation containing two amphiphilic vitamin derivatives as shell components and evaluation of its skin physiological effects for application to cosmetics for sensitive skin",
+        "filename": "IFSCC2025-767.pdf"
+      },
+      {
+        "id": "IFSCC2025-736",
+        "title": "Development of an in-vitro setup using ‘Skinsight’ for the evaluation of the skin tightness delay effects",
+        "filename": "IFSCC2025-736.pdf"
+      },
+      {
+        "id": "IFSCC2025-228",
+        "title": "Development of Hyaluronic Acid-Lecithin Complex that Accumulates in the Stratum Corneum and Exerts Excellent Softening Effects",
+        "filename": "IFSCC2025-228.pdf"
+      },
+      {
+        "id": "IFSCC2025-1635",
+        "title": "Development of Multifunctional Hydrogel-Coated Illite Microparticles as a Cosmetic Ingredient",
+        "filename": "IFSCC2025-1635.pdf"
+      },
+      {
+        "id": "IFSCC2025-1558",
+        "title": "Development of peptide-loaded nanostructured lipid carriers by hydrophobic ion pairing method",
+        "filename": "IFSCC2025-1558.pdf"
+      },
+      {
+        "id": "IFSCC2025-1679",
+        "title": "Development of Stabilized Transfersome Carriers for Enhanced Delivery of Bakuchiol and Hyaluronic Acid in Anti-Aging",
+        "filename": "IFSCC2025-1679.pdf"
+      },
+      {
+        "id": "IFSCC2025-1766",
+        "title": "Different Lamellar Structures Constructed by Behenyltrimethylammonium Chloride / Fatty Alcohol / Water and Their Responsive Behaviors to Preparation Processes, Storage Time and Shear.",
+        "filename": "IFSCC2025-1766.pdf"
+      },
+      {
+        "id": "IFSCC2025-397",
+        "title": "Dihydromyricetin: extraction, efficacy tests and its application in cosmetics",
+        "filename": "IFSCC2025-397.pdf"
+      },
+      {
+        "id": "IFSCC2025-1278",
+        "title": "Distinct Body Site-Specific Profiles in 3D-cultured Human Donor Hypodermis-Derived Models: Implications for Targeted Skincare Product Development",
+        "filename": "IFSCC2025-1278.pdf"
+      },
+      {
+        "id": "IFSCC2025-1538",
+        "title": "Driving The Next Level Of Personalization Through Ai-Powered Feedback Tool And Consumer Insights In Beauty-Tech",
+        "filename": "IFSCC2025-1538.pdf"
+      },
+      {
+        "id": "IFSCC2025-839",
+        "title": "Droplet Control Technology For Ethanol Free Fragrance",
+        "filename": "IFSCC2025-839.pdf"
+      },
+      {
+        "id": "IFSCC2025-1409",
+        "title": "Effects of Fermentation on the Components of Noni Seed Oil and Its skincare Activity",
+        "filename": "IFSCC2025-1409.pdf"
+      },
+      {
+        "id": "IFSCC2025-1093",
+        "title": "Efficacy and Safety of a Functional Repair Product Containing Multi-effect Repair Materials after 1565 nm Non-ablative Fractional Laser for Facial Rejuvenation in Asia",
+        "filename": "IFSCC2025-1093.pdf"
+      },
+      {
+        "id": "IFSCC2025-1466",
+        "title": "Efficacy evaluation of a novel serum formulation on improving skin redness and overall skin health in sensitive skin: Short-term and Long-term study",
+        "filename": "IFSCC2025-1466.pdf"
+      },
+      {
+        "id": "IFSCC2025-1397",
+        "title": "Efficacy of a Novel Anti-acne serum in reducing acne lesions and PIH management in polluted environments",
+        "filename": "IFSCC2025-1397.pdf"
+      },
+      {
+        "id": "IFSCC2025-929",
+        "title": "Efficacy of Mandelic Acid Serum on Acne Treatment and Recurrence Prevention",
+        "filename": "IFSCC2025-929.pdf"
+      },
+      {
+        "id": "IFSCC2025-1225",
+        "title": "Efficacy Study of A New Composition With The Effect of Improving The Appearance of Scars And Stretch Marks",
+        "filename": "IFSCC2025-1225.pdf"
+      },
+      {
+        "id": "IFSCC2025-1029",
+        "title": "Enhanced Solubility and Stability of Resveratrol Using Deep Eutectic Solvent and Liposome Encapsulation",
+        "filename": "IFSCC2025-1029.pdf"
+      },
+      {
+        "id": "IFSCC2025-1256",
+        "title": "Enhanced Transdermal Delivery and Efficacy through Combined Microneedle and Serum Applications",
+        "filename": "IFSCC2025-1256.pdf"
+      },
+      {
+        "id": "IFSCC2025-1043",
+        "title": "Enhancement of Film-Forming Properties in Color Cosmetics Through Plasticizer Integration: Focus on Trimethylsiloxysilicate and Plasticizer System",
+        "filename": "IFSCC2025-1043.pdf"
+      },
+      {
+        "id": "IFSCC2025-1369",
+        "title": "Enhancing Fragrance Persistence and Intensity: Evaluation of Hydroxypropyl Methylcellulose Stearoxy Ether as a Fragrance-Boosting Agent",
+        "filename": "IFSCC2025-1369.pdf"
+      },
+      {
+        "id": "IFSCC2025-477",
+        "title": "Enhancing Intradermal Permeability: The Efficacy of Selaginella tamariscina-derived Polysaccharides",
+        "filename": "IFSCC2025-477.pdf"
+      },
+      {
+        "id": "IFSCC2025-985",
+        "title": "Enhancing Retinol Efficacy: Addressing Challenges with Solid Lipid Particle Technology",
+        "filename": "IFSCC2025-985.pdf"
+      },
+      {
+        "id": "IFSCC2025-834",
+        "title": "Enhancing sensory and rheological properties of serums and creams with lotus water: a comprehensive textural and rheological analysis",
+        "filename": "IFSCC2025-834.pdf"
+      },
+      {
+        "id": "IFSCC2025-881",
+        "title": "Enhancing Skincare Efficacy: A Synergistic Formulation of N-Acetylneuraminic acid and Ozonated Oil",
+        "filename": "IFSCC2025-881.pdf"
+      },
+      {
+        "id": "IFSCC2025-1190",
+        "title": "Enhancing Sun Protection Factor of O/W Sunscreen by Modifying Droplet Shape through Regulating Interfacial Crystallization of Oil-Phase Components",
+        "filename": "IFSCC2025-1190.pdf"
+      },
+      {
+        "id": "IFSCC2025-869",
+        "title": "Establishment of a high cell-density suspension culture system of Adenium obesum and evaluation of the efficacy of the culture extracts",
+        "filename": "IFSCC2025-869.pdf"
+      },
+      {
+        "id": "IFSCC2025-859",
+        "title": "Establishment of large-scale production process for exosome like nanovesicles derived from Dunaliella salina and evaluation of their stability",
+        "filename": "IFSCC2025-859.pdf"
+      },
+      {
+        "id": "IFSCC2025-1714",
+        "title": "Evaluating the Influence of Application Techniques on the Efficacy and Safety of Chemical Peeling Serum: A Study of Leave-On and Rinse-Off Methods",
+        "filename": "IFSCC2025-1714.pdf"
+      },
+      {
+        "id": "IFSCC2025-1801",
+        "title": "Evaluation Of Niacinamide And N-Acetyl Glucosamine (Nag) Moisturizing Gel On Indonesian Teenagers’ Skin",
+        "filename": "IFSCC2025-1801.pdf"
+      },
+      {
+        "id": "IFSCC2025-1561",
+        "title": "Exploring Nordic Cica: Unlocking the Potential of Finnish Bio-Based Raw Materials in Skincare Applications",
+        "filename": "IFSCC2025-1561.pdf"
+      },
+      {
+        "id": "IFSCC2025-1010",
+        "title": "Exploring the role of natural deep eutectic solvents in shaping cosmetic gels properties",
+        "filename": "IFSCC2025-1010.pdf"
+      },
+      {
+        "id": "IFSCC2025-857",
+        "title": "Formation and Stability Improvement of Transparent Bi-continuous Microemulsion of Kyol Oil with Type-1 Collagen Synthesis Effect",
+        "filename": "IFSCC2025-857.pdf"
+      },
+      {
+        "id": "IFSCC2025-1638",
+        "title": "Formulating alcohol-free fragrance formulas with similar olfactory performances as alcoholic-based ones",
+        "filename": "IFSCC2025-1638.pdf"
+      },
+      {
+        "id": "IFSCC2025-695",
+        "title": "Formulation Design for Clear Sunscreens",
+        "filename": "IFSCC2025-695.pdf"
+      },
+      {
+        "id": "IFSCC2025-1594",
+        "title": "Formulation of a body mud cream for clinically proven draining and firming efficacy in association with a dedicated massage technique.",
+        "filename": "IFSCC2025-1594.pdf"
+      },
+      {
+        "id": "IFSCC2025-1512",
+        "title": "From Color to Decision: A Python-Based Approach to Predicting Delta E Ranges",
+        "filename": "IFSCC2025-1512.pdf"
+      },
+      {
+        "id": "IFSCC2025-302",
+        "title": "Glyco-san: A Multifunctional Chitosan-Based Technology for Enhanced Cleanser Performance",
+        "filename": "IFSCC2025-302.pdf"
+      },
+      {
+        "id": "IFSCC2025-180",
+        "title": "Harnessing the Power of Jasmine Sambac: Enhancing Skin Viscoelasticity through Olfactory Stimulation",
+        "filename": "IFSCC2025-180.pdf"
+      },
+      {
+        "id": "IFSCC2025-307",
+        "title": "How can we predict health conditions beyond skin color? Revisiting skin-tone homogeneity",
+        "filename": "IFSCC2025-307.pdf"
+      },
+      {
+        "id": "IFSCC2025-652",
+        "title": "How smell can evoke product awareness - development of a highclass fragrance for cosmetic application",
+        "filename": "IFSCC2025-652.pdf"
+      },
+      {
+        "id": "IFSCC2025-696",
+        "title": "Illuminating Hidden Patterns of Skin Aging through AI-Driven Insights",
+        "filename": "IFSCC2025-696.pdf"
+      },
+      {
+        "id": "IFSCC2025-633",
+        "title": "Impact of the simultaneous presence of surfactants and particles on the quality of a cosmetic emulsion: interaction mechanisms",
+        "filename": "IFSCC2025-633.pdf"
+      },
+      {
+        "id": "IFSCC2025-843",
+        "title": "Innovative self-assembly technology: a supramolecular ruddy complexion microcapsule with high efficiency for eliminating yellow and whitening",
+        "filename": "IFSCC2025-843.pdf"
+      },
+      {
+        "id": "IFSCC2025-1460",
+        "title": "Instant anti-redness effect evaluation of a novel serum formulation",
+        "filename": "IFSCC2025-1460.pdf"
+      },
+      {
+        "id": "IFSCC2025-263",
+        "title": "Investigate the versatility and dependability of biopolymers in the production of an oil-water (O/W) emulsion",
+        "filename": "IFSCC2025-263.pdf"
+      },
+      {
+        "id": "IFSCC2025-1513",
+        "title": "Investigating the Root Cause of an Unwanted Odor in Lotion: A Case Study of Metabisulfite Decomposition",
+        "filename": "IFSCC2025-1513.pdf"
+      },
+      {
+        "id": "IFSCC2025-1773",
+        "title": "Investigation on Skin Penetration and Anti-inflammatory Repair of Paeonol/Hydroxyasparaginamide/Heparin Sodium/ Bisabolol/Glycyrrhizic Acid Nanocarriers",
+        "filename": "IFSCC2025-1773.pdf"
+      },
+      {
+        "id": "IFSCC2025-1134",
+        "title": "Investigation on the Impact of Cholesterol Structure on W/O/W Emulsion Stability",
+        "filename": "IFSCC2025-1134.pdf"
+      },
+      {
+        "id": "IFSCC2025-1441",
+        "title": "Leveraging A/B Testing In Beauty-Tech For Advanced Product Development Of Personalized Cosmetics",
+        "filename": "IFSCC2025-1441.pdf"
+      },
+      {
+        "id": "IFSCC2025-1114",
+        "title": "Lipidomics and KEGG Enrichment Analysis Revealed Key Differences Between Dry Sensitive Skin and Oily Sensitive Skin",
+        "filename": "IFSCC2025-1114.pdf"
+      },
+      {
+        "id": "IFSCC2025-1518",
+        "title": "Liposome-Based Delivery Systems for Sustained and Controlled Scent Release: Enhancing Stability and Retention in Cosmetic and Perfumery Applications",
+        "filename": "IFSCC2025-1518.pdf"
+      },
+      {
+        "id": "IFSCC2025-907",
+        "title": "Liquid crystal applications and benefits",
+        "filename": "IFSCC2025-907.pdf"
+      },
+      {
+        "id": "IFSCC2025-636",
+        "title": "Long Lasting Fragrances with High Emotional Impact: a Possible Match?",
+        "filename": "IFSCC2025-636.pdf"
+      },
+      {
+        "id": "IFSCC2025-218",
+        "title": "Long-Lasting Skin Radiance Achieved by Hydrogel-in-Oil Emulsion",
+        "filename": "IFSCC2025-218.pdf"
+      },
+      {
+        "id": "IFSCC2025-1823",
+        "title": "Mandacaru extract (jamacaru cereus) obtained sustainably from Brazilian biodiversity, has undisclosed properties in human skin care.",
+        "filename": "IFSCC2025-1823.pdf"
+      },
+      {
+        "id": "IFSCC2025-1682",
+        "title": "MCB Hair: A Data-Driven Approach to Personalized Hair Color Recommendations Based on Skin Tone",
+        "filename": "IFSCC2025-1682.pdf"
+      },
+      {
+        "id": "IFSCC2025-1534",
+        "title": "Multi-benefit holistic approach tailored for Brazilian market necessities: Hybrid Sunscreen & Make-up product",
+        "filename": "IFSCC2025-1534.pdf"
+      },
+      {
+        "id": "IFSCC2025-1579",
+        "title": "N-Acetyl Glucosamine and Nonapeptide-1 as the Next Affordable, Promising Skin Brightening Agents for the Asian Market",
+        "filename": "IFSCC2025-1579.pdf"
+      },
+      {
+        "id": "IFSCC2025-679",
+        "title": "Network Pharmacology and Experimental Validation of a Novel Multi-Herbal Extract in Acne Treatment: Mechanisms of Action",
+        "filename": "IFSCC2025-679.pdf"
+      },
+      {
+        "id": "IFSCC2025-321",
+        "title": "New formulation design of cleansing products created using foaming science - Foam volume enhancement by controlling viscoelasticity at air-water interface",
+        "filename": "IFSCC2025-321.pdf"
+      },
+      {
+        "id": "IFSCC2025-176",
+        "title": "New testing methods in Beauty, new trends and innovative solutions to evaluate in vivo cosmetics efficacy: a technological panorama of nomad and connected diagnostic devices",
+        "filename": "IFSCC2025-176.pdf"
+      },
+      {
+        "id": "IFSCC2025-733",
+        "title": "Novel plant-derived polycarbon-chain ceramide: an ingredient that promotes endogenous moisturizing and repairing effects",
+        "filename": "IFSCC2025-733.pdf"
+      },
+      {
+        "id": "IFSCC2025-669",
+        "title": "Novel Sialic Acid Nanoliposomes Delivery System with High Stability and Efficacy for Efficient Anti-Aging and Skin-Brightening",
+        "filename": "IFSCC2025-669.pdf"
+      },
+      {
+        "id": "IFSCC2025-1264",
+        "title": "Oil incorporation in water-based solid formats using a new biodegradable polymeric emulsifier",
+        "filename": "IFSCC2025-1264.pdf"
+      },
+      {
+        "id": "IFSCC2025-982",
+        "title": "Optimized Skincare Formulation for Atopic Dermatitis: Validated Through Comprehensive In Vitro and In Vivo Safety and Efficacy Assessments",
+        "filename": "IFSCC2025-982.pdf"
+      },
+      {
+        "id": "IFSCC2025-1361",
+        "title": "Optimizing Active Ingredient Delivery in Personalized Cosmetics by Modulating Flexibility through Liposome Structural Modifications",
+        "filename": "IFSCC2025-1361.pdf"
+      },
+      {
+        "id": "IFSCC2025-1787",
+        "title": "Permeation of small molecules through biological and synthetic skin models using an organ-on-chip platform under controlled dosing conditions.",
+        "filename": "IFSCC2025-1787.pdf"
+      },
+      {
+        "id": "IFSCC2025-1236",
+        "title": "Plant-derived Prinsepia CER-NP, New and Green Skincare Active in Soothing, Immune-regulating and Antioxidant",
+        "filename": "IFSCC2025-1236.pdf"
+      },
+      {
+        "id": "IFSCC2025-1335",
+        "title": "Polymeric nanomicelles with enhanced stability of retinoids through targeted peptide conjugation and efficient drug loading capabilities.",
+        "filename": "IFSCC2025-1335.pdf"
+      },
+      {
+        "id": "IFSCC2025-1341",
+        "title": "Potentializing and accelerating hair care formulations through design of experiments powered by sensory feedback",
+        "filename": "IFSCC2025-1341.pdf"
+      },
+      {
+        "id": "IFSCC2025-395",
+        "title": "Precipitation morphology and properties of surfactant-polymer complex formed by two cationic polymers",
+        "filename": "IFSCC2025-395.pdf"
+      },
+      {
+        "id": "IFSCC2025-1567",
+        "title": "Predicting Performance in Cosmetics Formulations Through Algorithm Design of Experiment Driven",
+        "filename": "IFSCC2025-1567.pdf"
+      },
+      {
+        "id": "IFSCC2025-787",
+        "title": "Predicting skin aging clinical signs evolution using dermatological knowledge and image generative models",
+        "filename": "IFSCC2025-787.pdf"
+      },
+      {
+        "id": "IFSCC2025-986",
+        "title": "Predicting the Future of Curly Hair Formulations: A Novel Digitally Personalized and Sustainable Approach to Diversity in Hair Care",
+        "filename": "IFSCC2025-986.pdf"
+      },
+      {
+        "id": "IFSCC2025-1125",
+        "title": "Preparation and Characterization of PDRN-Modified Ceramide Cationic Nanoemulsion (PDRN-CER-CNE) for Anti-Photoaging Cosmetics",
+        "filename": "IFSCC2025-1125.pdf"
+      },
+      {
+        "id": "IFSCC2025-1191",
+        "title": "Preparation of fermented extract derived from peony stamens and assessment of its effectiveness in cosmetic applications",
+        "filename": "IFSCC2025-1191.pdf"
+      },
+      {
+        "id": "IFSCC2025-759",
+        "title": "Rapid and Non-Invasive Skin Viscoelasticity Measurement via Indentation and Relaxation",
+        "filename": "IFSCC2025-759.pdf"
+      },
+      {
+        "id": "IFSCC2025-796",
+        "title": "Redefining Sustainable Cosmetic Emulsions: Natural Deep Eutectic Solvents as key ingredients",
+        "filename": "IFSCC2025-796.pdf"
+      },
+      {
+        "id": "IFSCC2025-991",
+        "title": "Repairing Effect of Fibronectin and Its Compositions on Damaged Skin",
+        "filename": "IFSCC2025-991.pdf"
+      },
+      {
+        "id": "IFSCC2025-325",
+        "title": "Research on influencing parameters of the soaping effect in skin care emulsion and its formation mechanism",
+        "filename": "IFSCC2025-325.pdf"
+      },
+      {
+        "id": "IFSCC2025-1461",
+        "title": "Research on the Evaluation Method of a Dual-Tube Facial Cleanser Product with Selective Cleaning Ability",
+        "filename": "IFSCC2025-1461.pdf"
+      },
+      {
+        "id": "IFSCC2025-1445",
+        "title": "Research on the Tolerance to Hard Water of a Body Wash",
+        "filename": "IFSCC2025-1445.pdf"
+      },
+      {
+        "id": "IFSCC2025-973",
+        "title": "Revolutionary Sunscreen Technology: Broad-Spectrum (UV + Blue Light) Protection with Non-Penetrating Filters, Pollution Protection, Translucent Jelly Texture and Customizable Shades, and Skin Tone Correction",
+        "filename": "IFSCC2025-973.pdf"
+      },
+      {
+        "id": "IFSCC2025-1368",
+        "title": "Revolutionizing Pore-care - A Breakthrough Approach for Effective and Gentle Removal of Keratotic Plugs for Healthier Skin",
+        "filename": "IFSCC2025-1368.pdf"
+      },
+      {
+        "id": "IFSCC2025-1694",
+        "title": "RNA Interference in Cosmetic Innovation: Advancing Skin Whitening, Anti-Aging, Hypoallergenic Properties, and Beauty Enhancement.",
+        "filename": "IFSCC2025-1694.pdf"
+      },
+      {
+        "id": "IFSCC2025-1563",
+        "title": "Rubbing Degradable Hydrogel-Liposome Composite Particles to Enhance Transdermal Delivery in Cosmetic Applications",
+        "filename": "IFSCC2025-1563.pdf"
+      },
+      {
+        "id": "IFSCC2025-1277",
+        "title": "Scalable production and characterization of silk-based emulsion for cosmetic application",
+        "filename": "IFSCC2025-1277.pdf"
+      },
+      {
+        "id": "IFSCC2025-1367",
+        "title": "Screening Methods for Organic Acids: Based on Skin Protein Receptors and Molecular Docking Techniques",
+        "filename": "IFSCC2025-1367.pdf"
+      },
+      {
+        "id": "IFSCC2025-799",
+        "title": "Silica-encapsulated Liposome Particles for High Loading and Release of HHydrophilic Niacinamide and Hydrophobic Retinol",
+        "filename": "IFSCC2025-799.pdf"
+      },
+      {
+        "id": "IFSCC2025-987",
+        "title": "Skin during pregnancy: explore its needs to develop a new multipurpose lotion",
+        "filename": "IFSCC2025-987.pdf"
+      },
+      {
+        "id": "IFSCC2025-493",
+        "title": "Skin Surface Biomarkers: Non-Invasive Assessment and Clinical Implications",
+        "filename": "IFSCC2025-493.pdf"
+      },
+      {
+        "id": "IFSCC2025-1321",
+        "title": "Solid Lipid Nanoparticles Highly Loaded With Brazilian Biodiversity Amazon Butters: One Alternative To Improve Their Product Sensory And Rheology",
+        "filename": "IFSCC2025-1321.pdf"
+      },
+      {
+        "id": "IFSCC2025-417",
+        "title": "Study on the regulation of collagen and anti-aging by hydroxypropyl tetrahydropyrantriol nanocarriers",
+        "filename": "IFSCC2025-417.pdf"
+      },
+      {
+        "id": "IFSCC2025-1024",
+        "title": "Study on the Stabilization and Improved Usability of W/O Foundation Formulations Containing High Concentration Pigments Using Naturally Derived Emulsifiers and Polymers",
+        "filename": "IFSCC2025-1024.pdf"
+      },
+      {
+        "id": "IFSCC2025-1148",
+        "title": "Surfactin-Based Bio-compatible Carrier for Controlled Release of Fragrances",
+        "filename": "IFSCC2025-1148.pdf"
+      },
+      {
+        "id": "IFSCC2025-1722",
+        "title": "The Anti-inflammatory and Antioxidant Effects of Cell-Free Culture Supernatant of Probiotic Staphylococcus epidermidis CCSM0287 through the MAPK/ NF-　B Signaling Pathways in HaCaT cell induced by UVB",
+        "filename": "IFSCC2025-1722.pdf"
+      },
+      {
+        "id": "IFSCC2025-909",
+        "title": "The Application of a Novel Wrapping Technique for Oleuropein to Improve its Stability and Bioavailability",
+        "filename": "IFSCC2025-909.pdf"
+      },
+      {
+        "id": "IFSCC2025-421",
+        "title": "The Challenge of Achieving Both Water-Holding Capability and Water Resistance: Innovations in Plant-Derived Multifunctional Amphiphilic Polymer Esters",
+        "filename": "IFSCC2025-421.pdf"
+      },
+      {
+        "id": "IFSCC2025-1163",
+        "title": "The development of anti-glycating Lonicera japonica plant extract through molecular docking and virtual screening of 13 plant-derived phenolic compounds for anti-glycation targets of aldose reductase, RAGE and PPARG.",
+        "filename": "IFSCC2025-1163.pdf"
+      },
+      {
+        "id": "IFSCC2025-628",
+        "title": "The efficacy and safety of physical osmosis technology synergized with peptide anti-aging eye serums",
+        "filename": "IFSCC2025-628.pdf"
+      },
+      {
+        "id": "IFSCC2025-1746",
+        "title": "The fermented milk by Streptococcus thermophilus CGMCC24468 prevents oxidative damage of H2O2 to HaCaT via modulating MAPK/ERK signaling pathway",
+        "filename": "IFSCC2025-1746.pdf"
+      },
+      {
+        "id": "IFSCC2025-1620",
+        "title": "The Future of Innovation: Unveiling the Science of Skin Diversity to Drive Cosmetic Advancements",
+        "filename": "IFSCC2025-1620.pdf"
+      },
+      {
+        "id": "IFSCC2025-1535",
+        "title": "The perfect balance of texture and sustainability: Optimization of sunscreen with enhanced sensory performance and eco conscious filters to encourage daily photoprotection usage",
+        "filename": "IFSCC2025-1535.pdf"
+      },
+      {
+        "id": "IFSCC2025-368",
+        "title": "The skin liquid rinse concept: New technology for gently washing the skin",
+        "filename": "IFSCC2025-368.pdf"
+      },
+      {
+        "id": "IFSCC2025-1286",
+        "title": "Transforming Global Consumer Engagement with a new polyglotte digital conversational Avatar",
+        "filename": "IFSCC2025-1286.pdf"
+      },
+      {
+        "id": "IFSCC2025-1813",
+        "title": "Using Cryo FIB-SEM and Confocal Microscopy to Visualise the Microstructure of Skincare Formulations",
+        "filename": "IFSCC2025-1813.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Melanogenesis / Pigmentation",
+    "folder": "07_Melanogenesis, Pigmentation",
+    "papers": [
+      {
+        "id": "IFSCC2025-1046",
+        "title": "A novel toner-emulsion bundle through multi-pathway approach for holistic skin tone management: Addressing brightness, yellowness and redness",
+        "filename": "IFSCC2025-1046.pdf"
+      },
+      {
+        "id": "IFSCC2025-621",
+        "title": "A Unique Silk Microneedle Delivery Platform Integrated with Co-Delivery Nanoliposomes Facilitates Efficient and Safe Skin Pigmentation Treatment",
+        "filename": "IFSCC2025-621.pdf"
+      },
+      {
+        "id": "IFSCC2025-764",
+        "title": "An Image-Based Method for Assessing Depigmenting Agents in Reconstructed Human Pigmented Epidermis Models",
+        "filename": "IFSCC2025-764.pdf"
+      },
+      {
+        "id": "IFSCC2025-1293",
+        "title": "Characterization of the axillary skin as a support for the development of cosmetic formulations for the control of hyperpigmentation",
+        "filename": "IFSCC2025-1293.pdf"
+      },
+      {
+        "id": "IFSCC2025-1429",
+        "title": "Chemical Constituents and Whitening Activity of Compounds Isolated from Saussurea Involucrata",
+        "filename": "IFSCC2025-1429.pdf"
+      },
+      {
+        "id": "IFSCC2025-1110",
+        "title": "Comprehensive Improvement of Post-Acne Pigmentation Effects through the Novel Cosmetic Whitening Ingredient Phenethylresorcinol/Mandelic Acid Double-Layer Composite Nanoemulsion",
+        "filename": "IFSCC2025-1110.pdf"
+      },
+      {
+        "id": "IFSCC2025-1753",
+        "title": "Comprehensive Study on the Innovative Mechanism of Hyaluronic Acid, Tranexamic Acid and Extremophile Red Algae Combination for Holistic Skin Tone Correction",
+        "filename": "IFSCC2025-1753.pdf"
+      },
+      {
+        "id": "IFSCC2025-1294",
+        "title": "Cosmetic Potential of Stellaria alsine Extract: Anti-Aging, Anti-Inflammatory, and Brightening Properties of an Underrated Botanical",
+        "filename": "IFSCC2025-1294.pdf"
+      },
+      {
+        "id": "IFSCC2025-341",
+        "title": "Development of a Triple Permeation System Integrated with Nanocarrier, Atomization and Electro-Enhanced Permeation Technologies for Efficient Skin-Whitening, Repairing and Percutaneous Penetration",
+        "filename": "IFSCC2025-341.pdf"
+      },
+      {
+        "id": "IFSCC2025-1197",
+        "title": "Effects of CP-AcT on Melanin Synthesis and Regulation of Inflammatory Factors I Terasse I ZONE B I",
+        "filename": "IFSCC2025-1197.pdf"
+      },
+      {
+        "id": "IFSCC2025-1360",
+        "title": "Explore the optimal solution for skin color: nicotinamide combined with traditional plant active essence to create a good complexion in all dimensions",
+        "filename": "IFSCC2025-1360.pdf"
+      },
+      {
+        "id": "IFSCC2025-1201",
+        "title": "Exploring the Efficacy of Niacinamide and Ascorbyl Tetraisopalmitate in Lip-Brightening Serum Formulation",
+        "filename": "IFSCC2025-1201.pdf"
+      },
+      {
+        "id": "IFSCC2025-717",
+        "title": "Exploring the Synergistic Anti-Pigment Efficacy and Mechanisms of a Crithmum Maritimum Ferment-Phenylethyl Resorcinol Complex",
+        "filename": "IFSCC2025-717.pdf"
+      },
+      {
+        "id": "IFSCC2025-683",
+        "title": "From anti-yellowing to anti-aging: innovative herbal research and application of Qise complex",
+        "filename": "IFSCC2025-683.pdf"
+      },
+      {
+        "id": "IFSCC2025-399",
+        "title": "Glabridin blocks TRPV1 activation and inhibits skin inflammation",
+        "filename": "IFSCC2025-399.pdf"
+      },
+      {
+        "id": "IFSCC2025-597",
+        "title": "Harnessing Bifidobacterium Adolescentis Fermentation as Skin’s Aurora Palette for Achieving Even Sensitive Skin Tone",
+        "filename": "IFSCC2025-597.pdf"
+      },
+      {
+        "id": "IFSCC2025-1640",
+        "title": "Hydroquinone-Free Skincare Treatment for Hyperpigmented Facial Skin: An Effective, Well-Tolerated, and Safe Approach for Japanese Patients",
+        "filename": "IFSCC2025-1640.pdf"
+      },
+      {
+        "id": "IFSCC2025-1767",
+        "title": "Implementation and Validation of a Pigmentation Model Using B16-F10 Melanoma Cells for Dermatological Applications I Terasse I ZONE C I",
+        "filename": "IFSCC2025-1767.pdf"
+      },
+      {
+        "id": "IFSCC2025-1528",
+        "title": "In vivo multi-scale evaluation of brightening product efficacy on hyperpigmented spots in high phototype skin",
+        "filename": "IFSCC2025-1528.pdf"
+      },
+      {
+        "id": "IFSCC2025-308",
+        "title": "Integrin ligands from the dermis: modulators of epidermal aging, including persistent pigmented spots",
+        "filename": "IFSCC2025-308.pdf"
+      },
+      {
+        "id": "IFSCC2025-739",
+        "title": "Naringin: Bridging Correlation and Causation in Methylglyoxal Metabolism and Skin Lightening",
+        "filename": "IFSCC2025-739.pdf"
+      },
+      {
+        "id": "IFSCC2025-602",
+        "title": "New strategy for dark spot prevention with cosmetics: Unveiling an upstream epigenetic switch that triggers the formation of dark spots and its novel solution",
+        "filename": "IFSCC2025-602.pdf"
+      },
+      {
+        "id": "IFSCC2025-1314",
+        "title": "Novel cosmetic for infraorbital dark circles: clinical efficacy and skin tolerance of a formulation containing vectorized caffeine, matrikines, chrysin and tranexamic acid",
+        "filename": "IFSCC2025-1314.pdf"
+      },
+      {
+        "id": "IFSCC2025-194",
+        "title": "Oxyresveratrol: A Novel, Gentle and Effective Skin Whitening Ingredient for Sensitive Skin",
+        "filename": "IFSCC2025-194.pdf"
+      },
+      {
+        "id": "IFSCC2025-858",
+        "title": "Photoacoustic-ultrasound dual-mode microscopic imaging of depth-resolved melanin distribution in facial skin for assessment of aging",
+        "filename": "IFSCC2025-858.pdf"
+      },
+      {
+        "id": "IFSCC2025-1456",
+        "title": "Preparation of supramolecular BR LicoA VE for promoting permeability and whitening effects",
+        "filename": "IFSCC2025-1456.pdf"
+      },
+      {
+        "id": "IFSCC2025-1406",
+        "title": "Real-Time Monitoring of Melanosome Dynamics: Using Holotomographic Microscopy for Pigmentation Control",
+        "filename": "IFSCC2025-1406.pdf"
+      },
+      {
+        "id": "IFSCC2025-1222",
+        "title": "Revolutionizing Skin Tone Management: Glucuronyl Glucosyloleanolate, a Natural and AI-Discovered Compound",
+        "filename": "IFSCC2025-1222.pdf"
+      },
+      {
+        "id": "IFSCC2025-613",
+        "title": "Senescent Keratinocytes as Melanin Vacuums: Targeting the Melanin-accumulated Cells for Advanced Skin Brightening",
+        "filename": "IFSCC2025-613.pdf"
+      },
+      {
+        "id": "IFSCC2025-765",
+        "title": "Study of Chinese skin pigmentation and solutions.",
+        "filename": "IFSCC2025-765.pdf"
+      },
+      {
+        "id": "IFSCC2025-1450",
+        "title": "Study on the Preparation of Resveratrol Molecular Inclusion Complexes Assisted by Cellpolypid and Evaluation of Their Skin Whitening Efficacy",
+        "filename": "IFSCC2025-1450.pdf"
+      },
+      {
+        "id": "IFSCC2025-660",
+        "title": "Synergistic effects of a novel ascorbic acid-carnosine conjugates and its composition on skin protection and whitening for next generation skincare",
+        "filename": "IFSCC2025-660.pdf"
+      },
+      {
+        "id": "IFSCC2025-207",
+        "title": "Synergistic Effects of Carnosine and Retinol in Inhibiting Melanogenesis in Human Melanoma MNT-1 Cells",
+        "filename": "IFSCC2025-207.pdf"
+      },
+      {
+        "id": "IFSCC2025-357",
+        "title": "The curious case of the MC1R-inhibiting depigmenting peptide: new hypothesis for pathway link with sensitive skin",
+        "filename": "IFSCC2025-357.pdf"
+      },
+      {
+        "id": "IFSCC2025-1133",
+        "title": "Whitening promotion of Ascorbyl Tetraisopalmitate (VCIP) nano emulsion through surfactin encapsulation",
+        "filename": "IFSCC2025-1133.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Hair",
+    "folder": "08_Hair",
+    "papers": [
+      {
+        "id": "IFSCC2025-818",
+        "title": "15-prostaglandin dehydrogenase Inhibitor Improves Dihydrotestosterone-Damaged Human Dermal Microvascular Endothelial Cells",
+        "filename": "IFSCC2025-818.pdf"
+      },
+      {
+        "id": "IFSCC2025-855",
+        "title": "A Holistic Approach to Scalp and Hair Health: Discovery of Novel Genetic Markers and Lifestyle Factors",
+        "filename": "IFSCC2025-855.pdf"
+      },
+      {
+        "id": "IFSCC2025-249",
+        "title": "A Novel Biomimetic Approach Focused on Branched Alkyl Chains",
+        "filename": "IFSCC2025-249.pdf"
+      },
+      {
+        "id": "IFSCC2025-371",
+        "title": "A Novel Polymeric Malassezia Inhibitor for Anti-dandruff",
+        "filename": "IFSCC2025-371.pdf"
+      },
+      {
+        "id": "IFSCC2025-854",
+        "title": "A Randomized Clinical Trial Assessing the Noninferiority of an Alcohol-Free Adenosine Formula Versus 2% Minoxidil in Mild Alopecia",
+        "filename": "IFSCC2025-854.pdf"
+      },
+      {
+        "id": "IFSCC2025-1130",
+        "title": "A Study on the Effects of Hordeum vulgare extract on Hair Loss Improvement and Scalp Health",
+        "filename": "IFSCC2025-1130.pdf"
+      },
+      {
+        "id": "IFSCC2025-573",
+        "title": "A target approach to textured hair: hair treatment containing murumuru butter for children",
+        "filename": "IFSCC2025-573.pdf"
+      },
+      {
+        "id": "IFSCC2025-1551",
+        "title": "Addressing Rheology and Performance Challenges in Non-Sulfate Formulations with Functional Polysaccharides",
+        "filename": "IFSCC2025-1551.pdf"
+      },
+      {
+        "id": "IFSCC2025-1833",
+        "title": "Advancing Hair Care: Unlocking the science of hair reconstruction and the power of adaptative natural solutions I Foyer Debussy I ZONE F I",
+        "filename": "IFSCC2025-1833.pdf"
+      },
+      {
+        "id": "IFSCC2025-814",
+        "title": "Assessing Chemical Treatment-Induced Hair Damages and Conditioner Recovery Efficacy Utilizing Integrative Analytical Approaches Supported by Nuclear Magnetic Resonance (NMR) Spectroscopy",
+        "filename": "IFSCC2025-814.pdf"
+      },
+      {
+        "id": "IFSCC2025-999",
+        "title": "Assessing Hair’s Internal Porosity Using Scanning Electron Microscopy",
+        "filename": "IFSCC2025-999.pdf"
+      },
+      {
+        "id": "IFSCC2025-505",
+        "title": "Better 8, better you: A hair transformation technology that remodels keratin bonds with the precision of art",
+        "filename": "IFSCC2025-505.pdf"
+      },
+      {
+        "id": "IFSCC2025-1052",
+        "title": "Characterizing Scalp Stratum Corneum Turnover: A Novel Application of Dansyl Chloride and Photography",
+        "filename": "IFSCC2025-1052.pdf"
+      },
+      {
+        "id": "IFSCC2025-1255",
+        "title": "Development of a novel Green conditioning agent produced by a sustainable route from the Amazon Pracaxi Oil",
+        "filename": "IFSCC2025-1255.pdf"
+      },
+      {
+        "id": "IFSCC2025-647",
+        "title": "Development of an Advanced System for Estimating the Number of Overlapping Hair Cuticles Through the Analysis of Hair Surface Image Data Utilizing a Newly Developed AI Model",
+        "filename": "IFSCC2025-647.pdf"
+      },
+      {
+        "id": "IFSCC2025-241",
+        "title": "Discovery and analysis of a novel hair damage mechanism, ‘Glyco-oxidation’",
+        "filename": "IFSCC2025-241.pdf"
+      },
+      {
+        "id": "IFSCC2025-1301",
+        "title": "Efficacy of a blend esters plant-based oils and avocado oil on the mechanical properties of bleached coily hair",
+        "filename": "IFSCC2025-1301.pdf"
+      },
+      {
+        "id": "IFSCC2025-1634",
+        "title": "Efficacy of a newly developed hydroxylated grapeseed oil on hair growth stimulation",
+        "filename": "IFSCC2025-1634.pdf"
+      },
+      {
+        "id": "IFSCC2025-948",
+        "title": "Empowering PO: Synergistic mixture of diols and piroctone olamine for anti-dandruff application and beyond",
+        "filename": "IFSCC2025-948.pdf"
+      },
+      {
+        "id": "IFSCC2025-278",
+        "title": "Encapsulation of pequi oil optimize by the spray drying process and application in a leave-in formulation for curly and straight hair",
+        "filename": "IFSCC2025-278.pdf"
+      },
+      {
+        "id": "IFSCC2025-1843",
+        "title": "Epidemiologic, Clinical and Therapeutic aspects of Alopecia Areata in children seen in the Dermatology department at the University Hospital of Befelatanana, Antananarivo, Madagascar",
+        "filename": "IFSCC2025-1843.pdf"
+      },
+      {
+        "id": "IFSCC2025-1526",
+        "title": "Esterquat Derived From Sunflower Oil With Definition And Retention Of Curl In Conditioner For Hair Care Products",
+        "filename": "IFSCC2025-1526.pdf"
+      },
+      {
+        "id": "IFSCC2025-819",
+        "title": "Exosomes Isolated from Iris germanica L. Rhizome Recovered Human Follicle Dermal Papilla Cells Impaired by Dihydrotestosterone",
+        "filename": "IFSCC2025-819.pdf"
+      },
+      {
+        "id": "IFSCC2025-1388",
+        "title": "Explorations of consumer relevant testing of textured hair",
+        "filename": "IFSCC2025-1388.pdf"
+      },
+      {
+        "id": "IFSCC2025-517",
+        "title": "Eyelash Growth Cosmetics Containing Aleurites moluccanus (AMS) Oil: Hair Growth Mechanism by Antioxidant Nrf2/ARE-AKR1C Family- PGF2 Axis Activity",
+        "filename": "IFSCC2025-517.pdf"
+      },
+      {
+        "id": "IFSCC2025-983",
+        "title": "Hair and environmental stress: evaluation of the protective effect of a cosmetic product against particle and UV pollution stress by instrumental methods",
+        "filename": "IFSCC2025-983.pdf"
+      },
+      {
+        "id": "IFSCC2025-250",
+        "title": "Hard Water Makes Hair and Scalp Barrier Function Weaker ~ To protect hair and scalp from silent damage ~",
+        "filename": "IFSCC2025-250.pdf"
+      },
+      {
+        "id": "IFSCC2025-504",
+        "title": "Helichrysum italicum essential oil promotes hair growth by enhancing IGF-1 signalling ex vivo",
+        "filename": "IFSCC2025-504.pdf"
+      },
+      {
+        "id": "IFSCC2025-1475",
+        "title": "Impact of Hydrogen Peroxide on Hair Fiber and Follicle Integrity: A Study Combining FTIR-ATR, Mechanical Strength and Immunostaining of Proteins Related to Melanogenesis",
+        "filename": "IFSCC2025-1475.pdf"
+      },
+      {
+        "id": "IFSCC2025-1735",
+        "title": "Innovate in the formulation of hair products through quantitative sensory analysis and an expert panel on treated strands.",
+        "filename": "IFSCC2025-1735.pdf"
+      },
+      {
+        "id": "IFSCC2025-930",
+        "title": "Innovative Delivery Systems for a DNA Aptamer Promoting Hair Growth",
+        "filename": "IFSCC2025-930.pdf"
+      },
+      {
+        "id": "IFSCC2025-1183",
+        "title": "Innovative Hair Care: Upcycled Oligopeptides as Sustainable Alternatives to Quaternary Ammonium Compounds",
+        "filename": "IFSCC2025-1183.pdf"
+      },
+      {
+        "id": "IFSCC2025-654",
+        "title": "Innovative protein cross-linking technology using natural polyphenols to restore hair structure: Recovery of hair strength using quinone cross-linking in hair dye treatments containing hydrogen peroxide",
+        "filename": "IFSCC2025-654.pdf"
+      },
+      {
+        "id": "IFSCC2025-1434",
+        "title": "Instrumental approach for the eco-design of hair styling products: rheology and texture analysis",
+        "filename": "IFSCC2025-1434.pdf"
+      },
+      {
+        "id": "IFSCC2025-578",
+        "title": "Investigating hair follicle aging - DNA intercalation induces senescence markers, shortens anagen phase and reduces hair shaft production in healthy human hair follicles ex vivo",
+        "filename": "IFSCC2025-578.pdf"
+      },
+      {
+        "id": "IFSCC2025-651",
+        "title": "Investigation of the Interactions of Conditioners with Human Hair by Electrokinetic Analysis",
+        "filename": "IFSCC2025-651.pdf"
+      },
+      {
+        "id": "IFSCC2025-154",
+        "title": "Kopexil and Kopyrrol Co-Delivery Nanoliposomes Targeting Different Hair Regeneration Pathways for Safe and Effective Androgenetic Alopecia Treatment",
+        "filename": "IFSCC2025-154.pdf"
+      },
+      {
+        "id": "IFSCC2025-1299",
+        "title": "Machine Learning for Hair Volume Analysis: Advancing Methodologies in Cosmetic Science",
+        "filename": "IFSCC2025-1299.pdf"
+      },
+      {
+        "id": "IFSCC2025-418",
+        "title": "Mechanism and solutions for hair thinning: licorice leaf extract inhibits the negative influence of sebum peroxidation on the scalp",
+        "filename": "IFSCC2025-418.pdf"
+      },
+      {
+        "id": "IFSCC2025-1122",
+        "title": "Mechanism study on sclareolide deposition from rinse-off products",
+        "filename": "IFSCC2025-1122.pdf"
+      },
+      {
+        "id": "IFSCC2025-1348",
+        "title": "Mechanisms of Panthenol Interaction with Hair Keratin: Insights from Spectroscopy and Molecular Modeling",
+        "filename": "IFSCC2025-1348.pdf"
+      },
+      {
+        "id": "IFSCC2025-738",
+        "title": "Mobile Field-Based Extraction of Fresh Prunus speciosa Flower A Solvent-Free, Waterless Novel Approach for Anti-Hair Loss and Scalp Care Benefits",
+        "filename": "IFSCC2025-738.pdf"
+      },
+      {
+        "id": "IFSCC2025-1298",
+        "title": "New Insights into Konjac Glucomannan as a Barrier Agent Against Aromatic Amines in Hair Dyes: Evaluation of Its Protective Mechanisms and Efficacy in Reducing Scalp Irritation and Sensitivity",
+        "filename": "IFSCC2025-1298.pdf"
+      },
+      {
+        "id": "IFSCC2025-747",
+        "title": "Novel Characteristics of Oxidative Dyes: Localization in Hair",
+        "filename": "IFSCC2025-747.pdf"
+      },
+      {
+        "id": "IFSCC2025-344",
+        "title": "Novel hair cleansing technology~Compatibility of cleansing and care functions at high level by lamellar liquid crystal structure~",
+        "filename": "IFSCC2025-344.pdf"
+      },
+      {
+        "id": "IFSCC2025-1549",
+        "title": "Olfactory receptor OR8D1: A new target in Androgenetic Alopecia",
+        "filename": "IFSCC2025-1549.pdf"
+      },
+      {
+        "id": "IFSCC2025-625",
+        "title": "Peony Peptide—A New Naturally Derived Raw Material in Anti-Aging and Anti-Hair Loss Field",
+        "filename": "IFSCC2025-625.pdf"
+      },
+      {
+        "id": "IFSCC2025-562",
+        "title": "Plant exosomes for hair loss prevention though dermal papilla cell stimulation and protection",
+        "filename": "IFSCC2025-562.pdf"
+      },
+      {
+        "id": "IFSCC2025-1035",
+        "title": "Plant substitution therapy improve hair loss　Potential targets and related pathways",
+        "filename": "IFSCC2025-1035.pdf"
+      },
+      {
+        "id": "IFSCC2025-646",
+        "title": "Potential of Skin GAG-Inducing Active Ingredient for Scalp Care: Enhancing Hair Follicle Health from the Bulb",
+        "filename": "IFSCC2025-646.pdf"
+      },
+      {
+        "id": "IFSCC2025-1098",
+        "title": "Preparation and characterization of biota orientalis leaf exosome-like nanovesicles",
+        "filename": "IFSCC2025-1098.pdf"
+      },
+      {
+        "id": "IFSCC2025-1793",
+        "title": "Quantifying Hair Damage: Bridging the Gap Between Subjective and Objective evaluations to Asses Hair Elasticity",
+        "filename": "IFSCC2025-1793.pdf"
+      },
+      {
+        "id": "IFSCC2025-693",
+        "title": "Recombinant Filaggrin 2 Ameliorates DHT-Induced Damage in Dermal Papilla Cells (DPCs)",
+        "filename": "IFSCC2025-693.pdf"
+      },
+      {
+        "id": "IFSCC2025-922",
+        "title": "Rethinking Hair Color Classification: A Data-Driven Framework for Innovation",
+        "filename": "IFSCC2025-922.pdf"
+      },
+      {
+        "id": "IFSCC2025-1084",
+        "title": "Safety and Efficacy Evaluation of a Repairing Essence in Maintaining Hair and Scalp Healthy",
+        "filename": "IFSCC2025-1084.pdf"
+      },
+      {
+        "id": "IFSCC2025-1439",
+        "title": "Skinification: Combining adenosine and a silicium-derivative for scalp care and minoxidil-like effects on hair",
+        "filename": "IFSCC2025-1439.pdf"
+      },
+      {
+        "id": "IFSCC2025-886",
+        "title": "Stress-Induced Hair Greying Modeled Using Human Hair-Bearing Organoids: A Step Toward a Sustainable Future",
+        "filename": "IFSCC2025-886.pdf"
+      },
+      {
+        "id": "IFSCC2025-1356",
+        "title": "Study on the antioxidant capacity of the lotions with Aquilaria Baillonii Wood Oil using different surfactants and Clinical trial with scalp water",
+        "filename": "IFSCC2025-1356.pdf"
+      },
+      {
+        "id": "IFSCC2025-1014",
+        "title": "Study on the Hair Loss Relief and Skin Moisturizing/Barrier Improvement Effects of 3’-Sialyllactose Sodium Salt",
+        "filename": "IFSCC2025-1014.pdf"
+      },
+      {
+        "id": "IFSCC2025-1164",
+        "title": "Study on the scalp characteristics of Chinese people with hair loss",
+        "filename": "IFSCC2025-1164.pdf"
+      },
+      {
+        "id": "IFSCC2025-617",
+        "title": "Study on the unique rare ginsenoside formulation in combination with minoxidil for anti-hair loss",
+        "filename": "IFSCC2025-617.pdf"
+      },
+      {
+        "id": "IFSCC2025-665",
+        "title": "Suppression of Cuticle Peeling by a Low Molecular Weight Amphiphilic Substance",
+        "filename": "IFSCC2025-665.pdf"
+      },
+      {
+        "id": "IFSCC2025-793",
+        "title": "Synergy between a food supplement and a cosmetic care for hair longevity: effects on protein carbonylation, hair pigmentation and texture",
+        "filename": "IFSCC2025-793.pdf"
+      },
+      {
+        "id": "IFSCC2025-1304",
+        "title": "The Future of Hair Care: detangling the knots of innovation",
+        "filename": "IFSCC2025-1304.pdf"
+      },
+      {
+        "id": "IFSCC2025-1706",
+        "title": "The Importance Of Application Gestures To Enhance Formulation Benefits On Curly Hair",
+        "filename": "IFSCC2025-1706.pdf"
+      },
+      {
+        "id": "IFSCC2025-374",
+        "title": "Two-step Enzymatic transformation of Grape Seed Oil to Produce a New Hair Growth-Stimulating active ingredient",
+        "filename": "IFSCC2025-374.pdf"
+      },
+      {
+        "id": "IFSCC2025-229",
+        "title": "Unveiling the Genetic Roots of Gray Hair: The Role of Plexin-A1 in Melanocyte Function and Aging",
+        "filename": "IFSCC2025-229.pdf"
+      },
+      {
+        "id": "IFSCC2025-1452",
+        "title": "Which hairstyles are linked to the perception of Kawaii? The relationship between hair and interpersonal impressions based on eye-tracking analysis",
+        "filename": "IFSCC2025-1452.pdf"
+      },
+      {
+        "id": "IFSCC2025-726",
+        "title": "Zinc-Glycinate boosts holistic beauty of scalp & hair",
+        "filename": "IFSCC2025-726.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Neuro/Sensory Sciences/Emotions",
+    "folder": "09_Neuro, Sensory Sciences, Emotions",
+    "papers": [
+      {
+        "id": "IFSCC2025-293",
+        "title": "3-D Skin Model Study of UV-Induced Sebum Oxidation and Antioxidants",
+        "filename": "IFSCC2025-293.pdf"
+      },
+      {
+        "id": "IFSCC2025-1711",
+        "title": "3d Bioprinted Skin Models To Evaluate Anti-Pollution And Antioxidant Potential Of Compounds From Marine Origin",
+        "filename": "IFSCC2025-1711.pdf"
+      },
+      {
+        "id": "IFSCC2025-1158",
+        "title": "3D model for menopausal skin: advancing personalized and specialized active ingredients and solutions",
+        "filename": "IFSCC2025-1158.pdf"
+      },
+      {
+        "id": "IFSCC2025-1608",
+        "title": "A Dual ZnO Dispersion Strategy for Viscosity Control and LongTerm Stability in Sunscreens",
+        "filename": "IFSCC2025-1608.pdf"
+      },
+      {
+        "id": "IFSCC2025-947",
+        "title": "A Gentle Alternative to AHAs in Improving Desquamation",
+        "filename": "IFSCC2025-947.pdf"
+      },
+      {
+        "id": "IFSCC2025-330",
+        "title": "A Multi-Dimensional Approach For Holistic Appraisal Of Products Acting On Well-Being",
+        "filename": "IFSCC2025-330.pdf"
+      },
+      {
+        "id": "IFSCC2025-667",
+        "title": "A Multi-Dimensional Evaluation of the Effects of Natural Scented Childcare Products on Children’s Emotional Relaxation",
+        "filename": "IFSCC2025-667.pdf"
+      },
+      {
+        "id": "IFSCC2025-1271",
+        "title": "A neuroscience-based multidimensional approach to assess the emotional response generated by olfactory and topical experiences",
+        "filename": "IFSCC2025-1271.pdf"
+      },
+      {
+        "id": "IFSCC2025-447",
+        "title": "A new competent re-innervated human skin model mimicking sensitive skin",
+        "filename": "IFSCC2025-447.pdf"
+      },
+      {
+        "id": "IFSCC2025-1747",
+        "title": "A novel ex vivo test to assess UV-induced oxidation of human sebum and its protective effects",
+        "filename": "IFSCC2025-1747.pdf"
+      },
+      {
+        "id": "IFSCC2025-442",
+        "title": "A Novel SENDS Supermolecule Solution for Simultaneous Photoaging and Thermal Aging Protection",
+        "filename": "IFSCC2025-442.pdf"
+      },
+      {
+        "id": "IFSCC2025-569",
+        "title": "A sleeping mask cream for enhanced relaxation, improved sleep quality and wellbeing: a real-time multimodal neuroscience & AI-driven evaluation of emotional responses",
+        "filename": "IFSCC2025-569.pdf"
+      },
+      {
+        "id": "IFSCC2025-640",
+        "title": "A step beyond self-rating of sensory attributes with artificial intelligence",
+        "filename": "IFSCC2025-640.pdf"
+      },
+      {
+        "id": "IFSCC2025-1678",
+        "title": "A Study on Skin Barrier Damage and Temporary Microvascular Activation by SLS-induced skin irritation",
+        "filename": "IFSCC2025-1678.pdf"
+      },
+      {
+        "id": "IFSCC2025-756",
+        "title": "A Sustainable Approach to Sunscreen: Plant-Derived Starch as a Natural SPF Booster",
+        "filename": "IFSCC2025-756.pdf"
+      },
+      {
+        "id": "IFSCC2025-963",
+        "title": "Accelerating Natural Cosmetic Innovation: A Digital Approach to Predicting Skin Sensitization Potential",
+        "filename": "IFSCC2025-963.pdf"
+      },
+      {
+        "id": "IFSCC2025-1571",
+        "title": "Advanced Human Skin Platform for Accelerated Discovery of Bioactives in Skin Health and Anti-Aging",
+        "filename": "IFSCC2025-1571.pdf"
+      },
+      {
+        "id": "IFSCC2025-445",
+        "title": "AHA-98: A Novel Tetrapeptide Against UV-Induced Skin Photoaging",
+        "filename": "IFSCC2025-445.pdf"
+      },
+      {
+        "id": "IFSCC2025-239",
+        "title": "AI-Driven Peptide Design for MMP1 Inhibition: A Novel Approach to Skincare Innovation",
+        "filename": "IFSCC2025-239.pdf"
+      },
+      {
+        "id": "IFSCC2025-1318",
+        "title": "An active perfume ingredient could stimulate the olfactive receptors of the human skin keratinocytes",
+        "filename": "IFSCC2025-1318.pdf"
+      },
+      {
+        "id": "IFSCC2025-870",
+        "title": "An Innovative Study on Rose Petal Extract (Rosa centifolia L.) for resisting skin stress towards Epidermal Keratinocytes",
+        "filename": "IFSCC2025-870.pdf"
+      },
+      {
+        "id": "IFSCC2025-1070",
+        "title": "Application of Norway Spruce Leaf Extract in Oily Skin Care: a Mechanism and Clinical Study",
+        "filename": "IFSCC2025-1070.pdf"
+      },
+      {
+        "id": "IFSCC2025-380",
+        "title": "Association between hydrophilization of stratum corneum due to residual chlorine in tap water and loss of barrier function",
+        "filename": "IFSCC2025-380.pdf"
+      },
+      {
+        "id": "IFSCC2025-147",
+        "title": "Beauty Beyond Appearance",
+        "filename": "IFSCC2025-147.pdf"
+      },
+      {
+        "id": "IFSCC2025-760",
+        "title": "Beauty in Motion: Insights from Digital Human Simulations of Real Human Facial Movements",
+        "filename": "IFSCC2025-760.pdf"
+      },
+      {
+        "id": "IFSCC2025-1240",
+        "title": "Beyond Brightness: a multi-targeted approach to skin tone enhancement by a novel mask formula",
+        "filename": "IFSCC2025-1240.pdf"
+      },
+      {
+        "id": "IFSCC2025-1121",
+        "title": "Beyond the functionality: Next dimension method of evaluating feel in skincare experience.",
+        "filename": "IFSCC2025-1121.pdf"
+      },
+      {
+        "id": "IFSCC2025-950",
+        "title": "BIOMIMICRY: Study of daisy photoprotection strategies for the development of new cosmetic products",
+        "filename": "IFSCC2025-950.pdf"
+      },
+      {
+        "id": "IFSCC2025-1548",
+        "title": "Brain's role in beauty: the Connection between Stress, Inflammation, Emotional Well-Being",
+        "filename": "IFSCC2025-1548.pdf"
+      },
+      {
+        "id": "IFSCC2025-424",
+        "title": "Bring down skin premature ageing by improving emotional resilience: an innovative Lactobacillus extract as a neuro-cosmetic ingredient",
+        "filename": "IFSCC2025-424.pdf"
+      },
+      {
+        "id": "IFSCC2025-277",
+        "title": "Coffea bengalensis-Derived Extracellular Vesicles: MicroRNA-Mediated Modulation of Skin Inflammation and Neuron Communication",
+        "filename": "IFSCC2025-277.pdf"
+      },
+      {
+        "id": "IFSCC2025-1619",
+        "title": "Comparative analysis of the coverage, uniformity, application time and product consumption of different types of sunscreens",
+        "filename": "IFSCC2025-1619.pdf"
+      },
+      {
+        "id": "IFSCC2025-162",
+        "title": "Complementary effects of saccharide isomerate and dipotassium glycyrrhizate on tight junction barrier dysfunction and nerve activation",
+        "filename": "IFSCC2025-162.pdf"
+      },
+      {
+        "id": "IFSCC2025-1195",
+        "title": "Comprehensive analysis of the protective effects of carnosine and resveratrol combination on skin photodamage using HFF cells and 3D dermal skin model",
+        "filename": "IFSCC2025-1195.pdf"
+      },
+      {
+        "id": "IFSCC2025-367",
+        "title": "Computationally Designed Octapeptide Inspired by Traditional Chinese Medicine for Enhancing Skin Radiance and Well-Aging by Regulating Intercellular Communication",
+        "filename": "IFSCC2025-367.pdf"
+      },
+      {
+        "id": "IFSCC2025-444",
+        "title": "Coreopsis tinctoria Extract: A Natural Remedy for UVA-Induced Photodamage via Mitigation of Endoplasmic Reticulum Stress",
+        "filename": "IFSCC2025-444.pdf"
+      },
+      {
+        "id": "IFSCC2025-1708",
+        "title": "Correlating Triborheology to the Sensory Profile of Cosmetic Formulations",
+        "filename": "IFSCC2025-1708.pdf"
+      },
+      {
+        "id": "IFSCC2025-1472",
+        "title": "Cosmetic composition for skin improvment comprising a novel biopolymer PHA microparticle derived from microbial strain",
+        "filename": "IFSCC2025-1472.pdf"
+      },
+      {
+        "id": "IFSCC2025-1004",
+        "title": "Decoding the Language of Lip Color: A Cross-Cultural Perspective",
+        "filename": "IFSCC2025-1004.pdf"
+      },
+      {
+        "id": "IFSCC2025-1465",
+        "title": "Development and Application of an Eye Irritation Screening Method Based on TRPV1 Channels",
+        "filename": "IFSCC2025-1465.pdf"
+      },
+      {
+        "id": "IFSCC2025-300",
+        "title": "Development and Validation of a Noodling Atlas for Assessing Cosmetic Product Noodling",
+        "filename": "IFSCC2025-300.pdf"
+      },
+      {
+        "id": "IFSCC2025-781",
+        "title": "Development of a Methodology for Assessing Primary Dermal Irritation, Cumulative Irritation, and Skin Sensitization of Nail Products",
+        "filename": "IFSCC2025-781.pdf"
+      },
+      {
+        "id": "IFSCC2025-1350",
+        "title": "Development of a novel micro titanium dioxide with excellent dispersibility",
+        "filename": "IFSCC2025-1350.pdf"
+      },
+      {
+        "id": "IFSCC2025-1652",
+        "title": "Development of an innervated skin-on-a-chip to study neurovascular interactions",
+        "filename": "IFSCC2025-1652.pdf"
+      },
+      {
+        "id": "IFSCC2025-1326",
+        "title": "Development of TA-GNR@TiO2 Core@Shell Composites for IR-A Blocking Cosmetics",
+        "filename": "IFSCC2025-1326.pdf"
+      },
+      {
+        "id": "IFSCC2025-219",
+        "title": "Early onset of tactile sensory deterioration begins in the thirties",
+        "filename": "IFSCC2025-219.pdf"
+      },
+      {
+        "id": "IFSCC2025-805",
+        "title": "Edelweiss Complex: An Emerging Ingredient for Relieving Irritation and Redness in Sensitive Skin and Enhancing Skin Barrier Function",
+        "filename": "IFSCC2025-805.pdf"
+      },
+      {
+        "id": "IFSCC2025-990",
+        "title": "Effectiveness for Sensitive skin: From novel scientific global concept to performance on 3D innervated epidermis",
+        "filename": "IFSCC2025-990.pdf"
+      },
+      {
+        "id": "IFSCC2025-893",
+        "title": "Effects of depth differences in skin internal markers on skin external markers",
+        "filename": "IFSCC2025-893.pdf"
+      },
+      {
+        "id": "IFSCC2025-1471",
+        "title": "Effects of multiple factors on the lasting duration of sunscreens in a real life study",
+        "filename": "IFSCC2025-1471.pdf"
+      },
+      {
+        "id": "IFSCC2025-259",
+        "title": "Elegant Scents Make Time Fly: Psychological Impact of Aroma on Psychological Time",
+        "filename": "IFSCC2025-259.pdf"
+      },
+      {
+        "id": "IFSCC2025-1775",
+        "title": "Emotional assessment of product experience of facial skincare creams in the selective market: implementation of a specific verbal evaluation methodology",
+        "filename": "IFSCC2025-1775.pdf"
+      },
+      {
+        "id": "IFSCC2025-1131",
+        "title": "Emotional measurement methods that combine physiology, behavior, and psychology",
+        "filename": "IFSCC2025-1131.pdf"
+      },
+      {
+        "id": "IFSCC2025-975",
+        "title": "Emotions in Atopic Dermatitis: a new parameter for a better evaluation by parents and children",
+        "filename": "IFSCC2025-975.pdf"
+      },
+      {
+        "id": "IFSCC2025-1185",
+        "title": "Enhancement of the photostability of oxyresveratrol using oxyresveratrol-encapsulated microparticles based on microfluidics",
+        "filename": "IFSCC2025-1185.pdf"
+      },
+      {
+        "id": "IFSCC2025-757",
+        "title": "Enhancing Skin Transparency Through Epigenetic Modulation: A Novel Complex of Dunaliella Salina Extract and Ascorbic Acid Peptide Derivative",
+        "filename": "IFSCC2025-757.pdf"
+      },
+      {
+        "id": "IFSCC2025-682",
+        "title": "Establishment and Application of an In Vitro Retinol Damage Model",
+        "filename": "IFSCC2025-682.pdf"
+      },
+      {
+        "id": "IFSCC2025-1260",
+        "title": "Evaluation of a Peptide-Protein Complex for ECM Improvement and Anti-Aging Effects",
+        "filename": "IFSCC2025-1260.pdf"
+      },
+      {
+        "id": "IFSCC2025-1821",
+        "title": "Evaluation Of Antioxidant And Anti-Pollution Potential Of Marine Compounds Using Reconstructed Human Skin",
+        "filename": "IFSCC2025-1821.pdf"
+      },
+      {
+        "id": "IFSCC2025-1261",
+        "title": "Evaluation of oxidative stress in skin: interest of a new technology for quantifying in vivo the impact of solar aggressions and the antioxidant activity of cosmetics",
+        "filename": "IFSCC2025-1261.pdf"
+      },
+      {
+        "id": "IFSCC2025-1625",
+        "title": "Evaluation of the photoprotective potential of trans-urocanic acid incorporated in mesoporous silica",
+        "filename": "IFSCC2025-1625.pdf"
+      },
+      {
+        "id": "IFSCC2025-788",
+        "title": "Exploring Sensory Potential of NaDES: From Synthetic Skin to Cosmetic Applications",
+        "filename": "IFSCC2025-788.pdf"
+      },
+      {
+        "id": "IFSCC2025-1311",
+        "title": "Feeling me, feeling you: how the way you touch matters in the prediction of sensory and emotional tactile perception",
+        "filename": "IFSCC2025-1311.pdf"
+      },
+      {
+        "id": "IFSCC2025-1346",
+        "title": "Fermented Berry-Derived Short-Chain Fatty Acids for Enhancing Skin Barrier Function and Alleviating Itch: An In Vitro Study",
+        "filename": "IFSCC2025-1346.pdf"
+      },
+      {
+        "id": "IFSCC2025-484",
+        "title": "Fermented Galla rhois gallnut extract alleviates photoaging by reducing oxidative stress and enhancing mitochondrial function in UV-damaged cells",
+        "filename": "IFSCC2025-484.pdf"
+      },
+      {
+        "id": "IFSCC2025-1078",
+        "title": "Fomitopsis Officinalis Extract Inhibits Sebum Secretion by Up-regulating MicroRNA29",
+        "filename": "IFSCC2025-1078.pdf"
+      },
+      {
+        "id": "IFSCC2025-686",
+        "title": "Formulation Strategies for Emulsifier-free High Performance High Pigment Loading Hybrid and Mineral-based Oil-in-Water Sunscreens",
+        "filename": "IFSCC2025-686.pdf"
+      },
+      {
+        "id": "IFSCC2025-1574",
+        "title": "From vibration to sensation: decoding tactile perception of skincare formulations using force plate",
+        "filename": "IFSCC2025-1574.pdf"
+      },
+      {
+        "id": "IFSCC2025-1693",
+        "title": "Hair Cosmetics and Thermal Styling: Formaldehyde Release and Human Safety Analysis",
+        "filename": "IFSCC2025-1693.pdf"
+      },
+      {
+        "id": "IFSCC2025-1352",
+        "title": "Helianthus Annuus Sprout Extract as a Promising Ingredient for Mitochondrial Protection in Sunscreen Formulation",
+        "filename": "IFSCC2025-1352.pdf"
+      },
+      {
+        "id": "IFSCC2025-1081",
+        "title": "Hippophae rhamnoides fruit oil improves hypoxic skin condition by increasing oxygen in epidermal cells",
+        "filename": "IFSCC2025-1081.pdf"
+      },
+      {
+        "id": "IFSCC2025-1339",
+        "title": "Holistic emotional impact assessment of cosmetic product: combining physical measurement of AI facial expression recognition and EEG and psychological evaluation of mood questionnaire",
+        "filename": "IFSCC2025-1339.pdf"
+      },
+      {
+        "id": "IFSCC2025-581",
+        "title": "Holistic Exploration of Lipidic Interfaces for Enhanced Skin-Formulation Interaction",
+        "filename": "IFSCC2025-581.pdf"
+      },
+      {
+        "id": "IFSCC2025-1039",
+        "title": "How Carbonylation Causes Protein Discoloration: The Role of Oligomers",
+        "filename": "IFSCC2025-1039.pdf"
+      },
+      {
+        "id": "IFSCC2025-827",
+        "title": "How Liquid Foundations Modulate the Facial Aesthetic Perception: Unveiling the Implicit Skin Tone Preferences of Chinese Women through Electrophysiological Indices",
+        "filename": "IFSCC2025-827.pdf"
+      },
+      {
+        "id": "IFSCC2025-1498",
+        "title": "Identification of Bioactive Compounds and Mechanistic Insights of Red Rice Extract in Skin Protection via AI-Driven Compound-Target Prediction and High-Throughput Screening",
+        "filename": "IFSCC2025-1498.pdf"
+      },
+      {
+        "id": "IFSCC2025-1090",
+        "title": "Identification of Camellia chekiangoleosa Hu extract as a novel senolytic ingredient",
+        "filename": "IFSCC2025-1090.pdf"
+      },
+      {
+        "id": "IFSCC2025-900",
+        "title": "Immediate comfort provided by an original mechanism: how TRPM8 regulates the activation of TRPA1 and TRPV1",
+        "filename": "IFSCC2025-900.pdf"
+      },
+      {
+        "id": "IFSCC2025-1351",
+        "title": "Immediate osmotic stress triggered by skin dryness: A key factor in the persistence of dry skin",
+        "filename": "IFSCC2025-1351.pdf"
+      },
+      {
+        "id": "IFSCC2025-1069",
+        "title": "Impact of odor and scalp discomfort during oxidative hair coloring on consumer’s mental state: Examination by EEG",
+        "filename": "IFSCC2025-1069.pdf"
+      },
+      {
+        "id": "IFSCC2025-1570",
+        "title": "Impact of Ozon exposure on the skin: new method to monitor in-vivo oxidative damages related to skin barrier alteration",
+        "filename": "IFSCC2025-1570.pdf"
+      },
+      {
+        "id": "IFSCC2025-1554",
+        "title": "Improving Sleep Quality with a Cosmetic Self-Facial Massage using a Neuroscientific Approach",
+        "filename": "IFSCC2025-1554.pdf"
+      },
+      {
+        "id": "IFSCC2025-817",
+        "title": "In Situ Formed Titania-loaded Mesoporous Silica with Excellent UV Protection and Sensory Experience",
+        "filename": "IFSCC2025-817.pdf"
+      },
+      {
+        "id": "IFSCC2025-1168",
+        "title": "In Vitro Tear Film Instability: A New Physico-Chemical Approach To Evaluate Eye Discomfort",
+        "filename": "IFSCC2025-1168.pdf"
+      },
+      {
+        "id": "IFSCC2025-962",
+        "title": "IN&OUT strategy for addressing psychological factors impacting skin physiology",
+        "filename": "IFSCC2025-962.pdf"
+      },
+      {
+        "id": "IFSCC2025-311",
+        "title": "Link Between Green Coffee, Emotions and Skin Fatigue",
+        "filename": "IFSCC2025-311.pdf"
+      },
+      {
+        "id": "IFSCC2025-1324",
+        "title": "Long-term clinical efficacy of a cosmetic formulation containing Brazilian berry extract in reducing signs of skin photoaging",
+        "filename": "IFSCC2025-1324.pdf"
+      },
+      {
+        "id": "IFSCC2025-1132",
+        "title": "Low-Heavy-Metal ZnO to Address Stricter Heavy Metal Limit",
+        "filename": "IFSCC2025-1132.pdf"
+      },
+      {
+        "id": "IFSCC2025-586",
+        "title": "Maltotetraose Activate Antioxidative Responses by NRF2 activation in human keratinocytes",
+        "filename": "IFSCC2025-586.pdf"
+      },
+      {
+        "id": "IFSCC2025-1242",
+        "title": "Men’s skin may be more sensitive than previously thought",
+        "filename": "IFSCC2025-1242.pdf"
+      },
+      {
+        "id": "IFSCC2025-560",
+        "title": "Microcapsules with a high content of solid UV absorbers made in silk-silicone hybrid polymers facilitate O/W sunscreen formulations",
+        "filename": "IFSCC2025-560.pdf"
+      },
+      {
+        "id": "IFSCC2025-1167",
+        "title": "Mitigating the Impact of Hard Water: Developing Effective Cleansing Formulations",
+        "filename": "IFSCC2025-1167.pdf"
+      },
+      {
+        "id": "IFSCC2025-1500",
+        "title": "MRGPRX2 - an important mast cell receptor to target itchy skin",
+        "filename": "IFSCC2025-1500.pdf"
+      },
+      {
+        "id": "IFSCC2025-579",
+        "title": "Neurophysiological Impacts of a Multisensory Nature Experience: Exploring Effects on Attention and Emotional States",
+        "filename": "IFSCC2025-579.pdf"
+      },
+      {
+        "id": "IFSCC2025-496",
+        "title": "Neuroscience & Machine Learning - Artificial Intelligence at the service of a revolution in the evaluation of the consumer experience",
+        "filename": "IFSCC2025-496.pdf"
+      },
+      {
+        "id": "IFSCC2025-687",
+        "title": "New approaches to addressing the dry skin against exposome: the role of filaggrin mediated pathways and therapeutic potential of filaggrin-derived peptide",
+        "filename": "IFSCC2025-687.pdf"
+      },
+      {
+        "id": "IFSCC2025-270",
+        "title": "New Generation Ceramic Nanocomposites For Uv Filters In Safe And Effective Sunscreens",
+        "filename": "IFSCC2025-270.pdf"
+      },
+      {
+        "id": "IFSCC2025-1389",
+        "title": "New molecular insights on immediate Capsaicin-induced stinging perception and sensitive skin in vivo",
+        "filename": "IFSCC2025-1389.pdf"
+      },
+      {
+        "id": "IFSCC2025-614",
+        "title": "Next-Generation Madecassoside-Functionalized Platinum Liposomes: A Super-Molecular Approach for Rapid Soothing and Long-Term Homeostasis of Sensitive Skin",
+        "filename": "IFSCC2025-614.pdf"
+      },
+      {
+        "id": "IFSCC2025-558",
+        "title": "Novel combination of antioxidants for key skin exposome regulation pathways: in vitro, ex vivo and in vivo studies",
+        "filename": "IFSCC2025-558.pdf"
+      },
+      {
+        "id": "IFSCC2025-637",
+        "title": "Novel insights into the effects of blue light on the skin: challenging previous findings?",
+        "filename": "IFSCC2025-637.pdf"
+      },
+      {
+        "id": "IFSCC2025-998",
+        "title": "Novel Multifunctional Sunscreen for Comprehensive Oily Skin Protection",
+        "filename": "IFSCC2025-998.pdf"
+      },
+      {
+        "id": "IFSCC2025-583",
+        "title": "Novel non-penetrating sun protection technology significantly reducing UV filter concentrations, their environmental footprint, and systemic absorption",
+        "filename": "IFSCC2025-583.pdf"
+      },
+      {
+        "id": "IFSCC2025-1779",
+        "title": "Objectivation And Quantification Of The Emotional Benefits Of Fragrances On Focal Attention",
+        "filename": "IFSCC2025-1779.pdf"
+      },
+      {
+        "id": "IFSCC2025-704",
+        "title": "Objective scoring of emotions induced by fragrance based on an innovative molecular salivary biological test",
+        "filename": "IFSCC2025-704.pdf"
+      },
+      {
+        "id": "IFSCC2025-243",
+        "title": "Oxidation of all lipids in an artificial epidermis to model the first early events of skin aging and predictively identify active ingredients that help the skin age healthily",
+        "filename": "IFSCC2025-243.pdf"
+      },
+      {
+        "id": "IFSCC2025-1106",
+        "title": "Oxidation of Metal-Phenolic Network on Rod-shaped Zinc Oxide for Broad-spectrum Sunscreen",
+        "filename": "IFSCC2025-1106.pdf"
+      },
+      {
+        "id": "IFSCC2025-966",
+        "title": "Ozone peaks as a major emerging stressor and pollutant causing detrimental skin conditions; A skincare serum offers protection and correction.",
+        "filename": "IFSCC2025-966.pdf"
+      },
+      {
+        "id": "IFSCC2025-245",
+        "title": "Paeonia Suffruticosa Callus Extract for Anti-Photoaging and Skin Whitening: Cellular and Transcriptomic Insights",
+        "filename": "IFSCC2025-245.pdf"
+      },
+      {
+        "id": "IFSCC2025-1550",
+        "title": "Perfumes as triggers of odor memories",
+        "filename": "IFSCC2025-1550.pdf"
+      },
+      {
+        "id": "IFSCC2025-1545",
+        "title": "Photoprotective and Post-Sun Repairing Effects of an Upcycled Complex Consisting of Camellia japonica Pericarp Extract and 3-O-Ethyl-L-Ascorbic Acid",
+        "filename": "IFSCC2025-1545.pdf"
+      },
+      {
+        "id": "IFSCC2025-1417",
+        "title": "Pilot Project to Measure the Subjects’ Emotions after Use of a Cosmetic Care Product",
+        "filename": "IFSCC2025-1417.pdf"
+      },
+      {
+        "id": "IFSCC2025-448",
+        "title": "PPA-89 Demonstrates Dual Protective Effects Against UV-Induced Photoaging Through Matrix Remodeling and Barrier Function Enhancement",
+        "filename": "IFSCC2025-448.pdf"
+      },
+      {
+        "id": "IFSCC2025-403",
+        "title": "Preparation and characterization of Psoralea corylifolia Linn. Exosome-like nanovesicles",
+        "filename": "IFSCC2025-403.pdf"
+      },
+      {
+        "id": "IFSCC2025-430",
+        "title": "Preparation and Properties of Recombinant Collagen Microspheres Loaded with Epigallocatechin-3-Gallate for Photodamage Repair",
+        "filename": "IFSCC2025-430.pdf"
+      },
+      {
+        "id": "IFSCC2025-1415",
+        "title": "Preparation of a Saffron Oil Composition with the Ability to Regulate the Expression of Skin Cortisol",
+        "filename": "IFSCC2025-1415.pdf"
+      },
+      {
+        "id": "IFSCC2025-1519",
+        "title": "Preserving formulations amid multidrug resistance",
+        "filename": "IFSCC2025-1519.pdf"
+      },
+      {
+        "id": "IFSCC2025-1176",
+        "title": "Principal components analysis in various cordyceps extracts and their benefits against sun damaging",
+        "filename": "IFSCC2025-1176.pdf"
+      },
+      {
+        "id": "IFSCC2025-153",
+        "title": "Red Meniran: The Secret to Minimizing Exposome-Induced Skin Imperfections",
+        "filename": "IFSCC2025-153.pdf"
+      },
+      {
+        "id": "IFSCC2025-1427",
+        "title": "Red rice extract as a biological UV filter and its application in sunscreens for UV boosting effect",
+        "filename": "IFSCC2025-1427.pdf"
+      },
+      {
+        "id": "IFSCC2025-1033",
+        "title": "Regulation of sebaceous glands under internal and external stress　Insights from Network Pharmacology and Experimental Validation",
+        "filename": "IFSCC2025-1033.pdf"
+      },
+      {
+        "id": "IFSCC2025-193",
+        "title": "Relaxation Effects of Natural and Compound Essential Oil Based on Electroencephalography and Electrocardiography",
+        "filename": "IFSCC2025-193.pdf"
+      },
+      {
+        "id": "IFSCC2025-1636",
+        "title": "Relevant technologies to develop future sunscreen products with longer and safer photoprotection",
+        "filename": "IFSCC2025-1636.pdf"
+      },
+      {
+        "id": "IFSCC2025-549",
+        "title": "Research of Mung bean sphingomyelin extract promoting skin barrier repair",
+        "filename": "IFSCC2025-549.pdf"
+      },
+      {
+        "id": "IFSCC2025-1458",
+        "title": "Resveratrol-Laden Tocofersolan Nanomicelles as A New Generation Anti-Photoaging Formulation for In Situ Transdermal Administration",
+        "filename": "IFSCC2025-1458.pdf"
+      },
+      {
+        "id": "IFSCC2025-1162",
+        "title": "Safety assessment of ingredients for pet care formulations: development of an in vitro canine skin tolerance model",
+        "filename": "IFSCC2025-1162.pdf"
+      },
+      {
+        "id": "IFSCC2025-1834",
+        "title": "Screening for UVB/UVA absorbers in fungi associated with the macroalga Phaeurus antarcticus led to the isolation of photoprotective isocoumarins and a benzofuran with cosmeceutical applications",
+        "filename": "IFSCC2025-1834.pdf"
+      },
+      {
+        "id": "IFSCC2025-623",
+        "title": "Senescent melanocytes as a key driver of human skin aging",
+        "filename": "IFSCC2025-623.pdf"
+      },
+      {
+        "id": "IFSCC2025-439",
+        "title": "Sensitive Skin Redefined: Sustainable Solutions for Environmental Stress-The Discovery of Plant-Based TRPV1 Inhibition",
+        "filename": "IFSCC2025-439.pdf"
+      },
+      {
+        "id": "IFSCC2025-1184",
+        "title": "Sensitive skin: R&D approach to substantiate the efficacy of a promising nutricosmetic ingredient to alleviate skin sensitivity",
+        "filename": "IFSCC2025-1184.pdf"
+      },
+      {
+        "id": "IFSCC2025-1607",
+        "title": "Sex-Based Differences Modulate Skin Physiology and Dictate Sensorial Perception of Cosmetic Formulations",
+        "filename": "IFSCC2025-1607.pdf"
+      },
+      {
+        "id": "IFSCC2025-1127",
+        "title": "Silica Capsule with UV and Blue Light Protection",
+        "filename": "IFSCC2025-1127.pdf"
+      },
+      {
+        "id": "IFSCC2025-198",
+        "title": "Skin fatigue is caused by stress hormones deteriorating the stratum corneum barrier",
+        "filename": "IFSCC2025-198.pdf"
+      },
+      {
+        "id": "IFSCC2025-824",
+        "title": "Skin Safety of Spicule-Based Cosmetics: Confocal Imaging Insights on Skin Penetration and Retention",
+        "filename": "IFSCC2025-824.pdf"
+      },
+      {
+        "id": "IFSCC2025-142",
+        "title": "Smart Skincare Formula for a Cheerful Day: Detect and Repair Damaged Skin Areas",
+        "filename": "IFSCC2025-142.pdf"
+      },
+      {
+        "id": "IFSCC2025-607",
+        "title": "Soothing and repairing effects and mechanisms of Tricholoma matsutake extracts on sensitive skin",
+        "filename": "IFSCC2025-607.pdf"
+      },
+      {
+        "id": "IFSCC2025-531",
+        "title": "Soothing the skin and favorizing well-being feelings: acting on the skin-brain axis with a topic application",
+        "filename": "IFSCC2025-531.pdf"
+      },
+      {
+        "id": "IFSCC2025-1273",
+        "title": "Spf Booster Combinations: A Strategy For Achieving Highly Effective And Sensory Sun Care Products Using Microscopical, Rheological And Texture Characterization",
+        "filename": "IFSCC2025-1273.pdf"
+      },
+      {
+        "id": "IFSCC2025-1074",
+        "title": "Spontaneous generation of localized ascending and descending flow in the suspension of UV scattering microparticles and Marangoni flow in the applied layer of the suspension and their influence on the structure and UV protecting ability of the deposited layer",
+        "filename": "IFSCC2025-1074.pdf"
+      },
+      {
+        "id": "IFSCC2025-480",
+        "title": "Study on the efficacy of Himalayan native probiotics JMB326 in skincare and photoprotection",
+        "filename": "IFSCC2025-480.pdf"
+      },
+      {
+        "id": "IFSCC2025-1804",
+        "title": "Surface Coatings: A Critical Determinant of Photostability in TiO2Based Sunscreens",
+        "filename": "IFSCC2025-1804.pdf"
+      },
+      {
+        "id": "IFSCC2025-1411",
+        "title": "Synthesis and photochemical characterization of a new generation of Smart UV filters",
+        "filename": "IFSCC2025-1411.pdf"
+      },
+      {
+        "id": "IFSCC2025-1253",
+        "title": "Tailoring the Rheological Behavior of Oil-Based ZnO Dispersions via Multi-surfactant Approach",
+        "filename": "IFSCC2025-1253.pdf"
+      },
+      {
+        "id": "IFSCC2025-557",
+        "title": "Targeting Neurogenic Inflammation As A Solution For Hypersentive Skin",
+        "filename": "IFSCC2025-557.pdf"
+      },
+      {
+        "id": "IFSCC2025-551",
+        "title": "Targeting phosphoproteomic changes in the epidermis to help skin adapt rapidly and efficiently to the exposome",
+        "filename": "IFSCC2025-551.pdf"
+      },
+      {
+        "id": "IFSCC2025-1736",
+        "title": "Technical Performance and Sensory Experience: How Fine Fragrances Technical Aspects Influence Consumer Perception",
+        "filename": "IFSCC2025-1736.pdf"
+      },
+      {
+        "id": "IFSCC2025-1577",
+        "title": "The Aging Process: Unraveling the Connection Between Neuroageing and Skin Sensitivity",
+        "filename": "IFSCC2025-1577.pdf"
+      },
+      {
+        "id": "IFSCC2025-672",
+        "title": "The Anti-angiogenic Effects of Hyaluronic Acid Oligosaccharides with Different Molecular Weights",
+        "filename": "IFSCC2025-672.pdf"
+      },
+      {
+        "id": "IFSCC2025-935",
+        "title": "The Impact of the USCT technology on active ingredients and efficacy of Chinese Specialty Plant Oils",
+        "filename": "IFSCC2025-935.pdf"
+      },
+      {
+        "id": "IFSCC2025-1172",
+        "title": "The Performance Comparison of Thamnolia vermicularis extract before and after Purification",
+        "filename": "IFSCC2025-1172.pdf"
+      },
+      {
+        "id": "IFSCC2025-167",
+        "title": "The ultimate O/W sunscreen by means of fiber emulsification Visualization of its unsurpassed performance through advanced OCT technologies",
+        "filename": "IFSCC2025-167.pdf"
+      },
+      {
+        "id": "IFSCC2025-1612",
+        "title": "TiO2 water-based dispersion for inclusive sunscreens",
+        "filename": "IFSCC2025-1612.pdf"
+      },
+      {
+        "id": "IFSCC2025-1227",
+        "title": "Touching Beauty: Transforming Skin Smoothness with Oryza sativa and Lithothamnium calcareum Extract",
+        "filename": "IFSCC2025-1227.pdf"
+      },
+      {
+        "id": "IFSCC2025-1433",
+        "title": "Ultrastructural observation by TEM of tape-stripped skin explants",
+        "filename": "IFSCC2025-1433.pdf"
+      },
+      {
+        "id": "IFSCC2025-1590",
+        "title": "Unlocking the secrets of fascia: How fasciatherapy-inspired facial and body massage boosts skin health and well-being",
+        "filename": "IFSCC2025-1590.pdf"
+      },
+      {
+        "id": "IFSCC2025-1283",
+        "title": "Unraveling Desire: Neurophysiological Prediction of Repurchase in Men’s Fragrances",
+        "filename": "IFSCC2025-1283.pdf"
+      },
+      {
+        "id": "IFSCC2025-1552",
+        "title": "Unveiling the Emotional Impact of Lipstick: A Neurophysiological and Behavioral Study",
+        "filename": "IFSCC2025-1552.pdf"
+      },
+      {
+        "id": "IFSCC2025-1086",
+        "title": "Unveiling The Sensory Dynamics Of Skin Cells: Diversity And Cross-Modality Insights",
+        "filename": "IFSCC2025-1086.pdf"
+      },
+      {
+        "id": "IFSCC2025-773",
+        "title": "World’s first computer-connected lab grown human bioprinted skin with a sensory nervous system for instantaneous cosmetics and fragrance testing.",
+        "filename": "IFSCC2025-773.pdf"
+      },
+      {
+        "id": "IFSCC2025-675",
+        "title": "“Muscle relaxation-like” effect and skin well-being mechanism : insights from neurocosmetics",
+        "filename": "IFSCC2025-675.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Health",
+    "folder": "10_Health",
+    "papers": [
+      {
+        "id": "IFSCC2025-1592",
+        "title": "A multiscale analysis of ceramide’s alterations in atopic dermatitis skin highlights enzymes as a possible target for treatment",
+        "filename": "IFSCC2025-1592.pdf"
+      },
+      {
+        "id": "IFSCC2025-361",
+        "title": "A novel green technology of multifunctional nanozymes and its potential application in skin care",
+        "filename": "IFSCC2025-361.pdf"
+      },
+      {
+        "id": "IFSCC2025-813",
+        "title": "Exploration of plant derived extracellular vesicles as a new active ingredient for skin health",
+        "filename": "IFSCC2025-813.pdf"
+      },
+      {
+        "id": "IFSCC2025-1771",
+        "title": "Skin Nanotexture Biometrics: A Novel Deep Learning Approach for Quantifying Atopic Dermatitis Severity Across Fitzpatrick Skin Types",
+        "filename": "IFSCC2025-1771.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Personnalisation/beauty tech",
+    "folder": "11_Personnalisation, beauty tech",
+    "papers": [
+      {
+        "id": "IFSCC2025-666",
+        "title": "Application of a Skin Prediction Algorithm for Personalized Skincare Services with Clinical Outcomes",
+        "filename": "IFSCC2025-666.pdf"
+      },
+      {
+        "id": "IFSCC2025-584",
+        "title": "Objectively and Precisely Representing Subjective Beauty Desires: a novel method for quantification of consumer self-perceived ideal complexion from retouched selfies using image analysis",
+        "filename": "IFSCC2025-584.pdf"
+      },
+      {
+        "id": "IFSCC2025-1584",
+        "title": "Revolutionizing Skincare: Biometric-Emotion Driven 3D Printing for Personalized Beauty Solutions",
+        "filename": "IFSCC2025-1584.pdf"
+      },
+      {
+        "id": "IFSCC2025-1443",
+        "title": "The First Self-delivered Ingredient: A Novel Bioinspired Electroporation-like Mechanism via Transient Membrane Pores for a Radiant Skin",
+        "filename": "IFSCC2025-1443.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Exposome/stress",
+    "folder": "12_Exposome, stress",
+    "papers": [
+      {
+        "id": "IFSCC2025-407",
+        "title": "Computational design of a novel cyclic peptide and its effect on reducing skin inflammatory aging by blockade of a novel target HMGB1",
+        "filename": "IFSCC2025-407.pdf"
+      },
+      {
+        "id": "IFSCC2025-1469",
+        "title": "Lipid aldehydes from senescent cells reshape the ECM and propagate senescence.",
+        "filename": "IFSCC2025-1469.pdf"
+      },
+      {
+        "id": "IFSCC2025-347",
+        "title": "Skin Issues Management Under in Vitro Human Chronic Stress 3D Skin Equivalents Through Treatment With Ectoin: By Modulating the Glucocorticoid Receptor Chaperone HSP70-HSP90-Complexes",
+        "filename": "IFSCC2025-347.pdf"
+      },
+      {
+        "id": "IFSCC2025-189",
+        "title": "Targeting β2-adrenergic receptor: a novel approach for limiting psychological stress-induced premature skin aging",
+        "filename": "IFSCC2025-189.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Fragrance",
+    "folder": "13_Fragrance",
+    "papers": [
+      {
+        "id": "IFSCC2025-641",
+        "title": "HS-GC-MS ANALYSIS AS A POWERFUL TOOL FOR OLFACTORY EVALUATION: LIQUID LIPSTICK STABILITY STUDY",
+        "filename": "IFSCC2025-641.pdf"
+      },
+      {
+        "id": "IFSCC2025-758",
+        "title": "Sleepless in Cannes? Not Anymore - The Science of Sleep-Inducing Scents",
+        "filename": "IFSCC2025-758.pdf"
+      },
+      {
+        "id": "IFSCC2025-291",
+        "title": "The Chemistry of the Future: CO2 Alcohol in the Creation of Innovative Fragrances",
+        "filename": "IFSCC2025-291.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Human & environmental safety",
+    "folder": "14_Human&environmental safety",
+    "papers": [
+      {
+        "id": "IFSCC2025-1363",
+        "title": "Innovative Eco-Friendly Microbeads for Skincare: A Sustainable and Effective Exfoliation Solution",
+        "filename": "IFSCC2025-1363.pdf"
+      },
+      {
+        "id": "IFSCC2025-1262",
+        "title": "Next Generation Risk Assessment of Octane-1,2-diol",
+        "filename": "IFSCC2025-1262.pdf"
+      }
+    ]
+  },
+  {
+    "name": "Photoprotection",
+    "folder": "15_Photoprotection",
+    "papers": [
+      {
+        "id": "IFSCC2025-645",
+        "title": "Addressing the Challenges of In Vivo SPF Testing: A Critical Review of the ISO 23675:2024 “Double Plate” In Vitro Method",
+        "filename": "IFSCC2025-645.pdf"
+      },
+      {
+        "id": "IFSCC2025-141",
+        "title": "Senescence of Dermal Fibroblasts Contributes to the Formation of Solar Lentigo: Functional Analysis of a Novel Anti-Hyperpigmentation Factor sFRP1",
+        "filename": "IFSCC2025-141.pdf"
+      },
+      {
+        "id": "IFSCC2025-1414",
+        "title": "The secret of cold Infrared(IRA) to human skin – mechanism of IRA-induced damage to dermal fibroblasts and keratinocytes and photoprotection method with functional liposomes",
+        "filename": "IFSCC2025-1414.pdf"
+      },
+      {
+        "id": "IFSCC2025-1614",
+        "title": "Utilization of Antioxidant Hydrogen Gas: Hydrogen-Releasing Film for Recovery of UV-Induced Skin Damage and Immediate Wrinkle Reduction",
+        "filename": "IFSCC2025-1614.pdf"
+      }
+    ]
+  }
+]

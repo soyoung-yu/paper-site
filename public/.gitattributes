@@ -1,0 +1,3 @@
+*.pdf  -filter -diff -merge -text
+papers/**  -filter -diff -merge -text
+assets/**  -filter -diff -merge -text
