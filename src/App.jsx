@@ -60,9 +60,10 @@ export default function PaperSite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6 md:p-8">
-      <div className="w-full px-4 sm:px-6 lg:px-8">
+      {/* 💡 풀폭: 상단 래퍼에서 max-w 제거하고 w-full + 좌우 패딩만 */}
+      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 4xl:px-20">
         {/* 헤더 */}
-        <header className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-6 sm:mb-8">
+        <header className="w-full bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
           </h1>
@@ -72,13 +73,15 @@ export default function PaperSite() {
         </header>
 
         {/* 메인 */}
-        <main className="bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+        <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
                 Categories
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+
+              {/* 💡 대화면에서도 계속 넓어지도록 칼럼 확장 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 4xl:grid-cols-6 gap-4">
                 {folders.map((folder) => (
                   <button
                     key={folder.folder}
@@ -90,7 +93,9 @@ export default function PaperSite() {
                       <h3 className="text-lg sm:text-xl font-semibold text-gray-800 truncate">
                         {folder.name}
                       </h3>
-                      <p className="text-xs sm:text-sm text-gray-500">{folder.papers.length} papers</p>
+                      <p className="text-xs sm:text-sm text-gray-500">
+                        {folder.papers.length} papers
+                      </p>
                     </div>
                   </button>
                 ))}
@@ -111,35 +116,35 @@ export default function PaperSite() {
               </h2>
 
               <div className="space-y-3 sm:space-y-4">
-                {selectedFolder.papers.map((paper) => {
-                  return (
-                    <div
-                      key={paper.id}
-                      className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
-                    >
-                      <div className="flex items-start sm:items-center flex-1 min-w-0">
-                        <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
-                        <div className="flex-1 min-w-0">
-                          <div className="flex items-center gap-2 mb-1">
-                            <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
-                            {paper.podium && <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />}
-                          </div>
-                          <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
-                            {paper.title}
-                          </span>
+                {selectedFolder.papers.map((paper) => (
+                  <div
+                    key={paper.id}
+                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
+                  >
+                    <div className="flex items-start sm:items-center flex-1 min-w-0">
+                      <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
+                          {paper.podium && (
+                            <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                          )}
                         </div>
+                        <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
+                          {paper.title}
+                        </span>
                       </div>
-
-                      <button
-                        onClick={() => logAndOpen(selectedFolder.folder, paper)}
-                        className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
-                      >
-                        <Download className="w-4 h-4 mr-2" />
-                        <span className="text-sm sm:text-base">Download</span>
-                      </button>
                     </div>
-                  );
-                })}
+
+                    <button
+                      onClick={() => logAndOpen(selectedFolder.folder, paper)}
+                      className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
+                    >
+                      <Download className="w-4 h-4 mr-2" />
+                      <span className="text-sm sm:text-base">Download</span>
+                    </button>
+                  </div>
+                ))}
               </div>
             </section>
           )}
