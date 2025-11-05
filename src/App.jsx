@@ -4,6 +4,8 @@ import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 const LOG_URL =
   "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
 
+const PAGE_SIZE = 10;
+
 const buildPdfPath = (folder, filename) => {
   const base = import.meta.env.BASE_URL || "/";
   return `${base}papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`;
@@ -60,7 +62,12 @@ export default function PaperSite() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
   const [podiumMap, setPodiumMap] = useState({});
-  const [affFilter, setAffFilter] = useState("ALL"); // "ALL" | normalizedAff string
+
+  // 폴더 내부 필터
+  const [affFilter, setAffFilter] = useState("ALL"); // "ALL" | normalized
+  // All Papers 전역 필터/페이지
+  const [allAffFilter, setAllAffFilter] = useState("ALL");
+  const [allPage, setAllPage] = useState(1);
 
   const isPodium = (id) => {
     if (!id) return false;
@@ -101,11 +108,18 @@ export default function PaperSite() {
         const params = new URLSearchParams(window.location.search);
         const folderParam = params.get("folder");
         const affParam = params.get("aff");
+        const aaffParam = params.get("aaff");
+        const apageParam = params.get("apage");
+
         if (folderParam) {
           const match = data.find((f) => f.folder === folderParam);
           if (match) setSelectedFolder(match);
         }
         if (affParam) setAffFilter(affParam);
+        if (aaffParam) setAllAffFilter(aaffParam);
+        if (apageParam && !Number.isNaN(Number(apageParam))) {
+          setAllPage(Math.max(1, Number(apageParam)));
+        }
       });
 
     fetch(`${base}podium.json`)
@@ -119,6 +133,8 @@ export default function PaperSite() {
       const params = new URLSearchParams(window.location.search);
       const folderParam = params.get("folder");
       const affParam = params.get("aff");
+      const aaffParam = params.get("aaff");
+      const apageParam = params.get("apage");
 
       if (!folderParam) setSelectedFolder(null);
       else {
@@ -127,6 +143,8 @@ export default function PaperSite() {
       }
 
       setAffFilter(affParam || "ALL");
+      setAllAffFilter(aaffParam || "ALL");
+      setAllPage(apageParam ? Math.max(1, Number(apageParam)) : 1);
     };
 
     window.addEventListener("popstate", onPopState);
@@ -166,7 +184,7 @@ export default function PaperSite() {
       .map((x) => x.p);
   }, [selectedFolder, podiumMap, affFilter]);
 
-  // 홈: 모든 논문 플랫 리스트 (podium 우선 → 그 다음 전체 원래 순서)
+  // All Papers: 전 폴더 paper 평탄화
   const allPapersFlat = useMemo(() => {
     if (!folders?.length) return [];
     let idx = 0;
@@ -182,15 +200,42 @@ export default function PaperSite() {
         });
       }
     }
-    return acc
-      .sort((a, b) => {
-        if (b.podium !== a.podium) return b.podium - a.podium;
-        return a.idx - b.idx;
-      })
-      .map(({ p, folder, folderName }) => ({ p, folder, folderName }));
+    return acc.sort((a, b) => {
+      if (b.podium !== a.podium) return b.podium - a.podium;
+      return a.idx - b.idx;
+    });
   }, [folders, podiumMap]);
 
-  // 드롭다운 변경 시 URL에도 반영
+  // All Papers: affiliation 옵션(전역)
+  const allAffOptions = useMemo(() => {
+    const counts = new Map();
+    for (const { p } of allPapersFlat) {
+      const key = normalizeAff(p.affiliation);
+      if (!key) continue;
+      const label = renderAffiliation(p.affiliation);
+      const prev = counts.get(key);
+      counts.set(key, { count: (prev?.count ?? 0) + 1, label });
+    }
+    return Array.from(counts.entries())
+      .sort((a, b) => a[1].label.localeCompare(b[1].label))
+      .map(([value, { count, label }]) => ({ value, label: `${label} (${count})` }));
+  }, [allPapersFlat]);
+
+  // All Papers: 필터 적용
+  const allPapersFiltered = useMemo(() => {
+    if (allAffFilter === "ALL") return allPapersFlat;
+    return allPapersFlat.filter(({ p }) => normalizeAff(p.affiliation) === allAffFilter);
+  }, [allPapersFlat, allAffFilter]);
+
+  // All Papers: 페이지네이션
+  const allTotalPages = Math.max(1, Math.ceil(allPapersFiltered.length / PAGE_SIZE));
+  const allPageSafe = Math.min(Math.max(1, allPage), allTotalPages);
+  const allPagedSlice = useMemo(() => {
+    const start = (allPageSafe - 1) * PAGE_SIZE;
+    return allPapersFiltered.slice(start, start + PAGE_SIZE);
+  }, [allPapersFiltered, allPageSafe]);
+
+  // 폴더 내부 드롭다운 변경 시 URL 반영
   const onChangeAff = (e) => {
     const v = e.target.value;
     setAffFilter(v);
@@ -199,6 +244,94 @@ export default function PaperSite() {
     if (v && v !== "ALL") params.set("aff", v);
     else params.delete("aff");
     window.history.pushState({}, "", `?${params.toString()}`);
+  };
+
+  // All Papers 드롭다운 변경 시 URL 반영 + 페이지 초기화
+  const onChangeAllAff = (e) => {
+    const v = e.target.value;
+    setAllAffFilter(v);
+    const params = new URLSearchParams(window.location.search);
+    if (v && v !== "ALL") params.set("aaff", v);
+    else params.delete("aaff");
+    params.set("apage", "1");
+    setAllPage(1);
+    window.history.pushState({}, "", `?${params.toString()}`);
+  };
+
+  // All Papers 페이지 이동
+  const gotoAllPage = (page) => {
+    const next = Math.min(Math.max(1, page), allTotalPages);
+    setAllPage(next);
+    const params = new URLSearchParams(window.location.search);
+    params.set("apage", String(next));
+    if (allAffFilter && allAffFilter !== "ALL") params.set("aaff", allAffFilter);
+    else params.delete("aaff");
+    window.history.pushState({}, "", `?${params.toString()}`);
+  };
+
+  const Pagination = ({ page, total, onChange }) => {
+    if (total <= 1) return null;
+
+    // 페이지 버튼 범위 (최대 7개 표시)
+    const windowSize = 7;
+    let start = Math.max(1, page - Math.floor(windowSize / 2));
+    let end = start + windowSize - 1;
+    if (end > total) {
+      end = total;
+      start = Math.max(1, end - windowSize + 1);
+    }
+    const pages = [];
+    for (let i = start; i <= end; i++) pages.push(i);
+
+    return (
+      <div className="flex items-center justify-center gap-2 mt-4">
+        <button
+          onClick={() => onChange(page - 1)}
+          disabled={page <= 1}
+          className="px-3 py-1 text-sm border rounded-lg disabled:opacity-50"
+        >
+          Prev
+        </button>
+        {start > 1 && (
+          <>
+            <button
+              onClick={() => onChange(1)}
+              className={`px-3 py-1 text-sm border rounded-lg ${page === 1 ? "bg-indigo-600 text-white" : ""}`}
+            >
+              1
+            </button>
+            {start > 2 && <span className="px-1">…</span>}
+          </>
+        )}
+        {pages.map((n) => (
+          <button
+            key={n}
+            onClick={() => onChange(n)}
+            className={`px-3 py-1 text-sm border rounded-lg ${page === n ? "bg-indigo-600 text-white" : ""}`}
+          >
+            {n}
+          </button>
+        ))}
+        {end < total && (
+          <>
+            {end < total - 1 && <span className="px-1">…</span>}
+            <button
+              onClick={() => onChange(total)}
+              className={`px-3 py-1 text-sm border rounded-lg ${page === total ? "bg-indigo-600 text-white" : ""}`}
+            >
+              {total}
+            </button>
+          </>
+        )}
+        <button
+          onClick={() => onChange(page + 1)}
+          disabled={page >= total}
+          className="px-3 py-1 text-sm border rounded-lg disabled:opacity-50"
+        >
+          Next
+        </button>
+      </div>
+    );
   };
 
   return (
@@ -246,12 +379,34 @@ export default function PaperSite() {
 
               {/* All Papers 섹션 */}
               <section className="mt-8 sm:mt-10">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
-                  All Papers
-                </h2>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+                    All Papers
+                  </h2>
+
+                  {/* 전역 affiliation 필터 */}
+                  <div className="flex items-center gap-2">
+                    <label htmlFor="allAffFilter" className="text-sm text-gray-600">
+                      Affiliation
+                    </label>
+                    <select
+                      id="allAffFilter"
+                      value={allAffFilter}
+                      onChange={onChangeAllAff}
+                      className="text-sm sm:text-base border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    >
+                      <option value="ALL">All affiliations</option>
+                      {allAffOptions.map((opt) => (
+                        <option key={opt.value} value={opt.value}>
+                          {opt.label}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
 
                 <div className="space-y-3 sm:space-y-4">
-                  {allPapersFlat.map(({ p: paper, folder /*, folderName*/ }) => {
+                  {allPagedSlice.map(({ p: paper, folder }) => {
                     const affLabel = renderAffiliation(paper.affiliation);
                     const podium = isPodium(paper.id);
                     return (
@@ -299,13 +454,19 @@ export default function PaperSite() {
                     );
                   })}
 
-                  {/* 전역 논문이 하나도 없을 때 */}
-                  {allPapersFlat.length === 0 && (
+                  {allPagedSlice.length === 0 && (
                     <div className="text-center text-gray-500 py-10">
                       표시할 논문이 없습니다.
                     </div>
                   )}
                 </div>
+
+                {/* 페이지네이션 */}
+                <Pagination
+                  page={allPageSafe}
+                  total={allTotalPages}
+                  onChange={gotoAllPage}
+                />
               </section>
             </>
           ) : (
@@ -324,7 +485,7 @@ export default function PaperSite() {
                   {selectedFolder.name}
                 </h2>
 
-                {/* affiliation 필터 드롭다운 */}
+                {/* 폴더 내부 affiliation 필터 */}
                 <div className="flex items-center gap-2">
                   <label htmlFor="affFilter" className="text-sm text-gray-600">
                     Affiliation
@@ -413,6 +574,7 @@ export default function PaperSite() {
     </div>
   );
 }
+
 
 
 
