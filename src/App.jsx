@@ -149,7 +149,7 @@ export default function PaperSite() {
       .map(([value, { count, label }]) => ({ value, label: `${label} (${count})` }));
   }, [selectedFolder]);
 
-  // 필터 + podium 우선 정렬
+  // 폴더 내부: 필터 + podium 우선 정렬
   const sortedPapers = useMemo(() => {
     if (!selectedFolder?.papers) return [];
     const filtered = selectedFolder.papers.filter((p) => {
@@ -165,6 +165,30 @@ export default function PaperSite() {
       })
       .map((x) => x.p);
   }, [selectedFolder, podiumMap, affFilter]);
+
+  // 홈: 모든 논문 플랫 리스트 (podium 우선 → 그 다음 전체 원래 순서)
+  const allPapersFlat = useMemo(() => {
+    if (!folders?.length) return [];
+    let idx = 0;
+    const acc = [];
+    for (const f of folders) {
+      for (const p of f.papers || []) {
+        acc.push({
+          p,
+          folder: f.folder,
+          folderName: f.name,
+          idx: idx++,
+          podium: isPodium(p.id) ? 1 : 0,
+        });
+      }
+    }
+    return acc
+      .sort((a, b) => {
+        if (b.podium !== a.podium) return b.podium - a.podium;
+        return a.idx - b.idx;
+      })
+      .map(({ p, folder, folderName }) => ({ p, folder, folderName }));
+  }, [folders, podiumMap]);
 
   // 드롭다운 변경 시 URL에도 반영
   const onChangeAff = (e) => {
@@ -192,32 +216,100 @@ export default function PaperSite() {
 
         <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
-            <section>
-              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
-                Sessions
-              </h2>
+            <>
+              {/* Sessions 섹션 */}
+              <section>
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
+                  Sessions
+                </h2>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
-                {folders.map((folder) => (
-                  <button
-                    key={folder.folder}
-                    onClick={() => handleSelectFolder(folder)}
-                    className="flex items-center w-full p-4 sm:p-6 border-2 border-gray-200 rounded-xl hover:border-indigo-500 hover:bg-indigo-50 transition-all"
-                  >
-                    <Folder className="w-10 h-10 sm:w-12 sm:h-12 text-indigo-600 mr-3 sm:mr-4 flex-shrink-0" />
-                    <div className="text-left min-w-0">
-                      <h3 className="text-lg sm:text-xl font-semibold text-gray-800 truncate">
-                        {folder.name}
-                      </h3>
-                      <p className="text-xs sm:text-sm text-gray-500">
-                        {folder.papers.length} papers
-                      </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
+                  {folders.map((folder) => (
+                    <button
+                      key={folder.folder}
+                      onClick={() => handleSelectFolder(folder)}
+                      className="flex items-center w-full p-4 sm:p-6 border-2 border-gray-200 rounded-xl hover:border-indigo-500 hover:bg-indigo-50 transition-all"
+                    >
+                      <Folder className="w-10 h-10 sm:w-12 sm:h-12 text-indigo-600 mr-3 sm:mr-4 flex-shrink-0" />
+                      <div className="text-left min-w-0">
+                        <h3 className="text-lg sm:text-xl font-semibold text-gray-800 truncate">
+                          {folder.name}
+                        </h3>
+                        <p className="text-xs sm:text-sm text-gray-500">
+                          {folder.papers.length} papers
+                        </p>
+                      </div>
+                    </button>
+                  ))}
+                </div>
+              </section>
+
+              {/* All Papers 섹션 */}
+              <section className="mt-8 sm:mt-10">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
+                  All Papers
+                </h2>
+
+                <div className="space-y-3 sm:space-y-4">
+                  {allPapersFlat.map(({ p: paper, folder /*, folderName*/ }) => {
+                    const affLabel = renderAffiliation(paper.affiliation);
+                    const podium = isPodium(paper.id);
+                    return (
+                      <div
+                        key={`${folder}__${paper.id}`}
+                        className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
+                      >
+                        {/* 왼쪽: 아이콘 + 정보 */}
+                        <div className="flex items-start sm:items-center flex-1 min-w-0">
+                          <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
+                          <div className="flex-1 min-w-0">
+                            <div className="flex items-center gap-2 mb-1">
+                              <span className="text-xs sm:text-sm text-gray-500">
+                                {paper.id}
+                              </span>
+                              {podium && (
+                                <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                              )}
+                            </div>
+                            <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
+                              {paper.title}
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* 오른쪽: affiliation 뱃지 + 다운로드 버튼 */}
+                        <div className="flex items-center justify-end gap-2 sm:gap-3">
+                          {affLabel && (
+                            <span
+                              title={affLabel}
+                              className="px-2 py-1 text-xs sm:text-sm bg-gray-100 text-gray-700 rounded-md border border-gray-200 max-w-[40vw] truncate"
+                            >
+                              {affLabel}
+                            </span>
+                          )}
+                          <button
+                            onClick={() => logAndOpen(folder, paper)}
+                            className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
+                          >
+                            <Download className="w-4 h-4 mr-2" />
+                            <span className="text-sm sm:text-base">Download</span>
+                          </button>
+                        </div>
+                      </div>
+                    );
+                  })}
+
+                  {/* 전역 논문이 하나도 없을 때 */}
+                  {allPapersFlat.length === 0 && (
+                    <div className="text-center text-gray-500 py-10">
+                      표시할 논문이 없습니다.
                     </div>
-                  </button>
-                ))}
-              </div>
-            </section>
+                  )}
+                </div>
+              </section>
+            </>
           ) : (
+            // 폴더 내부 뷰
             <section>
               <button
                 onClick={handleBack}
