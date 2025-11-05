@@ -48,20 +48,18 @@ const logAndOpen = (folder, paper) => {
 export default function PaperSite() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
-
-  // ✅ podium.json 상태
   const [podiumMap, setPodiumMap] = useState({});
 
   useEffect(() => {
     const base = import.meta.env.BASE_URL || "/";
 
-    // papers.json 로드
+    // papers.json
     fetch(`${base}papers.json`)
       .then((r) => r.json())
       .then(setFolders)
       .catch((e) => console.error("❌ Failed to load papers.json", e));
 
-    // podium.json 로드
+    // podium.json
     fetch(`${base}podium.json`)
       .then((r) => r.json())
       .then(setPodiumMap)
@@ -71,6 +69,8 @@ export default function PaperSite() {
   return (
     <div className="min-h-screen w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
+        
+        {/* Header */}
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -80,6 +80,7 @@ export default function PaperSite() {
           </p>
         </header>
 
+        {/* Main */}
         <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <section>
@@ -122,43 +123,50 @@ export default function PaperSite() {
               </h2>
 
               <div className="space-y-3 sm:space-y-4">
-                {selectedFolder.papers.map((paper) => (
-                  <div
-                    key={paper.id}
-                    className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="flex items-start sm:items-center flex-1 min-w-0">
-                      <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
-
-                          {/* ✅ podium.json 기반 아이콘 표시 */}
-                          {podiumMap[paper.id] && (
-                            <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
-                          )}
-                        </div>
-
-                        <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
-                          {paper.title}
-                        </span>
-                      </div>
-                    </div>
-
-                    <button
-                      onClick={() => logAndOpen(selectedFolder.folder, paper)}
-                      className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
+                {[...selectedFolder.papers]
+                  .sort((a, b) => {
+                    const aPodium = podiumMap[a.id] ? 1 : 0;
+                    const bPodium = podiumMap[b.id] ? 1 : 0;
+                    return bPodium - aPodium; // ✅ podium 먼저
+                  })
+                  .map((paper) => (
+                    <div
+                      key={paper.id}
+                      className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
                     >
-                      <Download className="w-4 h-4 mr-2" />
-                      <span className="text-sm sm:text-base">Download</span>
-                    </button>
-                  </div>
-                ))}
+                      <div className="flex items-start sm:items-center flex-1 min-w-0">
+                        <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
+
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
+
+                            {podiumMap[paper.id] && (
+                              <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                            )}
+                          </div>
+
+                          <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
+                            {paper.title}
+                          </span>
+                        </div>
+                      </div>
+
+                      <button
+                        onClick={() => logAndOpen(selectedFolder.folder, paper)}
+                        className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
+                      >
+                        <Download className="w-4 h-4 mr-2" />
+                        <span className="text-sm sm:text-base">Download</span>
+                      </button>
+                    </div>
+                  ))}
               </div>
             </section>
           )}
         </main>
 
+        {/* Footer */}
         <footer className="text-center mt-6 sm:mt-8 mb-6 text-gray-600">
           <p className="text-xs sm:text-sm">© 2025 IFSCC Conference | All Rights Reserved</p>
         </footer>
@@ -166,4 +174,5 @@ export default function PaperSite() {
     </div>
   );
 }
+
 
