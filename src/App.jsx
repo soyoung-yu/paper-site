@@ -15,7 +15,7 @@ const dedupe = (paperId) => {
   const key = `dl:${paperId}`;
   const last = Number(localStorage.getItem(key) || 0);
   const now = Date.now();
-  if (now - last < 2000) return true; // 2초 내 재클릭 무시
+  if (now - last < 2000) return true;
   localStorage.setItem(key, String(now));
   return false;
 };
@@ -59,11 +59,12 @@ export default function PaperSite() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4 sm:p-6 md:p-8">
-      {/* 💡 풀폭: 상단 래퍼에서 max-w 제거하고 w-full + 좌우 패딩만 */}
-      <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 4xl:px-20">
-        {/* 헤더 */}
-        <header className="w-full bg-white rounded-2xl shadow-lg p-6 sm:p-8 mb-6 sm:mb-8">
+    // ✅ 화면 가로폭을 그대로 쓰도록 w-screen
+    <div className="min-h-screen w-screen bg-gradient-to-br from-blue-50 to-indigo-100">
+      {/* ✅ 어떤 max-width도 걸리지 않게 max-w-none, 좌우 패딩만 부여 */}
+      <div className="w-full max-w-none px-4 sm:px-6 lg:px-8 2xl:px-12 3xl:px-16 4xl:px-20">
+        {/* 헤더: 폭 제한 제거 */}
+        <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
           </h1>
@@ -72,7 +73,7 @@ export default function PaperSite() {
           </p>
         </header>
 
-        {/* 메인 */}
+        {/* 메인 패널: 폭 제한 제거 */}
         <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <section>
@@ -80,8 +81,8 @@ export default function PaperSite() {
                 Categories
               </h2>
 
-              {/* 💡 대화면에서도 계속 넓어지도록 칼럼 확장 */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-5 4xl:grid-cols-6 gap-4">
+              {/* ✅ 초대형 모니터에서도 계속 펼쳐지도록 칼럼 확장 */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
                 {folders.map((folder) => (
                   <button
                     key={folder.folder}
@@ -117,18 +118,17 @@ export default function PaperSite() {
 
               <div className="space-y-3 sm:space-y-4">
                 {selectedFolder.papers.map((paper) => (
+                  // ✅ 각 행도 전체 너비로 확장
                   <div
                     key={paper.id}
-                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
+                    className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
                   >
                     <div className="flex items-start sm:items-center flex-1 min-w-0">
                       <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
                       <div className="flex-1 min-w-0">
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
-                          {paper.podium && (
-                            <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
-                          )}
+                          {paper.podium && <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />}
                         </div>
                         <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
                           {paper.title}
@@ -150,8 +150,7 @@ export default function PaperSite() {
           )}
         </main>
 
-        {/* 푸터 */}
-        <footer className="text-center mt-6 sm:mt-8 text-gray-600">
+        <footer className="text-center mt-6 sm:mt-8 mb-6 text-gray-600">
           <p className="text-xs sm:text-sm">© 2025 IFSCC Conference | All Rights Reserved</p>
         </footer>
       </div>
