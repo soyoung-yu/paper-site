@@ -2,27 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ===== Global base ===== */
+/* 전역 보정 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 뷰포트에 맞춰 레이아웃이 꽉 차도록 */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* 글자 크기는 고정/완만 스케일 (원하면 이 줄 지워도 됨) */
 :root {
-  /* Fluid root font-size: scales with viewport width */
   font-size: clamp(14px, 0.9vw + 10px, 18px);
 
-  /* Typography rendering */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
-  /* Color scheme hint for UI controls */
-  color-scheme: light dark;
-
-  /* Better text rendering */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links */
+/* 링크 기본색 (필요 없으면 제거) */
 a {
   font-weight: 500;
   color: #646cff;
@@ -32,24 +41,21 @@ a:hover {
   color: #535bf2;
 }
 
-/* Body reset
-   Remove fixed centering so the app can be fully responsive */
-html, body, #root {
-  height: 100%;
-}
+/* ✅ 중앙정렬/고정폭을 유발하던 flex 제거가 핵심 */
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  background: transparent; /* page background is handled by Tailwind classes */
+  display: block;           /* ← 기존 flex 제거 */
+  background: transparent;  /* 배경은 앱(Tailwind)에서 제어 */
 }
 
-/* Headings inherit fluid scale via rem */
+/* 제목은 rem로 자연 스케일 */
 h1 {
   line-height: 1.1;
 }
 
-/* Buttons: keep minimal defaults, Tailwind will style most buttons */
+/* 버튼 기본값 (Tailwind에서 덮어씀) */
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -69,8 +75,7 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* Light mode defaults for plain elements
-   Tailwind dark mode can override via class if you enable it */
+/* 라이트 모드 기본 */
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -84,23 +89,14 @@ button:focus-visible {
   }
 }
 
-/* Optional utility tweaks without adding classes in JSX */
-@layer base {
-  /* Make images and videos responsive by default */
-  img, video {
-    max-width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  /* Respect prefers-reduced-motion */
-  @media (prefers-reduced-motion: reduce) {
-    * {
-      animation-duration: 0.01ms !important;
-      animation-iteration-count: 1 !important;
-      transition-duration: 0.01ms !important;
-      scroll-behavior: auto !important;
-    }
+/* 접근성: 모션 감소 존중 */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
+
 
