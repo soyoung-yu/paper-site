@@ -23,7 +23,12 @@ const logAndOpen = (folder, paper) => {
   };
 
   try {
-    navigator.sendBeacon(LOG_URL, new Blob([new URLSearchParams(payload).toString()], { type: "application/x-www-form-urlencoded" }));
+    navigator.sendBeacon(
+      LOG_URL,
+      new Blob([new URLSearchParams(payload).toString()], {
+        type: "application/x-www-form-urlencoded",
+      })
+    );
   } catch (_) {}
 
   try {
@@ -34,6 +39,24 @@ const logAndOpen = (folder, paper) => {
   window.open(href, "_blank", "noopener");
 };
 
+// 보기용 라벨 매핑 (없으면 원문 그대로 노출)
+const AFFIL_LABELS = {
+  "cosmax": "COSMAX",
+  "l’oréal": "L’Oréal",
+  "l'oreal": "L’Oréal",
+  "l'oiréal": "L’Oréal",
+  "l’oréal ": "L’Oréal",
+  "shiseido": "Shiseido",
+  "amorepacific": "AMOREPACIFIC",
+  "kolma": "Kolma",
+};
+
+const renderAffiliation = (aff) => {
+  if (!aff) return null;
+  const key = String(aff).trim().toLowerCase();
+  return AFFIL_LABELS[key] || aff;
+};
+
 export default function PaperSite() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
@@ -42,7 +65,9 @@ export default function PaperSite() {
   const isPodium = (id) => {
     if (!id) return false;
     const k = String(id).trim();
-    return Boolean(podiumMap[k] ?? podiumMap[k.toUpperCase()] ?? podiumMap[k.toLowerCase()]);
+    return Boolean(
+      podiumMap[k] ?? podiumMap[k.toUpperCase()] ?? podiumMap[k.toLowerCase()]
+    );
   };
 
   // 폴더 선택 시 URL에 folder 파라미터 추가
@@ -114,7 +139,6 @@ export default function PaperSite() {
   return (
     <div className="min-h-screen w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
-
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -166,46 +190,66 @@ export default function PaperSite() {
               </h2>
 
               <div className="space-y-3 sm:space-y-4">
-                {sortedPapers.map((paper) => (
-                  <div
-                    key={paper.id}
-                    className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
-                  >
-                    <div className="flex items-start sm:items-center flex-1 min-w-0">
-                      <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="text-xs sm:text-sm text-gray-500">{paper.id}</span>
-                          {isPodium(paper.id) && (
-                            <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
-                          )}
+                {sortedPapers.map((paper) => {
+                  const affLabel = renderAffiliation(paper.affiliation);
+                  return (
+                    <div
+                      key={paper.id}
+                      className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-3 sm:gap-4 p-4 border border-gray-200 rounded-xl hover:bg-gray-50 transition-colors"
+                    >
+                      {/* 왼쪽: 아이콘 + 정보 */}
+                      <div className="flex items-start sm:items-center flex-1 min-w-0">
+                        <FileText className="w-6 h-6 text-red-500 mr-3 flex-shrink-0" />
+                        <div className="flex-1 min-w-0">
+                          <div className="flex items-center gap-2 mb-1">
+                            <span className="text-xs sm:text-sm text-gray-500">
+                              {paper.id}
+                            </span>
+                            {isPodium(paper.id) && (
+                              <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
+                            )}
+                          </div>
+                          <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
+                            {paper.title}
+                          </span>
                         </div>
-                        <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
-                          {paper.title}
-                        </span>
+                      </div>
+
+                      {/* 오른쪽: affiliation 뱃지 + 다운로드 버튼 */}
+                      <div className="flex items-center justify-end gap-2 sm:gap-3">
+                        {affLabel && (
+                          <span
+                            title={affLabel}
+                            className="px-2 py-1 text-xs sm:text-sm bg-gray-100 text-gray-700 rounded-md border border-gray-200 max-w-[40vw] truncate"
+                          >
+                            {affLabel}
+                          </span>
+                        )}
+                        <button
+                          onClick={() => logAndOpen(selectedFolder.folder, paper)}
+                          className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
+                        >
+                          <Download className="w-4 h-4 mr-2" />
+                          <span className="text-sm sm:text-base">Download</span>
+                        </button>
                       </div>
                     </div>
-
-                    <button
-                      onClick={() => logAndOpen(selectedFolder.folder, paper)}
-                      className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
-                    >
-                      <Download className="w-4 h-4 mr-2" />
-                      <span className="text-sm sm:text-base">Download</span>
-                    </button>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </section>
           )}
         </main>
 
         <footer className="text-center mt-6 sm:mt-8 mb-6 text-gray-600">
-          <p className="text-xs sm:text-sm">© 2025 COSMAX. Internal research tool for IFSCC paper reference.</p>
+          <p className="text-xs sm:text-sm">
+            © 2025 COSMAX. Internal research tool for IFSCC paper reference.
+          </p>
         </footer>
       </div>
     </div>
   );
 }
+
 
 
