@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
-const [podiumMap, setPodiumMap] = useState({});
-
 const LOG_URL =
   "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
 
@@ -51,20 +49,23 @@ export default function PaperSite() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
 
+  // ✅ podium.json 상태
+  const [podiumMap, setPodiumMap] = useState({});
+
   useEffect(() => {
     const base = import.meta.env.BASE_URL || "/";
-  
+
     // papers.json 로드
     fetch(`${base}papers.json`)
       .then((r) => r.json())
       .then(setFolders)
-      .catch((e) => console.error("Failed to load papers.json", e));
-  
+      .catch((e) => console.error("❌ Failed to load papers.json", e));
+
     // podium.json 로드
     fetch(`${base}podium.json`)
       .then((r) => r.json())
       .then(setPodiumMap)
-      .catch((e) => console.error("Failed to load podium.json", e));
+      .catch((e) => console.error("❌ Failed to load podium.json", e));
   }, []);
 
   return (
@@ -137,6 +138,7 @@ export default function PaperSite() {
                             <Award className="w-4 h-4 text-yellow-500 flex-shrink-0" />
                           )}
                         </div>
+
                         <span className="block text-gray-800 text-sm sm:text-base lg:text-lg leading-snug line-clamp-2">
                           {paper.title}
                         </span>
@@ -164,3 +166,4 @@ export default function PaperSite() {
     </div>
   );
 }
+
