@@ -128,7 +128,7 @@ export default function PaperSite() {
           {!selectedFolder ? (
             <section>
               <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
-                Categories
+                Sessions
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 3xl:grid-cols-6 4xl:grid-cols-8 gap-4">
@@ -201,7 +201,7 @@ export default function PaperSite() {
         </main>
 
         <footer className="text-center mt-6 sm:mt-8 mb-6 text-gray-600">
-          <p className="text-xs sm:text-sm">© 2025 IFSCC Conference | All Rights Reserved</p>
+          <p className="text-xs sm:text-sm">© 2025 COSMAX. Internal research tool for IFSCC paper reference.</p>
         </footer>
       </div>
     </div>
