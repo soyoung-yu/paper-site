@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
-import podiumMap from "../public/podium.json"; // ✅ podium.json 불러오기
+
+const [podiumMap, setPodiumMap] = useState({});
 
 const LOG_URL =
   "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
@@ -51,10 +52,19 @@ export default function PaperSite() {
   const [selectedFolder, setSelectedFolder] = useState(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL || "/"}papers.json`)
+    const base = import.meta.env.BASE_URL || "/";
+  
+    // papers.json 로드
+    fetch(`${base}papers.json`)
       .then((r) => r.json())
       .then(setFolders)
       .catch((e) => console.error("Failed to load papers.json", e));
+  
+    // podium.json 로드
+    fetch(`${base}podium.json`)
+      .then((r) => r.json())
+      .then(setPodiumMap)
+      .catch((e) => console.error("Failed to load podium.json", e));
   }, []);
 
   return (
