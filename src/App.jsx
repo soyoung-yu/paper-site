@@ -41,19 +41,18 @@ const logAndOpen = (folder, paper) => {
 
 // 보기용 라벨 매핑 (없으면 원문 그대로 노출)
 const AFFIL_LABELS = {
-  "cosmax": "COSMAX",
+  cosmax: "COSMAX",
   "l’oréal": "L’Oréal",
   "l'oreal": "L’Oréal",
-  "l'oiréal": "L’Oréal",
-  "l’oréal ": "L’Oréal",
-  "shiseido": "Shiseido",
-  "amorepacific": "AMOREPACIFIC",
-  "kolma": "Kolma",
+  shiseido: "Shiseido",
+  amorepacific: "AMOREPACIFIC",
+  kolma: "Kolma",
 };
 
+const normalizeAff = (aff) => (aff ? String(aff).trim().toLowerCase() : "");
 const renderAffiliation = (aff) => {
   if (!aff) return null;
-  const key = String(aff).trim().toLowerCase();
+  const key = normalizeAff(aff);
   return AFFIL_LABELS[key] || aff;
 };
 
@@ -61,6 +60,7 @@ export default function PaperSite() {
   const [folders, setFolders] = useState([]);
   const [selectedFolder, setSelectedFolder] = useState(null);
   const [podiumMap, setPodiumMap] = useState({});
+  const [affFilter, setAffFilter] = useState("ALL"); // "ALL" | normalizedAff string
 
   const isPodium = (id) => {
     if (!id) return false;
@@ -70,18 +70,24 @@ export default function PaperSite() {
     );
   };
 
-  // 폴더 선택 시 URL에 folder 파라미터 추가
+  // 폴더 선택 시 URL에 folder 파라미터 추가 (aff는 유지)
   const handleSelectFolder = (folder) => {
     setSelectedFolder(folder);
-    const params = new URLSearchParams();
+    const params = new URLSearchParams(window.location.search);
     params.set("folder", folder.folder);
+    if (affFilter && affFilter !== "ALL") params.set("aff", affFilter);
+    else params.delete("aff");
     window.history.pushState({}, "", `?${params.toString()}`);
   };
 
   // 카테고리로 돌아가기
   const handleBack = () => {
     setSelectedFolder(null);
-    window.history.pushState({}, "", "/");
+    setAffFilter("ALL");
+    const params = new URLSearchParams(window.location.search);
+    params.delete("folder");
+    params.delete("aff");
+    window.history.pushState({}, "", params.toString() ? `?${params}` : "/");
   };
 
   useEffect(() => {
@@ -94,10 +100,12 @@ export default function PaperSite() {
 
         const params = new URLSearchParams(window.location.search);
         const folderParam = params.get("folder");
+        const affParam = params.get("aff");
         if (folderParam) {
           const match = data.find((f) => f.folder === folderParam);
           if (match) setSelectedFolder(match);
         }
+        if (affParam) setAffFilter(affParam);
       });
 
     fetch(`${base}podium.json`)
@@ -105,40 +113,74 @@ export default function PaperSite() {
       .then(setPodiumMap);
   }, []);
 
-  // 브라우저 뒤로가기/앞으로가기 대응
+  // 브라우저 뒤로/앞으로 가기 대응
   useEffect(() => {
     const onPopState = () => {
       const params = new URLSearchParams(window.location.search);
       const folderParam = params.get("folder");
+      const affParam = params.get("aff");
 
-      if (!folderParam) {
-        setSelectedFolder(null);
-        return;
+      if (!folderParam) setSelectedFolder(null);
+      else {
+        const match = folders.find((f) => f.folder === folderParam);
+        setSelectedFolder(match || null);
       }
 
-      const match = folders.find((f) => f.folder === folderParam);
-      setSelectedFolder(match || null);
+      setAffFilter(affParam || "ALL");
     };
 
     window.addEventListener("popstate", onPopState);
     return () => window.removeEventListener("popstate", onPopState);
   }, [folders]);
 
-  // podium = 1, normal = 0 → podium 먼저 나오도록 안정 정렬
+  // 현재 선택된 폴더 안에서 affiliation 옵션 만들기 (라벨+카운트)
+  const affOptions = useMemo(() => {
+    if (!selectedFolder?.papers) return [];
+    const counts = new Map(); // key: normalizedAff, value: {count, label}
+    for (const p of selectedFolder.papers) {
+      const key = normalizeAff(p.affiliation);
+      if (!key) continue;
+      const label = renderAffiliation(p.affiliation);
+      const prev = counts.get(key);
+      counts.set(key, { count: (prev?.count ?? 0) + 1, label });
+    }
+    return Array.from(counts.entries())
+      .sort((a, b) => a[1].label.localeCompare(b[1].label))
+      .map(([value, { count, label }]) => ({ value, label: `${label} (${count})` }));
+  }, [selectedFolder]);
+
+  // 필터 + podium 우선 정렬
   const sortedPapers = useMemo(() => {
     if (!selectedFolder?.papers) return [];
-    return selectedFolder.papers
+    const filtered = selectedFolder.papers.filter((p) => {
+      if (affFilter === "ALL") return true;
+      return normalizeAff(p.affiliation) === affFilter;
+    });
+
+    return filtered
       .map((p, idx) => ({ p, idx, podium: isPodium(p.id) ? 1 : 0 }))
       .sort((a, b) => {
         if (b.podium !== a.podium) return b.podium - a.podium;
         return a.idx - b.idx;
       })
       .map((x) => x.p);
-  }, [selectedFolder, podiumMap]);
+  }, [selectedFolder, podiumMap, affFilter]);
+
+  // 드롭다운 변경 시 URL에도 반영
+  const onChangeAff = (e) => {
+    const v = e.target.value;
+    setAffFilter(v);
+    const params = new URLSearchParams(window.location.search);
+    if (selectedFolder) params.set("folder", selectedFolder.folder);
+    if (v && v !== "ALL") params.set("aff", v);
+    else params.delete("aff");
+    window.history.pushState({}, "", `?${params.toString()}`);
+  };
 
   return (
     <div className="min-h-screen w-full">
       <div className="w-full px-4 sm:px-6 lg:px-8 2xl:px-12">
+
         <header className="w-full bg-white rounded-2xl shadow-lg mt-4 sm:mt-6 p-6 sm:p-8 mb-6 sm:mb-8">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-indigo-900 text-center leading-tight">
             IFSCC 2025 Full Paper
@@ -185,9 +227,31 @@ export default function PaperSite() {
                 <span className="text-sm sm:text-base">Back to Categories</span>
               </button>
 
-              <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
-                {selectedFolder.name}
-              </h2>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
+                  {selectedFolder.name}
+                </h2>
+
+                {/* affiliation 필터 드롭다운 */}
+                <div className="flex items-center gap-2">
+                  <label htmlFor="affFilter" className="text-sm text-gray-600">
+                    Affiliation
+                  </label>
+                  <select
+                    id="affFilter"
+                    value={affFilter}
+                    onChange={onChangeAff}
+                    className="text-sm sm:text-base border border-gray-300 rounded-lg px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                  >
+                    <option value="ALL">All affiliations</option>
+                    {affOptions.map((opt) => (
+                      <option key={opt.value} value={opt.value}>
+                        {opt.label}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
 
               <div className="space-y-3 sm:space-y-4">
                 {sortedPapers.map((paper) => {
@@ -236,6 +300,13 @@ export default function PaperSite() {
                     </div>
                   );
                 })}
+
+                {/* 필터 결과 없을 때 */}
+                {sortedPapers.length === 0 && (
+                  <div className="text-center text-gray-500 py-10">
+                    해당 affiliation의 논문이 없습니다.
+                  </div>
+                )}
               </div>
             </section>
           )}
@@ -250,6 +321,7 @@ export default function PaperSite() {
     </div>
   );
 }
+
 
 
 
