@@ -53,20 +53,24 @@ const AFFIL_LABELS = {
   "l’occitane": "L’Occitane",
   "l'occitane": "L’Occitane",
 };
-
 const normalizeAff = (aff) => {
   if (!aff) return "";
   return String(aff)
-    .normalize("NFKC")      // 유니코드 정규화
-    .replace(/[‘’]/g, "'")  // 특수 따옴표 정규화
+    .normalize("NFKD")           // 악센트 분해
+    .replace(/\p{M}+/gu, "")     // 결합 악센트 제거 (é -> e)
+    .replace(/[‘’]/g, "'")       // 특수 따옴표 통일
     .replace(/[“”]/g, '"')
+    .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
 };
 
 const prettyLabel = (normKey) => {
   if (!normKey) return "";
-  return AFFIL_LABELS[normKey] || normKey.replace(/\b[a-z]/g, (m) => m.toUpperCase());
+  // 1순위: 표준 라벨 매핑 (악센트 포함된 예쁜 표기)
+  if (AFFIL_LABELS[normKey]) return AFFIL_LABELS[normKey];
+  // 2순위: 일반적인 Title Case (유니코드 문자 인식)
+  return normKey.replace(/\b\p{L}/gu, (m) => m.toUpperCase());
 };
 
 // "a, b / c | d" → ["a","b","c","d"] (정규화, 중복 제거)
