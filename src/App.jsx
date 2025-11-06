@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
 const LOG_URL =
-  "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
+  "https://script.google.com/macros/s/AKfycbw48wnaa0hcdBc3LUlFOhqfxSE3vQOWW9BZhsptTaY1wIbx2pdYcSmZZL6D39-wD6xTwA/exec";
 
 const PAGE_SIZE = 10;
 
