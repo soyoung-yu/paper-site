@@ -41,44 +41,21 @@ const logAndOpen = (folder, paper) => {
   window.open(href, "_blank", "noopener");
 };
 
-// ---------- Affiliation 유틸 ----------
+// 보기용 라벨 매핑 (없으면 원문 그대로 노출)
 const AFFIL_LABELS = {
   cosmax: "COSMAX",
   "l’oréal": "L’Oréal",
   "l'oreal": "L’Oréal",
-  loreal: "L’Oréal",
   shiseido: "Shiseido",
   amorepacific: "AMOREPACIFIC",
   kolma: "Kolma",
-  "l’occitane": "L’Occitane",
-  "l'occitane": "L’Occitane",
 };
 
-// 소문자 정규화
 const normalizeAff = (aff) => (aff ? String(aff).trim().toLowerCase() : "");
-
-// 보기용 라벨(대문자/표준 표기)
-const prettyLabel = (normKey) => {
-  if (!normKey) return "";
-  return AFFIL_LABELS[normKey] || normKey.replace(/\b([a-z])/g, (m, g1) => g1.toUpperCase());
-};
-
-// 단일 문자열에서 , ; / | 로 분리 → 소문자 정규화 + 중복 제거
-const splitAffiliations = (raw) => {
-  if (!raw) return [];
-  const arr = (Array.isArray(raw) ? raw : String(raw))
-    .split(/[,;\/|]+/g)
-    .map((s) => normalizeAff(s))
-    .filter(Boolean);
-  return Array.from(new Set(arr));
-};
-// -------------------------------------
-
-// (폴더 내부에서 쓰던 표시용 함수: 단일 라벨)
 const renderAffiliation = (aff) => {
   if (!aff) return null;
   const key = normalizeAff(aff);
-  return prettyLabel(key) || aff;
+  return AFFIL_LABELS[key] || aff;
 };
 
 export default function PaperSite() {
@@ -181,8 +158,9 @@ export default function PaperSite() {
     for (const p of selectedFolder.papers) {
       const key = normalizeAff(p.affiliation);
       if (!key) continue;
+      const label = renderAffiliation(p.affiliation);
       const prev = counts.get(key);
-      counts.set(key, { count: (prev?.count ?? 0) + 1, label: prettyLabel(key) });
+      counts.set(key, { count: (prev?.count ?? 0) + 1, label });
     }
     return Array.from(counts.entries())
       .sort((a, b) => a[1].label.localeCompare(b[1].label))
@@ -228,28 +206,25 @@ export default function PaperSite() {
     });
   }, [folders, podiumMap]);
 
-  // All Papers: affiliation 옵션(전역) — **분리/집계**
+  // All Papers: affiliation 옵션(전역)
   const allAffOptions = useMemo(() => {
-    const counts = new Map(); // key → {count, label}
+    const counts = new Map();
     for (const { p } of allPapersFlat) {
-      const toks = splitAffiliations(p.affiliation); // 단일 소속들
-      const uniq = new Set(toks); // 한 논문 내 중복 방지
-      for (const key of uniq) {
-        const prev = counts.get(key);
-        counts.set(key, { count: (prev?.count ?? 0) + 1, label: prettyLabel(key) });
-      }
+      const key = normalizeAff(p.affiliation);
+      if (!key) continue;
+      const label = renderAffiliation(p.affiliation);
+      const prev = counts.get(key);
+      counts.set(key, { count: (prev?.count ?? 0) + 1, label });
     }
     return Array.from(counts.entries())
       .sort((a, b) => a[1].label.localeCompare(b[1].label))
       .map(([value, { count, label }]) => ({ value, label: `${label} (${count})` }));
   }, [allPapersFlat]);
 
-  // All Papers: 필터 적용 — **여러 소속 중 하나라도 일치하면 포함**
+  // All Papers: 필터 적용
   const allPapersFiltered = useMemo(() => {
     if (allAffFilter === "ALL") return allPapersFlat;
-    return allPapersFlat.filter(({ p }) =>
-      splitAffiliations(p.affiliation).includes(allAffFilter)
-    );
+    return allPapersFlat.filter(({ p }) => normalizeAff(p.affiliation) === allAffFilter);
   }, [allPapersFlat, allAffFilter]);
 
   // All Papers: 페이지네이션
@@ -372,12 +347,11 @@ export default function PaperSite() {
           </p>
         </header>
 
-        {/* 메인: 홈에서 Sessions/All Papers를 분리 카드로 렌더 */}
-        <main className="w-full">
+        <main className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
           {!selectedFolder ? (
             <>
-              {/* Sessions 카드 */}
-              <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8">
+              {/* Sessions 섹션 */}
+              <section>
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">
                   Sessions
                 </h2>
@@ -403,14 +377,14 @@ export default function PaperSite() {
                 </div>
               </section>
 
-              {/* All Papers 카드 */}
-              <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mt-6 sm:mt-8 mb-6 sm:mb-8">
+              {/* All Papers 섹션 */}
+              <section className="mt-8 sm:mt-10">
                 <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-4 mb-4 sm:mb-6">
                   <h2 className="text-xl sm:text-2xl font-semibold text-gray-800">
                     All Papers
                   </h2>
 
-                  {/* 전역 affiliation 필터 (단일 소속 리스트) */}
+                  {/* 전역 affiliation 필터 */}
                   <div className="flex items-center gap-2">
                     <label htmlFor="allAffFilter" className="text-sm text-gray-600">
                       Affiliation
@@ -433,7 +407,7 @@ export default function PaperSite() {
 
                 <div className="space-y-3 sm:space-y-4">
                   {allPagedSlice.map(({ p: paper, folder }) => {
-                    const tokens = splitAffiliations(paper.affiliation); // 여러 소속 분리
+                    const affLabel = renderAffiliation(paper.affiliation);
                     const podium = isPodium(paper.id);
                     return (
                       <div
@@ -458,20 +432,16 @@ export default function PaperSite() {
                           </div>
                         </div>
 
-                        {/* 오른쪽: affiliation 개별 뱃지 + 다운로드 버튼 */}
-                        <div className="flex items-center justify-end gap-2 sm:gap-3 flex-wrap">
-                          {tokens.map((t) => {
-                            const label = prettyLabel(t);
-                            return (
-                              <span
-                                key={t}
-                                title={label}
-                                className="px-2 py-1 text-xs sm:text-sm bg-gray-100 text-gray-700 rounded-md border border-gray-200 max-w-[40vw] truncate"
-                              >
-                                {label}
-                              </span>
-                            );
-                          })}
+                        {/* 오른쪽: affiliation 뱃지 + 다운로드 버튼 */}
+                        <div className="flex items-center justify-end gap-2 sm:gap-3">
+                          {affLabel && (
+                            <span
+                              title={affLabel}
+                              className="px-2 py-1 text-xs sm:text-sm bg-gray-100 text-gray-700 rounded-md border border-gray-200 max-w-[40vw] truncate"
+                            >
+                              {affLabel}
+                            </span>
+                          )}
                           <button
                             onClick={() => logAndOpen(folder, paper)}
                             className="flex items-center justify-center px-4 py-2 sm:px-5 sm:py-2.5 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors w-full sm:w-auto"
@@ -500,8 +470,8 @@ export default function PaperSite() {
               </section>
             </>
           ) : (
-            // 폴더 내부 뷰: 기존과 동일하게 한 개 카드 블록
-            <section className="w-full bg-white rounded-2xl shadow-lg p-4 sm:p-6 md:p-8 mb-6 sm:mb-8">
+            // 폴더 내부 뷰
+            <section>
               <button
                 onClick={handleBack}
                 className="flex items-center text-indigo-600 hover:text-indigo-800 mb-4 sm:mb-6 transition-colors"
@@ -562,7 +532,7 @@ export default function PaperSite() {
                         </div>
                       </div>
 
-                      {/* 오른쪽: (폴더 내부는 기존대로 단일 라벨) + 다운로드 */}
+                      {/* 오른쪽: affiliation 뱃지 + 다운로드 버튼 */}
                       <div className="flex items-center justify-end gap-2 sm:gap-3">
                         {affLabel && (
                           <span
@@ -604,5 +574,8 @@ export default function PaperSite() {
     </div>
   );
 }
+
+
+
 
 
