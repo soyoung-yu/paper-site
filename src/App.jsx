@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { Folder, FileText, Download, ChevronLeft, Award } from "lucide-react";
 
 const LOG_URL =
-  "https://script.google.com/macros/s/AKfycbw293prF5n3ggPR64puvjtSgdVsIza1lXAl6EPQclpaKXkU5Puy5u4E_Zm67RitJ6g6rw/exec";
+  "https://script.google.com/macros/s/AKfycby542Gls4Ng_mIV1nw5FjPayRBc-bqZB7VPv4yF-zYu5ELsmPVs0ITUQ3APHH19JfeJug/exec";
 
 const PAGE_SIZE = 10;
 
@@ -11,6 +11,12 @@ const buildPdfPath = (folder, filename) => {
   return `${base}papers/${encodeURIComponent(folder)}/${encodeURIComponent(filename)}`;
 };
 
+/* =========================
+   클릭 로깅 & 다운로드 (수정)
+   - sendBeacon 1회 전송
+   - 실패 시 fetch(POST) 1회 폴백
+   - 픽셀(Image GET) 제거 => 중복 방지
+========================= */
 const logAndOpen = (folder, paper) => {
   const href = buildPdfPath(folder, paper.filename);
 
@@ -23,23 +29,30 @@ const logAndOpen = (folder, paper) => {
     ref: document.referrer || "",
     ts: new Date().toISOString(),
   };
+  const body = new URLSearchParams(payload).toString();
 
-  try {
-    navigator.sendBeacon(
-      LOG_URL,
-      new Blob([new URLSearchParams(payload).toString()], {
-        type: "application/x-www-form-urlencoded",
-      })
-    );
-  } catch (_) {}
+  let sent = false;
+  if ("sendBeacon" in navigator) {
+    try {
+      sent = navigator.sendBeacon(
+        LOG_URL,
+        new Blob([body], { type: "application/x-www-form-urlencoded" })
+      );
+    } catch {}
+  }
 
-  try {
-    const img = new Image();
-    img.src = `${LOG_URL}?${new URLSearchParams(payload).toString()}`;
-  } catch (_) {}
+  if (!sent) {
+    fetch(LOG_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body,
+      keepalive: true,
+    }).catch(() => {});
+  }
 
   window.open(href, "_blank", "noopener");
 };
+/* ------------------------------------- */
 
 /* ---------- Affiliation 유틸 ---------- */
 // 보기용 라벨 매핑 (없으면 적당히 Capitalize)
@@ -587,5 +600,6 @@ export default function PaperSite() {
     </div>
   );
 }
+
 
 
