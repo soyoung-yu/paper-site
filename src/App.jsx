@@ -52,6 +52,9 @@ const AFFIL_LABELS = {
   "l'oreal": "L’Oréal",
   "l’occitane": "L’Occitane",
   "l'occitane": "L’Occitane",
+  "estee lauder":"Estee Lauder",
+  "chanel":"Chanel",
+  "lvmh":"LVMH"
 };
 const normalizeAff = (aff) => {
   if (!aff) return "";
