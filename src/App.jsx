@@ -578,14 +578,8 @@ export default function PaperSite() {
           )}
         </main>
 
-        <footer className="text-center mt-6 sm:mt-8 mb-6 text-gray-600">
-          <p className="text-xs sm:text-sm">
-            © 2025 COSMAX. Internal research tool for IFSCC paper reference.
-          </p>
-        </footer>
       </div>
     </div>
   );
 }
-
 
