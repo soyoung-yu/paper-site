@@ -4,10 +4,10 @@ import { fileURLToPath } from "node:url";
 import { PDFParse } from "pdf-parse";
 
 const ROOT = path.resolve(process.cwd());
-const PAPERS_JSON = path.join(ROOT, "public", "papers.json");
-const PAPERS_DIR = path.join(ROOT, "public", "papers");
-const OUTPUT_JSON = path.join(ROOT, "public", "papers-search.json");
-const AFFILIATION_FILE = path.join(ROOT, "public", "affiliation.txt");
+const PUBLIC_DIR = path.join(ROOT, "public");
+const PAPERS_JSON = path.join(PUBLIC_DIR, "papers.json");
+const OUTPUT_JSON = path.join(PUBLIC_DIR, "papers-search.json");
+const AFFILIATION_FILE = path.join(PUBLIC_DIR, "affiliation.txt");
 const MAX_HEADER_LINES = 220;
 const SECTION_START_RE = /^\d+\.\s/;
 const KEYWORDS_RE = /^keywords?\b/i;
@@ -509,14 +509,19 @@ async function buildIndex() {
   for (const folder of raw) {
     const folderSlug = folder.folder;
     const folderName = folder.name;
+    const yearSlug = folder.year ?? "2025";
+    const baseDir = path.join(PUBLIC_DIR, yearSlug);
 
     for (const paper of folder.papers || []) {
-      const pdfPath = path.join(PAPERS_DIR, folderSlug, paper.filename);
+      const pdfPath = folderSlug
+        ? path.join(baseDir, folderSlug, paper.filename)
+        : path.join(baseDir, paper.filename);
       const text = await extractText(pdfPath);
       const affiliations = extractAffiliationsFromText(text);
       extractedMap.set(paper.id, affiliations);
       aggregated.push({
         id: paper.id,
+        year: yearSlug,
         title: paper.title,
         filename: paper.filename,
         folder: folderSlug,

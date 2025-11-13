@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = path.resolve(process.cwd());
-const PAPERS_DIR = path.join(ROOT, "public", "papers");
+const PAPERS_DIR = path.join(ROOT, "public", "2025");
 const PAPERS_JSON = path.join(ROOT, "public", "papers.json");
 
 const slugify = (value) =>
