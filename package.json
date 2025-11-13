@@ -8,12 +8,16 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build",
+    "extract:index": "node scripts/extract-text.js",
+    "normalize:folders": "node scripts/normalize-folders.js"
   },
   "dependencies": {
     "lucide-react": "^0.552.0",
+    "pdf-parse": "^2.4.5",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react-dom": "^19.1.1",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
