@@ -234,6 +234,7 @@ export default function PaperSite() {
   // All Papers 전역 필터/페이지
   const [allAffFilter, setAllAffFilter] = useState("ALL");
   const [allPage, setAllPage] = useState(1);
+  const [folderPage, setFolderPage] = useState(1);
   // 검색 상태
   const [searchQuery, setSearchQuery] = useState("");
   const [searchDraft, setSearchDraft] = useState("");
@@ -324,6 +325,7 @@ export default function PaperSite() {
     setSearchQuery(trimmed);
     setSearchDraft(trimmed);
     setAllPage(1);
+    setFolderPage(1);
 
     const params = new URLSearchParams(window.location.search);
     if (selectedYear) params.set("year", selectedYear);
@@ -380,6 +382,7 @@ export default function PaperSite() {
     setAffFilter("ALL");
     setAllAffFilter("ALL");
     setAllPage(1);
+    setFolderPage(1);
     const params = new URLSearchParams(window.location.search);
     params.set("year", year);
     params.delete("folder");
@@ -393,6 +396,7 @@ export default function PaperSite() {
     const year = folder.year ?? selectedYear ?? "2025";
     setSelectedYear(year);
     setSelectedFolder(folder);
+    setFolderPage(1);
     const params = new URLSearchParams(window.location.search);
     params.set("year", year);
     if (folder.folder) params.set("folder", folder.folder);
@@ -415,6 +419,7 @@ export default function PaperSite() {
   const handleBackToFolders = () => {
     setSelectedFolder(null);
     setAffFilter("ALL");
+    setFolderPage(1);
     const params = new URLSearchParams(window.location.search);
     if (selectedYear) params.set("year", selectedYear);
     else params.delete("year");
@@ -430,6 +435,7 @@ export default function PaperSite() {
     setAffFilter("ALL");
     setAllAffFilter("ALL");
     setAllPage(1);
+    setFolderPage(1);
     const params = new URLSearchParams(window.location.search);
     params.delete("year");
     params.delete("folder");
@@ -479,7 +485,9 @@ export default function PaperSite() {
         if (affParam) setAffFilter(affParam);
         if (aaffParam) setAllAffFilter(aaffParam);
         if (apageParam && !Number.isNaN(Number(apageParam))) {
-          setAllPage(Math.max(1, Number(apageParam)));
+          const pageNum = Math.max(1, Number(apageParam));
+          setAllPage(pageNum);
+          setFolderPage(pageNum);
         }
         if (searchParam !== null) {
           setSearchQuery(searchParam);
@@ -531,7 +539,9 @@ export default function PaperSite() {
 
       setAffFilter(affParam || "ALL");
       setAllAffFilter(aaffParam || "ALL");
-      setAllPage(apageParam ? Math.max(1, Number(apageParam)) : 1);
+      const pageNum = apageParam ? Math.max(1, Number(apageParam)) : 1;
+      setAllPage(pageNum);
+      setFolderPage(pageNum);
       const synced = searchParam ?? "";
       setSearchQuery(synced);
       setSearchDraft(synced);
@@ -646,6 +656,28 @@ export default function PaperSite() {
       })
       .map((x) => x.p);
   }, [activeFolder, podiumMap, affFilter, matchesSearch]);
+  const folderTotalPages = isAutoFolderYear
+    ? Math.max(1, Math.ceil(sortedPapers.length / PAGE_SIZE))
+    : 1;
+  const folderPageSafe = Math.min(Math.max(1, folderPage), folderTotalPages);
+  const folderPagedPapers = useMemo(() => {
+    if (!isAutoFolderYear) return sortedPapers;
+    const start = (folderPageSafe - 1) * PAGE_SIZE;
+    return sortedPapers.slice(start, start + PAGE_SIZE);
+  }, [isAutoFolderYear, sortedPapers, folderPageSafe]);
+
+  useEffect(() => {
+    if (!isAutoFolderYear && folderPage !== 1) {
+      setFolderPage(1);
+    }
+  }, [isAutoFolderYear, folderPage]);
+
+  useEffect(() => {
+    if (!isAutoFolderYear) return;
+    if (folderPage > folderTotalPages) {
+      setFolderPage(folderTotalPages);
+    }
+  }, [folderPage, folderTotalPages, isAutoFolderYear]);
   /* ---------------------------------------------------------- */
 
   /* ---------- All Papers 옵션/필터/표시 (다중 소속 대응) ---------- */
@@ -714,6 +746,8 @@ export default function PaperSite() {
   const onChangeAff = (e) => {
     const v = e.target.value;
     setAffFilter(v);
+    setFolderPage(1);
+    setAllPage(1);
     const params = new URLSearchParams(window.location.search);
     if (selectedYear) params.set("year", selectedYear);
     else params.delete("year");
@@ -722,6 +756,7 @@ export default function PaperSite() {
     else params.delete("folder");
     if (v && v !== "ALL") params.set("aff", v);
     else params.delete("aff");
+    params.set("apage", "1");
     window.history.pushState({}, "", `?${params.toString()}`);
     if (activeFolder || selectedYear) {
       logAffiliationEvent({
@@ -763,6 +798,20 @@ export default function PaperSite() {
     if (allAffFilter && allAffFilter !== "ALL") params.set("aaff", allAffFilter);
     else params.delete("aaff");
     window.history.pushState({}, "", `?${params.toString()}`);
+  };
+
+  const gotoFolderPage = (page) => {
+    const next = Math.min(Math.max(1, page), folderTotalPages);
+    setFolderPage(next);
+    setAllPage(next);
+    const params = new URLSearchParams(window.location.search);
+    if (selectedYear) params.set("year", selectedYear);
+    else params.delete("year");
+    const folderSlug = selectedFolder?.folder ?? activeFolder?.folder;
+    if (folderSlug) params.set("folder", folderSlug);
+    else params.delete("folder");
+    params.set("apage", String(next));
+    window.history.pushState({}, "", params.toString() ? `?${params}` : "/");
   };
 
   const onSearchInputChange = (e) => {
@@ -963,7 +1012,7 @@ export default function PaperSite() {
             </div>
 
               <div className="space-y-3 sm:space-y-4">
-                {sortedPapers.map((paper) => {
+                {folderPagedPapers.map((paper) => {
                   const folderYear = activeFolder?.year ?? selectedYear ?? "2025";
                   const tokens = splitAffiliations(paper.affiliation);
                   const podium = isPodium(paper.id);
@@ -1018,10 +1067,17 @@ export default function PaperSite() {
                   );
                 })}
 
-                {sortedPapers.length === 0 && (
+                {folderPagedPapers.length === 0 && (
                   <div className="text-center text-gray-500 py-10">
                     {hasSearchQuery ? "검색 결과가 없습니다." : "표시할 논문이 없습니다."}
                   </div>
+                )}
+                {isAutoFolderYear && folderTotalPages > 1 && (
+                  <Pagination
+                    page={folderPageSafe}
+                    total={folderTotalPages}
+                    onChange={gotoFolderPage}
+                  />
                 )}
               </div>
             </section>
